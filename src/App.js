@@ -52,9 +52,13 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          <Users />
-          <Modal />
+          
+          
         </div>
+        <div className="container">
+          <Users />
+        </div>
+        <Modal />
       </div>
   );
 }
