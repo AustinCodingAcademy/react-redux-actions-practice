@@ -41,14 +41,14 @@
   * import connect from react-redux into all components
   * create mapStateToProps function 
   * call the connect function
+  * SpecialText.js
+    * map a prop called `text` to the state `specialText`
   * Users.js
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
     * map a prop called `sortOn` to the state `currentUserSort`
   * Counter.js
     * map a prop called `count` to the state `currentCount`
-  * SpecialText.js
-    * map a prop called `text` to the state `specialText`
   * CurrentCity.js
     * map a prop called `text` to the state `currentCity`
   * Thermostat.js
@@ -64,13 +64,13 @@
   * create mapDispatchToProps
   * connect the component so that it becomes a container
   * export container
+  * SpecialTextBox.js
+    * import `setSpecialText` action
+    * map prop `set` to action `setSpecialText`
   * UserButtons.js
     * import `addUser` and `removeUser` action
     * map prop `add` to action `addUser`
     * map prop `remove` to action `removeUser`
-  * SpecialTextBox.js
-    * import `setSpecialText` action
-    * map prop `set` to action `setSpecialText`
   * CityDropDown.js
     * import `setCurrentCity` action
     * map prop `set` to action `setCurrentCity`

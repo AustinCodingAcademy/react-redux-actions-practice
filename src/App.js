@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CounterButton from "./components/CounterButton";
 import SpecialTextBox from "./components/SpecialTextBox";
-
 import Counter from "./components/Counter";
 import SpecialText from "./components/SpecialText";
 import UserButtons from "./components/UserButtons";
@@ -17,6 +16,7 @@ import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
+
 function App() {
   return (
       <div className="App">

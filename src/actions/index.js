@@ -1,23 +1,23 @@
-function increaseCounter(){
+export function increaseCounter(){
   return {
     type:"INCREASE_COUNTER"
   }
 }
 
-function setSpecialText(txt){
+export function setSpecialText(txt){
   return {
     type:"SET_SPECIAL_TEXT",
     value:txt
   }
 }
 
-function addUser(user){
+export function addUser(user){
   return {
     type:"ADD_USER",
     value:user
   }
 }
-function removeUser(){
+export function removeUser(){
   return {
     type:"REMOVE_USER"
   }
