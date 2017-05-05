@@ -59,7 +59,7 @@
   * Modal.js
     * map a prop called `isLoading` to the state `isLoading`
 
-Containers that care about changing the data
+### Containers that care about changing the data
   * Import the connect function from react-redux
   * create mapDispatchToProps
   * connect the component so that it becomes a container
