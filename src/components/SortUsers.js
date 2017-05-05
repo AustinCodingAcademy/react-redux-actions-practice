@@ -6,8 +6,8 @@ function SortUsers(props) {
         Sort Users On: 
         <select onChange={
           (e)=>{
-            if(props.setSearchText){
-              props.setSearchText(e.target.value);
+            if(props.set){
+              props.set(e.target.value);
             }
           }
         }>
