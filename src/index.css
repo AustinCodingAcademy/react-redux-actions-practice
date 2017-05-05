@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 48%;
+  height: 700px;
+  border: solid black 2px;
+  float:left;
+}
