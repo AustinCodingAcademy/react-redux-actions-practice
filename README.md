@@ -1,3 +1,5 @@
+# Make sure to do one thing at a time, save and refresh to check for errors
+
 ###  Reducers
   * Create Reducers in reducers/index.js
   * Look at state.js and create a reducer for each piece of state
@@ -37,9 +39,18 @@
   * create the store
   * export the store
 
+### Provide store to components
+  * In index.js
+  * Import Provider from react-redux
+  * Import store from store.js
+  * Use Provider component to wrap App
+  * Make sure there is no whitespace between Provider and App
+  * Give Provider a prop “store” and the value of the store
+
+
 ### Containers
   * We need to leave the components alone and create containers
-  * In the container folder, reate a container file for each component i.e. SpecialTextContainer.js
+  * In the container folder, create a container file for each component i.e. SpecialTextContainer.js
   * Import the appropriate component into the container file
   * This is where the connect function and the actions should be imported
   * This is where mapStateToProps and mapDispatchToProps should be
@@ -111,3 +122,8 @@
   * ModalContainer.js
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`
+
+### App
+  * Change App.js
+  * Use containers instead of components
+  * Basically, just add the word Container everywhere a component is referenced
