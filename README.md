@@ -37,68 +37,77 @@
   * create the store
   * export the store
 
-### Containers that care about what the data is
+### Containers
+  * We need to leave the components alone and create containers
+  * In the container folder, reate a container file for each component i.e. SpecialTextContainer.js
+  * Import the appropriate component into the container file
+  * This is where the connect function and the actions should be imported
+  * This is where mapStateToProps and mapDispatchToProps should be
+  * This is where you should do the connecting
+  * Export the container
+  
+### Create these Containers that care about what the data is
   * import connect from react-redux into all components
   * create mapStateToProps function 
   * call the connect function
-  * SpecialText.js
+  * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
-  * Users.js
+  * UsersContainer.js
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
     * map a prop called `sortOn` to the state `currentUserSort`
-  * Counter.js
+  * CounterContainer.js
     * map a prop called `count` to the state `currentCount`
-  * CurrentCity.js
+  * CurrentCityContainer.js
     * map a prop called `text` to the state `currentCity`
-  * Thermostat.js
+  * ThermostatContainer.js
     * map a prop called `temp` to the state `currentTemp`
-  * VideoPlayer.js
+  * VideoPlayerContainer.js
     * map a prop called `URL` to the state `videoURL`
     * map a prop called `scale` to the state `videoScale`
-  * Modal.js
+  * ModalContainer.js
     * map a prop called `isLoading` to the state `isLoading`
 
-### Containers that care about changing the data
+### Create these Containers that care about changing the data
   * Import the connect function from react-redux
   * create mapDispatchToProps
   * connect the component so that it becomes a container
   * export container
-  * SpecialTextBox.js
+  * SpecialTextBoxContainer.js
     * import `setSpecialText` action
     * map prop `set` to action `setSpecialText`
-  * UserButtons.js
+  * UserButtonsContainer.js
     * import `addUser` and `removeUser` action
     * map prop `add` to action `addUser`
     * map prop `remove` to action `removeUser`
-  * CityDropDown.js
+  * CityDropDownContainer.js
     * import `setCurrentCity` action
     * map prop `set` to action `setCurrentCity`
-  * ChangeTemperature.js
+  * ChangeTemperatureContainer.js
     * import `setTemp` action
     * map prop `set` to action `setTemp`
-  * CounterButton.js
+  * CounterButtonContainer.js
     * import the increaseCounter and decreaseCounter actions
     * map prop `increase` to action `increaseCounter`
     * map prop `decrees` to action `decreaseCounter`
-  * SearchTextBox.js
+  * SearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
-  * ChangeTemperature.js
+  * ChangeTemperatureContainer.js
     * import `setTemp` action
     * map prop `set` to action `setTemp`
-  * VideoTextBox.js
+  * VideoTextBoxContainer.js
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`
-  * SortUsers.js
+  * SortUsersContainer.js
     * import `setCurrentUserSort` action
     * map prop `set` to action `setCurrentUserSort`
-  * ScaleVideo.js
+  * ScaleVideoContainer.js
     * import `setVideoScale` action
     * map prop `set` to action `setVideoScale`
-  * ShowModal.js
+  * ShowModalContainer.js
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`Show
-  * Modal.js
+  * ModalContainer.js
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`
