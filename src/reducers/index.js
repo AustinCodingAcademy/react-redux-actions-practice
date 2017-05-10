@@ -26,3 +26,31 @@ function specialText(state =[], action){
   }
   return state;
 }
+
+function currentCity(state="", action) {
+  return state;
+}
+
+function searchText(state="", action) {
+  return state;
+}
+
+function currentTemp(state=0, action) {
+  return state;
+}
+
+function isLoading(state=true, actions) {
+  return state;
+}
+
+function videoURL(state="", action) {
+  return state;
+}
+
+function currentUserSort(state="", action) {
+  return state;
+}
+
+function videoScale(state=0, action) {
+  return state;
+}
