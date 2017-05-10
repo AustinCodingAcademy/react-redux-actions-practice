@@ -39,7 +39,7 @@
   * removeUser()
   * addUser(user)
   * setSearchText(text)
-  * setIsLoading(isLoading - true/false)
+  * setIsLoading(isLoading) - true/false
   * setTemp(temp)
   * setCurrentCity(city)
   * setVideoURL(URL)
