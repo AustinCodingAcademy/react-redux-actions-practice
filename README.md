@@ -11,7 +11,7 @@
   * currentCount
   * specialText
   * currentCity
-  * users
+  * users - use slice to remove the first user,  and ...state to add
   * currentTemp
   * isLoading
   * videoURL
@@ -19,18 +19,33 @@
   * currentUserSort
   * videoScale
 ### Create Actions in actions/index.js
+<<<<<<< HEAD
   * increaseCounter
   * decreaseCounter
   * setSpecialText
   * removeUser - use slice
   * addUser
   * setSearchText
-  * setIsLoading 
+  * setIsLoading
   * setTemp
   * setCurrentCity
   * setVideoURL
   * setCurrentUserSort
   * setVideoScale
+=======
+  * increaseCounter() - increase counter by one
+  * decreaseCounter() - decrease counter by one
+  * setSpecialText(text)
+  * removeUser()
+  * addUser(user)
+  * setSearchText(text)
+  * setIsLoading(isLoading - true/false)
+  * setTemp(temp)
+  * setCurrentCity(city)
+  * setVideoURL(URL)
+  * setCurrentUserSort(sort)
+  * setVideoScale(scale)
+
 ### Create Store
   * Create a store.js file
   * Import state from state.js
