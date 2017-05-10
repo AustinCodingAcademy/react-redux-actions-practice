@@ -7,7 +7,7 @@
   * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
   * Remember to return state if the reducer doesn't care about the action
   * You will need to decide which reducer cares about which action type
-
+  * Combine reducers and export
 
 ### Make these reducers
   * currentCount
