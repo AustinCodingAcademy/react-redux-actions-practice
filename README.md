@@ -19,18 +19,18 @@
   * currentUserSort
   * videoScale
 ### Create Actions in actions/index.js
-  * increaseCounter
-  * decreaseCounter
-  * setSpecialText
-  * removeUser - use slice
-  * addUser 
-  * setSearchText
-  * setIsLoading
-  * setTemp
-  * setCurrentCity
-  * setVideoURL
-  * setCurrentUserSort
-  * setVideoScale
+  * increaseCounter()
+  * decreaseCounter()
+  * setSpecialText(text)
+  * removeUser()
+  * addUser(user)
+  * setSearchText(text)
+  * setIsLoading(isLoading - true/false)
+  * setTemp(temp)
+  * setCurrentCity(city)
+  * setVideoURL(URL)
+  * setCurrentUserSort(sort)
+  * setVideoScale(scale)
 ### Create Store
   * Create a store.js file
   * Import state from state.js
