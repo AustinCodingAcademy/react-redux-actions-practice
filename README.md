@@ -23,7 +23,7 @@
   * decreaseCounter
   * setSpecialText
   * removeUser - use slice
-  * addUser 
+  * addUser
   * setSearchText
   * setIsLoading
   * setTemp
@@ -56,10 +56,10 @@
   * This is where mapStateToProps and mapDispatchToProps should be
   * This is where you should do the connecting
   * Export the container
-  
+
 ### Create these Containers that care about what the data is
   * import connect from react-redux into all components
-  * create mapStateToProps function 
+  * create mapStateToProps function
   * call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
@@ -127,3 +127,6 @@
   * Change App.js
   * Use containers instead of components
   * Basically, just add the word Container everywhere a component is referenced
+
+  Leslie Robertson
+  
