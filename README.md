@@ -1,5 +1,8 @@
 # Make sure to do one thing at a time, save and refresh to check for errors
 
+## Name
+Tony Rinaldi
+
 ###  Reducers
   * Create Reducers in reducers/index.js
   * Look at state.js and create a reducer for each piece of state
