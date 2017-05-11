@@ -10,7 +10,7 @@ function mapDispatchToProps(dispatch){
       let action = addUser(user);
       dispatch(action);
     },
-    decrease:function(){
+    remove:function(){
       let action = removeUser();
       dispatch(action);
     }

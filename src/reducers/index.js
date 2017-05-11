@@ -14,20 +14,13 @@ function currentCount(state=0, action){
 function users(state =[], action){
   if(action.type === "ADD_USER"){
     console.log(state);
-    state.push({
-        "id": 1,
-        "first_name": "Kylo",
-        "last_name": "Ren",
-        "address": "First Order, Space, IN 04103",
-        "phone": 15551234567,
-        "occupation": "Loyal Son",
-        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
-    })
+    state.push(action.value);
     console.log(state);
     return state;
 
   }
   if(action.type === "REMOVE_USER"){
+    console.log(state);
     state.shift();
     console.log(state);
     return state;
