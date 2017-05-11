@@ -1,8 +1,10 @@
 import {connect} from "react-redux";
 import CounterButton from "./CounterButton";
-import {increaseCounter} from "../actions/index";
+import {
+  increaseCounter,
+  decreaseCounter} from "../actions/index";
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     Counter: state.currentCount
   };
@@ -12,15 +14,16 @@ const mapDispatchToProps = dispatch => {
   return {
     increase: () => {
       dispatch(increaseCounter());
+      console.log("increase counter clicked");
+    },
+    decrease: () => {
+      dispatch(decreaseCounter());
+      console.log("decrease counter was clicked");
     }
   };
 };
 
-const CounterButtonContainer = connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps,
-
 )(CounterButton);
-// Don't know if this needs to be CounterButton or Counter
-
-export default CounterButtonContainer;
