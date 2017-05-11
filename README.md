@@ -11,7 +11,7 @@
   * currentCount
   * specialText
   * currentCity
-  * users
+  * users - use slice to remove first user, and ...state to add
   * currentTemp
   * isLoading
   * videoURL
@@ -19,18 +19,18 @@
   * currentUserSort
   * videoScale
 ### Create Actions in actions/index.js
-  * increaseCounter
-  * decreaseCounter
-  * setSpecialText
-  * removeUser - use slice
-  * addUser
-  * setSearchText
-  * setIsLoading
-  * setTemp
-  * setCurrentCity
-  * setVideoURL
-  * setCurrentUserSort
-  * setVideoScale
+  * increaseCounter() - increase counter by 1
+  * decreaseCounter() - decrease counter by 1
+  * setSpecialText(text)
+  * removeUser()
+  * addUser(user)
+  * setSearchText(text)
+  * setIsLoading(isLoading) which will be true/false
+  * setTemp(temp)
+  * setCurrentCity(city)
+  * setVideoURL(URL)
+  * setCurrentUserSort(sort)
+  * setVideoScale(scale)
 ### Create Store
   * Create a store.js file
   * Import state from state.js
@@ -127,6 +127,3 @@
   * Change App.js
   * Use containers instead of components
   * Basically, just add the word Container everywhere a component is referenced
-
-  Leslie Robertson
-  
