@@ -15,7 +15,7 @@ function mapDispatchToProps(dispatch){
 }
 
 
-const ShowModalContainer = connect(mapDispatchToProps)(ShowModal);
+const ShowModalContainer = connect(null, mapDispatchToProps)(ShowModal);
 
 
 export default ShowModalContainer

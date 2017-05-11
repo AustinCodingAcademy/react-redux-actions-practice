@@ -18,7 +18,7 @@ function mapDispatchToProps(dispatch){
 }
 
 
-const CounterButtonContainer = connect(mapDispatchToProps)(CounterButton);
+const CounterButtonContainer = connect(null, mapDispatchToProps)(CounterButton);
 
 
 export default CounterButtonContainer

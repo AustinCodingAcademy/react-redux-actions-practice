@@ -3,24 +3,34 @@ import {combineReducers} from 'redux';
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    return Object.assign({}, state, {
-        Counter: state+1
-      })
+    return state+1;
   }
   if(action.type === "DECREASE_COUNTER"){
-    return Object.assign({}, state, {
-        Counter: state-1
-      })
+    return state-1;
   }
   return state;
 }
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
+    console.log(state);
+    state.push({
+        "id": 1,
+        "first_name": "Kylo",
+        "last_name": "Ren",
+        "address": "First Order, Space, IN 04103",
+        "phone": 15551234567,
+        "occupation": "Loyal Son",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
+    })
+    console.log(state);
+    return state;
 
   }
   if(action.type === "REMOVE_USER"){
-
+    state.shift();
+    console.log(state);
+    return state;
   }
   return state;
 }

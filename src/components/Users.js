@@ -6,7 +6,7 @@ function Users(props) {
     var sorted = props.users.sort((a,b) => {
       return a[props.sortOn] > b[props.sortOn];
     });
-    usersDivs = sorted.filter(function(u){
+    usersDivs = props.users.filter(function(u){
       return !props.firstNameFilter ||
       (props.firstNameFilter &&
       u.first_name.indexOf(props.firstNameFilter) > -1);

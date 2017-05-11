@@ -13,7 +13,7 @@ function mapDispatchToProps(dispatch){
 }
 
 
-const VideoTextBoxContainer = connect(mapDispatchToProps)(VideoTextBox);
+const VideoTextBoxContainer = connect(null, mapDispatchToProps)(VideoTextBox);
 
 
 export default VideoTextBoxContainer

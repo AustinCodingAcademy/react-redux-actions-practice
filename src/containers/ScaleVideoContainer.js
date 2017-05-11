@@ -13,7 +13,7 @@ function mapDispatchToProps(dispatch){
 }
 
 
-const ScaleVideoContainer = connect(mapDispatchToProps)(ScaleVideo);
+const ScaleVideoContainer = connect(null, mapDispatchToProps)(ScaleVideo);
 
 
 export default ScaleVideoContainer
