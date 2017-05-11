@@ -13,17 +13,22 @@ function currentCount(state=0, action){
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-    console.log(state);
-    state.push(action.value);
-    console.log(state);
-    return state;
+    let tempArr = [];
+    tempArr = state.map( (user) =>{
+      return user;
+    })
+    tempArr.push(action.value);
+    console.log(tempArr);
+    return tempArr;
 
   }
   if(action.type === "REMOVE_USER"){
-    console.log(state);
-    state.shift();
-    console.log(state);
-    return state;
+    let tempArr = [];
+    tempArr = state.map( (user) =>{
+      return user;
+    })
+    tempArr.shift();
+    return tempArr;
   }
   return state;
 }
