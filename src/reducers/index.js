@@ -1,3 +1,31 @@
+import {combineReducers} from 'redux';
+
+function id(state=0, action){
+  return state;
+}
+
+function first_name(state="", action){
+  return state;
+}
+
+function last_name(state="", action){
+  return state;
+}
+function address(state="", action){
+  return state;
+}
+
+function phone(state=[], action){
+  return state;
+}
+
+function occupation(state="", action){
+  return state;
+}
+function avatar(state=[], action){
+  return state;
+}
+
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
