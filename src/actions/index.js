@@ -6,6 +6,14 @@ export function increaseCounter() {
   };
 }
 
+export const DECREASE_COUNTER = "DECREASE_COUNTER";
+
+export function decreaseCounter() {
+  return {
+    type: DECREASE_COUNTER
+  };
+}
+
 export const SET_SPECIAL_TEXT = "SET_SPECIAL_TEXT";
 
 export function setSpecialText(txt) {
