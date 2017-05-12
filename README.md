@@ -136,13 +136,10 @@
   * CounterButtonContainer.js
     * import the increaseCounter and decreaseCounter actions
     * map prop `increase` to action `increaseCounter`
-    * map prop `decrees` to action `decreaseCounter`
+    * map prop `decrease` to action `decreaseCounter`
   * SearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
-  * ChangeTemperatureContainer.js
-    * import `setTemp` action
-    * map prop `set` to action `setTemp`
   * VideoTextBoxContainer.js
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`
@@ -153,9 +150,6 @@
     * import `setVideoScale` action
     * map prop `set` to action `setVideoScale`
   * ShowModalContainer.js
-    * import `setIsLoading` action
-    * map prop `setIsLoading` to action `setIsLoading`Show
-  * ModalContainer.js
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`
 
