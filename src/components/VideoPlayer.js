@@ -1,4 +1,5 @@
 import React from 'react';
+import {VideoPlayerContainer} from '../containers/VideoPlayerContainer';
 
 function VideoPlayer(props) {
   let width = 200;

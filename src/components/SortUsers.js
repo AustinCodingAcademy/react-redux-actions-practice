@@ -1,4 +1,5 @@
 import React from 'react';
+import {SorUsersContainer} from '../containers/SortUsersContainer';
 
 function SortUsers(props) {
   return (

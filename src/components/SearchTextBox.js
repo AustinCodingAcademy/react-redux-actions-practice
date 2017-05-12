@@ -1,4 +1,5 @@
 import React from 'react';
+import {SearchTextBoxContainer} from '../containers/SearchTextBoxContainer';
 
 function SearchTextBox(props) {
   return (

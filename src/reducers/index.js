@@ -1,3 +1,5 @@
+import {combineReducers} from 'redux';
+
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
@@ -20,7 +22,7 @@ function users(state =[], action){
 }
 
 
-function specialText(state =[], action){
+function specialText(state ="", action){
   if(action.type === "SET_SPECIAL_TEXT"){
     return action.value;
   }
@@ -54,3 +56,9 @@ function currentUserSort(state="", action) {
 function videoScale(state=0, action) {
   return state;
 }
+
+const rootReducer = combineReducers({
+  currentCount,users,specialText,currentCity,searchText,currentTemp,isLoading,videoURL,currentUserSort,videoScale
+});
+
+export default rootReducer;

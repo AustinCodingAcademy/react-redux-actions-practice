@@ -1,4 +1,5 @@
 import React from 'react';
+import {UserButtonsContainer} from '../containers/UserButtonsContainer';
 
 function UserButtons(props) {
   return (

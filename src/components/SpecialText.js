@@ -1,4 +1,5 @@
 import React from 'react';
+import {SpecialTextContainer} from '../containers/SpecialTextContainer';
 
 function SpecialText(props) {
   return (

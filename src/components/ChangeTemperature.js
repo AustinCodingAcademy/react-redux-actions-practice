@@ -1,4 +1,5 @@
 import React from "react";
+import {ChangeTemperatureContainer} from '../containers/ChangeTemperatureContainer';
 
 function ChangeTemperature(props){
     return(

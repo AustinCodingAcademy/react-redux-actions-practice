@@ -1,4 +1,5 @@
 import React from 'react';
+import {UsersContainer} from '../containers/UsersContainer';
 
 function Users(props) {
   var usersDivs = null;

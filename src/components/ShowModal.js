@@ -1,4 +1,5 @@
 import React from 'react';
+import {ShowModalContainer} from '../containers/ShowModalContainer';
 
 function ShowModal(props) {
   return (

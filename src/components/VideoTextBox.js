@@ -1,4 +1,5 @@
 import React from 'react';
+import {VideoTextBoxContainer} from '../containers/VideoTextBoxContainer';
 
 function VideoTextBox(props) {
   return (
