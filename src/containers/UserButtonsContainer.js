@@ -8,10 +8,14 @@ function mapDispatchToProps(dispatch){
     add:function(user){
       let action = addUser(user);
       dispatch(action);
+    },
+    remove:function(user){
+      let action = removeUser(user);
+      dispatch(action);
     }
   }
 }
 
-const UserButtonsContainer = connect(mapDispatchToProps)(UserButtonsContainer);
+const UserButtonsContainer = connect(null,mapDispatchToProps)(UserButtons);
 
 export default UserButtonsContainer

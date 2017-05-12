@@ -7,6 +7,6 @@ function mapStateToProps(state){
   }
 }
 
-const CounterContainer = connect(mapStateToProps)(CounterContainer);
+const CounterContainer = connect(mapStateToProps)(Counter);
 
 export default CounterContainer

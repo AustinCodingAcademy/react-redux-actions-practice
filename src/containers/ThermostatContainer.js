@@ -7,6 +7,6 @@ function mapStateToProps(state){
   }
 }
 
-const ThermostatContainer = connect(mapStateToProps)(ThermostatContainer);
+const ThermostatContainer = connect(mapStateToProps)(Thermostat);
 
 export default ThermostatContainer

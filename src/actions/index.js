@@ -24,7 +24,7 @@ export function addUser(user){
   }
 }
 
-export function removeUser(){
+export function removeUser(user){
   return {
     type:"REMOVE_USER"
   }

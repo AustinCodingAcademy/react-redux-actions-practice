@@ -7,6 +7,6 @@ function mapStateToProps(state){
   }
 }
 
-const CurrentCityContainer = connect(mapStateToProps)(CurrentCityContainer);
+const CurrentCityContainer = connect(mapStateToProps)(CurrentCity);
 
 export default CurrentCityContainer

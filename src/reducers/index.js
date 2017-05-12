@@ -12,16 +12,16 @@ function currentCount(state=0, action){
 
 function users(state=[], action){
   if(action.type === "ADD_USER"){
-    return users.slice(1);
+    return [...state,action.value];
   }
   if(action.type === "REMOVE_USER"){
-    return [...state,action.value];
+    return state.slice(1);
   }
   return state;
 }
 
 
-function specialText(state=[], action){
+function specialText(state="", action){
   if(action.type === "SET_SPECIAL_TEXT"){
     return action.value;
   }
@@ -36,7 +36,7 @@ function currentCity(state="", action){
 }
 
 function currentTemp(state=0, action){
-  if(action.type === "SET_CURRENT_TEMP"){
+  if(action.type === "SET_TEMP"){
     return action.value;
   }
   return state;

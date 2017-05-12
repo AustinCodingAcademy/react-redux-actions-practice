@@ -7,6 +7,6 @@ function mapStateToProps(state){
   }
 }
 
-const SpecialTextContainer = connect(mapStateToProps)(SpecialTextContainer);
+const SpecialTextContainer = connect(mapStateToProps)(SpecialText);
 
 export default SpecialTextContainer

@@ -12,6 +12,6 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-const SearchTextBoxContainer = connect(mapDispatchToProps)(SearchTextBoxContainer);
+const SearchTextBoxContainer = connect(null,mapDispatchToProps)(SearchTextBox);
 
 export default SearchTextBoxContainer

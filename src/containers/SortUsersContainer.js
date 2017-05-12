@@ -12,6 +12,6 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-const SortUsersContainer = connect(mapDispatchToProps)(SortUsersContainer);
+const SortUsersContainer = connect(null,mapDispatchToProps)(SortUsers);
 
 export default SortUsersContainer

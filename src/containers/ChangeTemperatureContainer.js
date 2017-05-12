@@ -12,6 +12,6 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-const ChangeTemperatureContainer = connect(mapDispatchToProps)(ChangeTemperatureContainer);
+const ChangeTemperatureContainer = connect(null,mapDispatchToProps)(ChangeTemperature);
 
 export default ChangeTemperatureContainer

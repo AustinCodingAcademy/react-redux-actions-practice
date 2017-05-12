@@ -12,6 +12,6 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-const CityDropDownContainer = connect(mapDispatchToProps)(CityDropDownContainer);
+const CityDropDownContainer = connect(null,mapDispatchToProps)(CityDropDown);
 
 export default CityDropDownContainer
