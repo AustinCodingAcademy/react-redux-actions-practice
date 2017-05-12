@@ -10,10 +10,10 @@
   * Combine reducers and export
 
 ### Make these reducers
-  * currentCount
-    * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
-  * specialText
-    * if "SET_SPECIAL_TEXT" should return the action value
+  * ~~currentCount~~
+    * ~~if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action~~
+  * ~~specialText~~
+    * ~~if "SET_SPECIAL_TEXT" should return the action value~~
   * currentCity
     * if "SET_CURRENT_CITY" should return the action value
   * users
@@ -95,7 +95,7 @@
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container
-  * Create mapStateToProps function 
+  * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`

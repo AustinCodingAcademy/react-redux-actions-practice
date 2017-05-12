@@ -1,7 +1,7 @@
 import React from 'react';
 import CounterButtonContainer from "./components/CounterButtonContainer";
 import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
+import CounterContainer from "./components/CounterContainer";
 import SpecialText from "./components/SpecialText";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";
@@ -42,7 +42,7 @@ function App() {
         <ShowModal />
       </div>
       <div className="container">
-        <Counter />
+        <CounterContainer />
         <br />
         <SpecialText />
         <br />
