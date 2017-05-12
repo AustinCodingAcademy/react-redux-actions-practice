@@ -20,7 +20,7 @@ function users(state =[], action){
 }
 
 
-function specialText(state =[], action){
+function specialText(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
     return action.value;
   }
