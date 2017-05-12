@@ -28,5 +28,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const VideoTextBoxContainer = connect(mapDispatchToProps)(VideoTextBox);
+const VideoTextBoxContainer = connect(null, mapDispatchToProps)(VideoTextBox);
 export default VideoTextBoxContainer

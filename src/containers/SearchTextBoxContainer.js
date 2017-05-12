@@ -28,5 +28,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const SearchTextBoxContainer = connect(mapDispatchToProps)(SearchTextBox);
+const SearchTextBoxContainer = connect(null, mapDispatchToProps)(SearchTextBox);
 export default SearchTextBoxContainer

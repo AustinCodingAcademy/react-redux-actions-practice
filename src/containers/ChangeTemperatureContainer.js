@@ -28,5 +28,6 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const ChangeTemperatureContainer = connect(mapDispatchToProps)(ChangeTemperature);
+// put "null" in the first arguement if the mapStateToProps does not exist
+const ChangeTemperatureContainer = connect(null, mapDispatchToProps)(ChangeTemperature);
 export default ChangeTemperatureContainer

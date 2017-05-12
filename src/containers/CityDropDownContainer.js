@@ -28,5 +28,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const CityDropDownContainer = connect(mapDispatchToProps)(CityDropDown);
+const CityDropDownContainer = connect(null, mapDispatchToProps)(CityDropDown);
 export default CityDropDownContainer

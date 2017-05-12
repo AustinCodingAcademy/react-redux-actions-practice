@@ -18,6 +18,10 @@ function mapDispatchToProps(dispatch){
       let action = addUser(user);
       //this is standard
       dispatch(action);
+    },
+    remove: function(user){
+      let action = removeUser(user);
+      dispatch(action);
     }
   }
 }
@@ -28,5 +32,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const UserButtonsContainer = connect(mapDispatchToProps)(UserButtons);
+const UserButtonsContainer = connect(null, mapDispatchToProps)(UserButtons);
 export default UserButtonsContainer

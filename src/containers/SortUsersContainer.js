@@ -28,5 +28,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const SortUsersContainer = connect(mapDispatchToProps)(SortUsers);
+const SortUsersContainer = connect(null, mapDispatchToProps)(SortUsers);
 export default SortUsersContainer

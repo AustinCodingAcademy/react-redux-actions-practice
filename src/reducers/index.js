@@ -2,26 +2,30 @@ import {combineReducers} from 'redux';
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-
+    return state + 1;
   }
   if(action.type === "DECREASE_COUNTER"){
-
+    return state -1;
   }
   return state;
 }
 
-function users(state =[], action){
+function users(state = [], action){
   if(action.type === "ADD_USER"){
-
+// return [...state, user] is how you add to an array using redux (see lecture notes "More Redux")
+return [...state,action.value];
   }
   if(action.type === "REMOVE_USER"){
-
+// return state.splice(1) extracts everything but the index identified into a New
+//array, therefore it does not change the original state
+return state.splice(1);
   }
   return state;
 }
+//return Object.assign({name: "Bob"}, state); creates a new object and copies all the
+//information from the state object into it
 
-
-function specialText(state =[], action){
+function specialText(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
     return action.value;
   }

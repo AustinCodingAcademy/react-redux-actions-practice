@@ -11,11 +11,11 @@ function mapDispatchToProps(dispatch){
     // the below key needs to be the same name as the function props you require above,
     // and the value needs to be the function and prop called within the
     // function
-    set: function(text){
+    set: function(txt){
 
       //this is associated to the action folder's index.js.  It is calling the
       //function setCurrentUser and passing the user.
-      let action = setSpecialText(text);
+      let action = setSpecialText(txt);
       //this is standard
       dispatch(action);
     }
@@ -28,5 +28,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const SpecialTextBoxContainer = connect(mapDispatchToProps)(SpecialTextBox);
-export default SpecialTextBoxContainer
+const SpecialTextBoxContainer = connect(null, mapDispatchToProps)(SpecialTextBox);
+export default SpecialTextBoxContainer;

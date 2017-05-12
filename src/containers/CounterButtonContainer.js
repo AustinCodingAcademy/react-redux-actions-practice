@@ -32,5 +32,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const CounterButtonContainer = connect(mapDispatchToProps)(CounterButton);
+const CounterButtonContainer = connect(null, mapDispatchToProps)(CounterButton);
 export default CounterButtonContainer

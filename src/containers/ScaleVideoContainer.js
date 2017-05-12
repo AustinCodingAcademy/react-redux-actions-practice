@@ -27,5 +27,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const ScaleVideoContainer = connect(mapDispatchToProps)(ScaleVideo);
+const ScaleVideoContainer = connect(null, mapDispatchToProps)(ScaleVideo);
 export default ScaleVideoContainer

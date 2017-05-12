@@ -27,5 +27,5 @@ function mapDispatchToProps(dispatch){
 
 // const connectedThingFunction = connect(mapStateToProps, mapDispatchToProps);
 // const ListOfUsersContainer = connectedThingFunction(ListOfUsers);
-const ShowModalContainer = connect(mapDispatchToProps)(ShowModal);
+const ShowModalContainer = connect(null, mapDispatchToProps)(ShowModal);
 export default ShowModalContainer
