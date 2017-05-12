@@ -1,10 +1,10 @@
-export function increaseCounter(){
+export function increaseCounter(number){
   return {
     type:"INCREASE_COUNTER"
   }
 }
 
-export function decreaseCounter(){
+export function decreaseCounter(number){
   return {
     type:"DECREASE_COUNTER"
   }
@@ -44,6 +44,7 @@ export function setIsLoading(isLoading) {
 }
 
 export function setTemp(temp) {
+  console.log("setTemp");
   return {
     type: "SET_TEMP",
     value: temp

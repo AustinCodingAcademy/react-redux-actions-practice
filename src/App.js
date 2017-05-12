@@ -1,12 +1,14 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
+import CounterButtonContainer from "./containers/CounterButtonContainer";
+import SpecialTextContainer from "./containers/SpecialTextContainer";
+import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
 import Counter from "./components/Counter";
+import CounterContainer from "./containers/CounterContainer";
 import SpecialText from "./components/SpecialText";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";
 import Users from "./components/Users";
-import ChangeTemperature from "./components/ChangeTemperature";
+import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
 import CurrentCity from "./components/CurrentCity";
@@ -21,15 +23,15 @@ function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
-          <SpecialTextBox />
+          <SpecialTextBoxContainer />
           <br />
           <UserButtons />
           <br />
           <CityDropDown />
            <br />
-          <ChangeTemperature />
+          <ChangeTemperatureContainer />
           <br />
           <SearchTextBox />
           <br />
@@ -42,9 +44,9 @@ function App() {
           <ShowModal />
         </div>
         <div className="container">
-          <Counter />
+          <CounterContainer />
           <br />
-          <SpecialText />
+          <SpecialTextContainer />
           <br />
           <CurrentCity />
           <br />
