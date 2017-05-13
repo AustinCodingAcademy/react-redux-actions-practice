@@ -23,6 +23,15 @@ export function setSpecialText(txt) {
   };
 }
 
+export const SET_CURRENT_CITY = "SET_CURRENT_CITY"
+
+export function setCurrentCity(city) {
+  return {
+    type: SET_CURRENT_CITY,
+    value: city
+  };
+}
+
 export function addUser(user) {
   return {
     type: "ADD_USER",
