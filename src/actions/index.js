@@ -32,14 +32,17 @@ export function setCurrentCity(city) {
   };
 }
 
+export const ADD_USER = "ADD_USER";
+export const REMOVE_USER = "REMOVE_USER";
+
 export function addUser(user) {
   return {
-    type: "ADD_USER",
+    type: ADD_USER,
     value: user
   };
 }
 export function removeUser() {
   return {
-    type: "REMOVE_USER"
+    type: REMOVE_USER
   };
 }

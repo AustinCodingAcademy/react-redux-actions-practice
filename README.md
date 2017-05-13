@@ -38,11 +38,11 @@
   * ~~setSpecialText(text)~~
     * ~~type = "SET_SPECIAL_TEXT"~~
     * ~~value = text~~
-  * removeUser()
-    * type = "REMOVE_USER"
-  * addUser(user)
-    * type = "ADD_USER"
-    * value = user
+  * ~~removeUser()~~
+    * ~~type = "REMOVE_USER"~~
+  * ~~addUser(user)~~
+    * ~~type = "ADD_USER"~~
+    * ~~value = user~~
   * setSearchText(text)
     * type = "SET_SEARCH_TEXT"
     * value = text

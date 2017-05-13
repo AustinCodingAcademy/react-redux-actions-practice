@@ -30,10 +30,10 @@ function currentCity(state = [], action) {
 
 function users(state = [], action) {
   if (action.type === "ADD_USER") {
-
+    return [...state.action.value];
   }
   if (action.type === "REMOVE_USER") {
-
+    return state.users.slice(1);
   }
   return state;
 }
