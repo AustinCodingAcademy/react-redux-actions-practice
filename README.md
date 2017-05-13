@@ -12,8 +12,8 @@
 ### Make these reducers
   * ~~currentCount~~
     * ~~if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action~~
-  * specialText
-    * if "SET_SPECIAL_TEXT" should return the action value
+  * ~~specialText
+    * if "SET_SPECIAL_TEXT" should return the action value~~
   * currentCity
     * if "SET_CURRENT_CITY" should return the action value
   * users
@@ -31,10 +31,10 @@
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
 ### Create Actions in actions/index.js
-  * increaseCounter()
-    * type = "INCREASE_COUNTER"
-  * decreaseCounter()
-    * type = "DECREASE_COUNTER"
+  * ~~increaseCounter()~~
+    * ~~type = "INCREASE_COUNTER"~~
+  * ~~decreaseCounter()~~
+    * ~~type = "DECREASE_COUNTER"~~
   * setSpecialText(text)
     * type = "SET_SPECIAL_TEXT"
     * value = text
@@ -65,24 +65,24 @@
     * type = "SET_VIDEO_SCALE"
     * value = scale
 ### Create Store
-  * Create a store.js file
-  * Import state from state.js
-  * import createStore from redux
-  * import reducers from reducers
-  * create the store
-  * export the store
+  * ~~Create a store.js file~~
+  * ~~Import state from state.js~~
+  * ~~import createStore from redux~~
+  * ~~import reducers from reducers~~
+  * ~~create the store~~
+  * ~~export the store~~
 
 ### Provide store to components
-  * In index.js
-  * Import Provider from react-redux
-  * Import store from store.js
-  * Use Provider component to wrap App
-  * Make sure there is no whitespace between Provider and App
-  * Give Provider a prop “store” and the value of the store
+  * ~~In index.js~~
+  * ~~Import Provider from react-redux~~
+  * ~~Import store from store.js~~
+  * ~~Use Provider component to wrap App~~
+  * ~~Make sure there is no whitespace between Provider and App~~
+  * ~~Give Provider a prop “store” and the value of the store~~
 
 
 ### Containers
-  * We need to leave the components alone and create containers
+  * ~~We need to leave the components alone and create containers~~
   * In the container folder, create a container file for each component i.e. SpecialTextContainer.js
   * Import the appropriate component into the container file
   * This is where the connect function and the actions should be imported
