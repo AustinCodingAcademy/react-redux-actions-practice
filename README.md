@@ -14,8 +14,8 @@
     * ~~if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action~~
   * ~~specialText
     * if "SET_SPECIAL_TEXT" should return the action value~~
-  * currentCity
-    * if "SET_CURRENT_CITY" should return the action value
+  * ~~currentCity~~
+    * ~~if "SET_CURRENT_CITY" should return the action value~~
   * users
     * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
   * currentTemp
@@ -35,9 +35,9 @@
     * ~~type = "INCREASE_COUNTER"~~
   * ~~decreaseCounter()~~
     * ~~type = "DECREASE_COUNTER"~~
-  * setSpecialText(text)
-    * type = "SET_SPECIAL_TEXT"
-    * value = text
+  * ~~setSpecialText(text)~~
+    * ~~type = "SET_SPECIAL_TEXT"~~
+    * ~~value = text~~
   * removeUser()
     * type = "REMOVE_USER"
   * addUser(user)
@@ -52,9 +52,9 @@
   * setTemp(temp)
     * type = "SET_TEMP"
     * value = temp
-  * setCurrentCity(city)
-    * type = "SET_CURRENT_CITY"
-    * value = city
+  * ~~setCurrentCity(city)~~
+    * ~~type = "SET_CURRENT_CITY"~~
+    * ~~value = city~~
   * setVideoURL(URL)
     * type = "SET_VIDEO_URL"
     * value = URL
@@ -127,9 +127,9 @@
     * import `addUser` and `removeUser` action
     * map prop `add` to action `addUser`
     * map prop `remove` to action `removeUser`
-  * CityDropDownContainer.js
-    * import `setCurrentCity` action
-    * map prop `set` to action `setCurrentCity`
+  * ~~CityDropDownContainer.js~~
+    * ~~import `setCurrentCity` action~~
+    * ~~map prop `set` to action `setCurrentCity`~~
   * ChangeTemperatureContainer.js
     * import `setTemp` action
     * map prop `set` to action `setTemp`

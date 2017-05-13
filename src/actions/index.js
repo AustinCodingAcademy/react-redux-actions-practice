@@ -23,7 +23,7 @@ export function setSpecialText(txt) {
   };
 }
 
-export const SET_CURRENT_CITY = "SET_CURRENT_CITY"
+export const SET_CURRENT_CITY = "SET_CURRENT_CITY";
 
 export function setCurrentCity(city) {
   return {

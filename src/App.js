@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import CounterButtonContainer from "./components/CounterButtonContainer";
 import SpecialTextBoxContainer from "./components/SpecialTextBoxContainer";
 import CounterContainer from "./components/CounterContainer";
@@ -9,7 +9,7 @@ import Users from "./components/Users";
 import ChangeTemperature from "./components/ChangeTemperature";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
+import CurrentCityContainer from "./components/CurrentCityContainer";
 import CityDropDown from "./components/CityDropDown";
 import SearchTextBox from "./components/SearchTextBox";
 import SortUsers from "./components/SortUsers";
@@ -46,7 +46,7 @@ function App() {
         <br />
         <SpecialTextContainer />
         <br />
-        <CurrentCity />
+        <CurrentCityContainer />
         <br />
         <Thermostat />
         <br />
