@@ -8,8 +8,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    set: () => {
-      const action = setCurrentCity();
+    set: (city) => {
+      const action = setCurrentCity(city);
       dispatch(action);
     }
   };

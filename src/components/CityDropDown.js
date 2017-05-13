@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 function CityDropDown(props) {
   return (
     <div>
       CurrentCity:
       <select onChange={
-        (e)=>{
-          if(props.set){
+        (e) => {
+          if (props.set) {
             props.set(e.target.value);
           }
         }
