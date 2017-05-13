@@ -1,8 +1,8 @@
 import {connect} from "react-redux";
-import CityDropDown from "./CurrentCity";
+import CityDropDown from "./CityDropDown";
 import {setCurrentCity} from "../actions";
 
-const mapStateToProps = state => {
+const mapStateToProps = () => {
   return {};
 };
 

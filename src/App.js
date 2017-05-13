@@ -10,7 +10,7 @@ import ChangeTemperature from "./components/ChangeTemperature";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
 import CurrentCityContainer from "./components/CurrentCityContainer";
-import CityDropDown from "./components/CityDropDown";
+import CityDropDownContainer from "./components/CityDropDownContainer";
 import SearchTextBox from "./components/SearchTextBox";
 import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
@@ -27,7 +27,7 @@ function App() {
         <br />
         <UserButtons />
         <br />
-        <CityDropDown />
+        <CityDropDownContainer />
         <br />
         <ChangeTemperature />
         <br />
