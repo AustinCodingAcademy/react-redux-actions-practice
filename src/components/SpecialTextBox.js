@@ -1,26 +1,16 @@
-import React from 'react';
-import {connect} from "react-redux";
-import {setSpecialText} from "../actions";
+import React from "react";
 
 function SpecialTextBox(props) {
   return (
-      <div>
+    <div>
         Enter Special Text:
-        <input onChange={(e)=>{
-            if(props.set){
-              props.set(e.target.value);
-            }
+        <input onChange={(e) => {
+          if (props.set) {
+            props.set(e.target.value);
+          }
         }} />
-      </div>
+    </div>
   );
 }
 
-function mapDispatchToProps(dispatch){
-  return {
-    set:function(txt){
-      let action = setSpecialText(txt)
-      dispatch(action);
-    }
-  }
-}
 export default (SpecialTextBox);
