@@ -14,9 +14,11 @@ export function decreaseCounter() {
   };
 }
 
+export const SET_SPECIAL_TEXT = "SET_SPECIAL_TEXT";
+
 export function setSpecialText(txt) {
   return {
-    type: "SET_SPECIAL_TEXT",
+    type: SET_SPECIAL_TEXT,
     value: txt
   };
 }

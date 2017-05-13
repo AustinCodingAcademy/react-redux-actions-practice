@@ -12,8 +12,8 @@
 ### Make these reducers
   * ~~currentCount~~
     * ~~if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action~~
-  * ~~specialText~~
-    * ~~if "SET_SPECIAL_TEXT" should return the action value~~
+  * specialText
+    * if "SET_SPECIAL_TEXT" should return the action value
   * currentCity
     * if "SET_CURRENT_CITY" should return the action value
   * users

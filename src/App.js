@@ -1,6 +1,6 @@
 import React from 'react';
 import CounterButtonContainer from "./components/CounterButtonContainer";
-import SpecialTextBox from "./components/SpecialTextBox";
+import SpecialTextBoxContainer from "./components/SpecialTextBoxContainer";
 import CounterContainer from "./components/CounterContainer";
 import SpecialText from "./components/SpecialText";
 import UserButtons from "./components/UserButtons";
@@ -23,7 +23,7 @@ function App() {
       <div className="container">
         <CounterButtonContainer />
         <br />
-        <SpecialTextBox />
+        <SpecialTextBoxContainer />
         <br />
         <UserButtons />
         <br />

@@ -12,6 +12,13 @@ function currentCount(state = 0, action) {
   return state;
 }
 
+function specialText(state = [], action) {
+  if(action.type === "SET_SPECIAL_TEXT") {
+    return action.value;
+  }
+  return state;
+}
+
 function users(state = [], action) {
   if(action.type === "ADD_USER") {
 
@@ -22,13 +29,6 @@ function users(state = [], action) {
   return state;
 }
 
-
-function specialText(state = [], action) {
-  if(action.type === "SET_SPECIAL_TEXT") {
-    return action.value;
-  }
-  return state;
-}
 
 export default combineReducers({
   currentCount,
