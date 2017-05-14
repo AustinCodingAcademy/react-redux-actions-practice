@@ -6,7 +6,7 @@ import SpecialTextContainer from "./components/SpecialTextContainer";
 import UserButtonsContainer from "./components/UserButtonsContainer";
 import Thermostat from "./components/Thermostat";
 import UsersContainer from "./components/UsersContainer";
-import ChangeTemperature from "./components/ChangeTemperature";
+import ChangeTemperatureContainer from "./components/ChangeTemperatureContainer";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
 import CurrentCityContainer from "./components/CurrentCityContainer";
@@ -29,7 +29,7 @@ function App() {
         <br />
         <CityDropDownContainer />
         <br />
-        <ChangeTemperature />
+        <ChangeTemperatureContainer />
         <br />
         <SearchTextBox />
         <br />

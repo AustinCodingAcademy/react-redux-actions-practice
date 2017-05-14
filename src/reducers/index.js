@@ -46,10 +46,11 @@ function users(state = [], action) {
   return state;
 }
 
-function currentTemp(state = [], action) {
+function currentTemp(state = "", action) {
   if (action.type === SET_TEMP) {
     return action.value;
   }
+  return state;
 }
 
 
