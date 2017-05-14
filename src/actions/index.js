@@ -52,9 +52,54 @@ export function removeUser(){
 
 export const SET_TEMP = "SET_TEMP";
 
-export function setTemp(temp){
+export function setTemp(temp) {
   return{
     type: SET_TEMP,
     value: temp
+  };
+}
+
+export const SET_IS_LOADING = "SET_IS_LOADING";
+
+export function setIsLoading(isLoading){
+  return {
+    type: SET_IS_LOADING,
+    value: isLoading
+  };
+}
+
+export const SET_VIDEO_URL = "SET_VIDEO_URL";
+
+export function setVideoURL(URL){
+  return {
+    type: SET_VIDEO_URL,
+    value: URL
+  };
+}
+
+export const SET_SEARCH_TEXT = "SET_SEARCH_TEXT";
+
+export function setSearchText(text){
+  return {
+    type: SET_SEARCH_TEXT,
+    value: text
+  };
+}
+
+export const SET_CURRENT_USER_SORT = "SET_CURRENT_USER_SORT";
+
+export function setCurrentUserSort(sort){
+  return{
+    type: SET_CURRENT_USER_SORT,
+    value: sort
+  };
+}
+
+export const SET_VIDEO_SCALE = "SET_VIDEO_SCALE";
+
+export function setVideoScale(scale){
+  return {
+    type: SET_VIDEO_SCALE,
+    value: scale
   };
 }

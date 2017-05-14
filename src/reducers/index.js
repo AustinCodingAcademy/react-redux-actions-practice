@@ -6,7 +6,12 @@ import {
   SET_CURRENT_CITY,
   ADD_USER,
   REMOVE_USER,
-  SET_TEMP
+  SET_TEMP,
+  SET_VIDEO_URL,
+  SET_IS_LOADING,
+  SET_SEARCH_TEXT,
+  SET_CURRENT_USER_SORT,
+  SET_VIDEO_SCALE
 } from "../actions";
 
 function currentCount(state=0, action){
@@ -53,10 +58,50 @@ function currentTemp(state = "", action){
   return state;
 }
 
+function isLoading(state = "", action){
+  if(action.type === SET_IS_LOADING){
+    return action.value;
+  }
+  return state;
+}
+
+function videoURL(state = "", action){
+  if(action.type === SET_VIDEO_URL) {
+    return action.value;
+  }
+  return state;
+}
+
+function searchText(state = "", action){
+  if (action.type === SET_SEARCH_TEXT){
+    return action.value;
+  }
+  return state;
+}
+
+function currentUserSort(state = "", action){
+  if(action.type === SET_CURRENT_USER_SORT){
+    return action.value;
+  }
+  return state;
+}
+
+function videoScale(state = "", action){
+  if(action.type === SET_VIDEO_SCALE){
+    return action.valie;
+  }
+  return state;
+}
+
+
 export default combineReducers({
   users,
   currentCount,
   specialText,
   currentCity,
-  currentTemp
+  currentTemp,
+  isLoading,
+  videoURL,
+  currentUserSort,
+  videoScale
 });
