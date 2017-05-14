@@ -1,16 +1,16 @@
 import React from 'react';
 import CounterButtonContainer from "./components/CounterButtonContainer";
-import SpecialTextBox from "./components/SpecialTextBox";
+import SpecialTextBoxContainer from "./components/SpecialTextBoxContainer";
 import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
-import UserButtons from "./components/UserButtons";
-import Thermostat from "./components/Thermostat";
-import Users from "./components/Users";
-import ChangeTemperature from "./components/ChangeTemperature";
+import SpecialTextContainer from "./components/SpecialTextContainer";
+import UserButtonsContainer from "./components/UserButtonsContainer";
+import ThermostatContainer from "./components/ThermostatContainer";
+import UsersContainer from "./components/UsersContainer";
+import ChangeTemperatureContainer from "./components/ChangeTemperatureContainer";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
+import CurrentCityContainer from "./components/CurrentCityContainer";
+import CityDropDownContainer from "./components/CityDropDownContainer";
 import SearchTextBox from "./components/SearchTextBox";
 import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
@@ -23,13 +23,13 @@ function App() {
         <div className="container">
           <CounterButtonContainer />
           <br />
-          <SpecialTextBox />
+          <SpecialTextBoxContainer />
           <br />
-          <UserButtons />
+          <UserButtonsContainer />
           <br />
-          <CityDropDown />
+          <CityDropDownContainer />
            <br />
-          <ChangeTemperature />
+          <ChangeTemperatureContainer />
           <br />
           <SearchTextBox />
           <br />
@@ -44,11 +44,11 @@ function App() {
         <div className="container">
           <Counter />
           <br />
-          <SpecialText />
+          <SpecialTextContainer />
           <br />
-          <CurrentCity />
+          <CurrentCityContainer />
           <br />
-          <Thermostat />
+          <ThermostatContainer />
           <br />
           <VideoPlayer />
           <br />
@@ -56,7 +56,7 @@ function App() {
 
         </div>
         <div className="container">
-          <Users />
+          <UsersContainer />
         </div>
         <Modal />
       </div>

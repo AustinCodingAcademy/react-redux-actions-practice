@@ -21,7 +21,16 @@ export function setSpecialText(txt){
   return {
     type:SET_SPECIAL_TEXT,
     value:txt
-  }
+  };
+}
+
+export const SET_CURRENT_CITY = "SET_CURRENT_CITY"
+
+export function setCurrentCity(city){
+  return {
+    type: SET_CURRENT_CITY,
+    value: city
+  };
 }
 
 export const ADD_USER = "ADD_USER";
@@ -39,4 +48,13 @@ export function removeUser(){
   return {
     type:REMOVE_USER
   }
+}
+
+export const SET_TEMP = "SET_TEMP";
+
+export function setTemp(temp){
+  return{
+    type: SET_TEMP,
+    value: temp
+  };
 }
