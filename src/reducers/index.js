@@ -1,10 +1,13 @@
 import {combineReducers} from "redux";
-import {INCREASE_COUNTER} from "../actions";
-import {DECREASE_COUNTER} from "../actions";
-import {SET_SPECIAL_TEXT} from "../actions";
-import {SET_CURRENT_CITY} from "../actions";
-import {ADD_USER} from "../actions";
-import {REMOVE_USER} from "../actions";
+import {
+  INCREASE_COUNTER,
+  DECREASE_COUNTER,
+  SET_SPECIAL_TEXT,
+  SET_CURRENT_CITY,
+  ADD_USER,
+  REMOVE_USER,
+  SET_TEMP
+} from "../actions";
 
 function currentCount(state = 0, action) {
   if (action.type === INCREASE_COUNTER) {
@@ -43,11 +46,17 @@ function users(state = [], action) {
   return state;
 }
 
+function currentTemp(state = [], action) {
+  if (action.type === SET_TEMP) {
+    return action.value;
+  }
+}
+
 
 export default combineReducers({
   currentCount,
   specialText,
   currentCity,
   users,
-
+  currentTemp,
 });

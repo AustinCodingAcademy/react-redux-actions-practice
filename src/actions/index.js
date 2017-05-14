@@ -46,3 +46,12 @@ export function removeUser() {
     type: REMOVE_USER
   };
 }
+
+export const SET_TEMP = "SET_TEMP";
+
+export function setTemp(temp) {
+  return {
+    type: SET_TEMP,
+    value: temp
+  };
+}

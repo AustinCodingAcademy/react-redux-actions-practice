@@ -18,8 +18,8 @@
     * ~~if "SET_CURRENT_CITY" should return the action value~~
   * ~~users~~
     * ~~if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user~~
-  * currentTemp
-    * if "SET_TEMP" should return action value
+  * ~~currentTemp~~
+    * ~~if "SET_TEMP" should return action value~~
   * isLoading
     * if "SET_IS_LOADING" should return action value  
   * videoURL
@@ -49,9 +49,9 @@
   * setIsLoading(isLoading)
     * type = "SET_IS_LOADING"
     * value = isLoading
-  * setTemp(temp)
-    * type = "SET_TEMP"
-    * value = temp
+  * ~~setTemp(temp)~~
+    * ~~type = "SET_TEMP"~~
+    * ~~value = temp~~
   * ~~setCurrentCity(city)~~
     * ~~type = "SET_CURRENT_CITY"~~
     * ~~value = city~~
