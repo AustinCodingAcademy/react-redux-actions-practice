@@ -1,5 +1,5 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
+import CounterButtonContainer from "./components/CounterButtonContainer";
 import SpecialTextBox from "./components/SpecialTextBox";
 import Counter from "./components/Counter";
 import SpecialText from "./components/SpecialText";
@@ -21,7 +21,7 @@ function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
           <SpecialTextBox />
           <br />
@@ -52,8 +52,8 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
+
+
         </div>
         <div className="container">
           <Users />
