@@ -5,7 +5,7 @@ import CounterContainer from "./components/CounterContainer";
 import SpecialTextContainer from "./components/SpecialTextContainer";
 import UserButtonsContainer from "./components/UserButtonsContainer";
 import Thermostat from "./components/Thermostat";
-import Users from "./components/Users";
+import UsersContainer from "./components/UsersContainer";
 import ChangeTemperature from "./components/ChangeTemperature";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
@@ -56,7 +56,7 @@ function App() {
 
       </div>
       <div className="container">
-        <Users />
+        <UsersContainer />
       </div>
       <Modal />
     </div>
