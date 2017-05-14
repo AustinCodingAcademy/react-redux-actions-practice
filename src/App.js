@@ -4,7 +4,7 @@ import SpecialTextBoxContainer from "./components/SpecialTextBoxContainer";
 import CounterContainer from "./components/CounterContainer";
 import SpecialTextContainer from "./components/SpecialTextContainer";
 import UserButtonsContainer from "./components/UserButtonsContainer";
-import Thermostat from "./components/Thermostat";
+import ThermostatContainer from "./components/ThermostatContainer";
 import UsersContainer from "./components/UsersContainer";
 import ChangeTemperatureContainer from "./components/ChangeTemperatureContainer";
 import VideoPlayer from "./components/VideoPlayer";
@@ -48,7 +48,7 @@ function App() {
         <br />
         <CurrentCityContainer />
         <br />
-        <Thermostat />
+        <ThermostatContainer />
         <br />
         <VideoPlayer />
         <br />
