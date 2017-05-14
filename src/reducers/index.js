@@ -3,6 +3,8 @@ import {INCREASE_COUNTER} from "../actions";
 import {DECREASE_COUNTER} from "../actions";
 import {SET_SPECIAL_TEXT} from "../actions";
 import {SET_CURRENT_CITY} from "../actions";
+import {ADD_USER} from "../actions";
+import {REMOVE_USER} from "../actions";
 
 function currentCount(state = 0, action) {
   if (action.type === INCREASE_COUNTER) {
@@ -29,11 +31,14 @@ function currentCity(state = [], action) {
 }
 
 function users(state = [], action) {
-  if (action.type === "ADD_USER") {
-    return [...state.action.value];
+  if (action.type === ADD_USER) {
+    return [
+      ...state,
+      action.value
+    ];
   }
-  if (action.type === "REMOVE_USER") {
-    return state.users.slice(1);
+  if (action.type === REMOVE_USER) {
+    return state.slice(1);
   }
   return state;
 }

@@ -16,8 +16,8 @@
     * if "SET_SPECIAL_TEXT" should return the action value~~
   * ~~currentCity~~
     * ~~if "SET_CURRENT_CITY" should return the action value~~
-  * users
-    * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
+  * ~~users~~
+    * ~~if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user~~
   * currentTemp
     * if "SET_TEMP" should return action value
   * isLoading
