@@ -1,7 +1,8 @@
 import {connect} from "react-redux";
 import CounterButton  from "./CounterButton";
 import {
-  increaseCounter
+  increaseCounter,
+  decreaseCounter
 } from "../actions";
 
 const  mapStateToProps = state => {
@@ -17,7 +18,7 @@ const mapDispatchToProps = dispatch => {
       dispatch(increaseCounter());
     },
     decrease: () => {
-      console.log("decrease counter eventually");
+      dispatch(decreaseCounter());
     }
   };
 }
