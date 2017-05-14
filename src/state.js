@@ -1,6 +1,6 @@
 export default {
   currentCount: 0,
-  specialText: "",
+  specialText: [],
   currentCity: "",
   searchText: "",
   currentTemp: 0,

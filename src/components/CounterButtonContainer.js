@@ -7,7 +7,7 @@ import {
 
 const mapStateToProps = (state) => {
   return {
-    Counter: state.currentCount
+    counter: state.currentCount
   };
 };
 

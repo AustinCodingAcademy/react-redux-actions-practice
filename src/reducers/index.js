@@ -1,5 +1,6 @@
 import {combineReducers} from "redux";
 
+
 function currentCity(state = "") {
   return state;
 }
@@ -50,10 +51,12 @@ function users(state = [], action) {
 }
 
 
-function specialText(state = [], action) {
+function specialText(state = "", action) {
+  console.log(action.value);
   if (action.type === "SET_SPECIAL_TEXT") {
-    return action.value;
+    return state + action.value;
   }
+  console.log("state is ", state);
   return state;
 }
 
