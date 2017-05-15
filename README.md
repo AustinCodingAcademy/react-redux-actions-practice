@@ -58,9 +58,9 @@
   * ~~setVideoURL(URL)~~
     * ~~type = "SET_VIDEO_URL"~~
     * ~~value = URL~~
-  * setCurrentUserSort(sort)
-    * type = "SET_CURRENT_USER_SORT"
-    * value = sort
+  * ~~setCurrentUserSort(sort)~~
+    * ~~type = "SET_CURRENT_USER_SORT"~~
+    * ~~value = sort~~
   * ~~setVideoScale(scale)~~
     * ~~type = "SET_VIDEO_SCALE"~~
     * ~~value = scale~~
