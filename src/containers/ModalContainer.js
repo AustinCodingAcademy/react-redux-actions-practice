@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import Modal from "../components/Modal";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    isLoading:state.isLoading
+    isLoading:dispatch.isLoading
   }
 }
 
-const ModalContainer = connect(mapDispatchToProps)(Modal);
+const ModalContainer = connect(null, mapDispatchToProps)(Modal);
 export default ModalContainer

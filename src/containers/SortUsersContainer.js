@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import SortUsers from "../components/SortUsers";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    set:state.setCurrentUserSort
+    set:dispatch.setCurrentUserSort
   }
 }
 
-const SortUsersContainer = connect(mapDispatchToProps)(SortUsers);
+const SortUsersContainer = connect(null, mapDispatchToProps)(SortUsers);
 export default SortUsersContainer

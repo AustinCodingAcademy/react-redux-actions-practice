@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import CityDropDown from "../components/CityDropDown";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    set:state.setCurrentCity
+    set:dispatch.setCurrentCity
   }
 }
 
-const CityDropDownContainer = connect(mapDispatchToProps)(CityDropDown);
+const CityDropDownContainer = connect(null, mapDispatchToProps)(CityDropDown);
 export default CityDropDownContainer

@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import SearchTextBox from "../components/SearchTextBox";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    set:state.setSearchText
+    set:dispatch.setSearchText
   }
 }
 
-const SearchTextBoxContainer = connect(mapDispatchToProps)(SearchTextBox);
+const SearchTextBoxContainer = connect(null, mapDispatchToProps)(SearchTextBox);
 export default SearchTextBoxContainer

@@ -1,12 +1,12 @@
 import {connect} from 'react-redux';
 import UserButtons from "../components/UserButtons";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    add:state.addUser,
-    remove:state.removeUser
+    add:dispatch.addUser,
+    remove:dispatch.removeUser
   }
 }
 
-const UserButtonsContainer = connect(mapDispatchToProps)(UserButtons);
+const UserButtonsContainer = connect(null, mapDispatchToProps)(UserButtons);
 export default UserButtonsContainer

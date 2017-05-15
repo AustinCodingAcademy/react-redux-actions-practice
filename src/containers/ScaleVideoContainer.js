@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import ScaleVideo from "../components/ScaleVideo";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    set:state.setVideoScale
+    set:dispatch.setVideoScale
   }
 }
 
-const ScaleVideoContainer = connect(mapDispatchToProps)(ScaleVideo);
+const ScaleVideoContainer = connect(null, mapDispatchToProps)(ScaleVideo);
 export default ScaleVideoContainer

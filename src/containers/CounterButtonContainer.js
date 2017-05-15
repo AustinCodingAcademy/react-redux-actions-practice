@@ -1,13 +1,13 @@
 import {connect} from 'react-redux';
 import CounterButton from "../components/CounterButton";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    increase:state.increaseCounter,
-    decrease:state.decreaseCounter
+    increase:dispatch.increaseCounter,
+    decrease:dispatch.decreaseCounter
 
   }
 }
 
-const CounterButtonContainer = connect(mapDispatchToProps)(CounterButton);
+const CounterButtonContainer = connect(null, mapDispatchToProps)(CounterButton);
 export default CounterButtonContainer

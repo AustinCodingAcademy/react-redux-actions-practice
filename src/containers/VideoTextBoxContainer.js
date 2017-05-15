@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import VideoTextBox from "../components/VideoTextBox";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    set:state.setVideoURL
+    set:dispatch.setVideoURL
   }
 }
 
-const VideoTextBoxContainer = connect(mapDispatchToProps)(VideoTextBox);
+const VideoTextBoxContainer = connect(null, mapDispatchToProps)(VideoTextBox);
 export default VideoTextBoxContainer

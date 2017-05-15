@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import SpecialTextBox from "../components/SpecialTextBox";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    set:state.setSpecialText
+    set:dispatch.setSpecialText
   }
 }
 
-const SpecialTextBoxContainer = connect(mapDispatchToProps)(SpecialTextBox);
+const SpecialTextBoxContainer = connect(null, mapDispatchToProps)(SpecialTextBox);
 export default SpecialTextBoxContainer

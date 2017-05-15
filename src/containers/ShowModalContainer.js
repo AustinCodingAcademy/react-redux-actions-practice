@@ -1,11 +1,11 @@
 import {connect} from 'react-redux';
 import ShowModal from "../components/ShowModal";
 
-function mapDispatchToProps(state){
+function mapDispatchToProps(dispatch){
   return{
-    setIsLoading:state.setIsLoading
+    setIsLoading:dispatch.setIsLoading
   }
 }
 
-const ShowModalContainer = connect(mapDispatchToProps)(ShowModal);
+const ShowModalContainer = connect(null, mapDispatchToProps)(ShowModal);
 export default ShowModalContainer
