@@ -89,5 +89,14 @@ export function setSearchText(text) {
   return {
     type: SET_SEARCH_TEXT,
     value: text
-  }
+  };
+}
+
+export const SET_CURRENT_USER_SORT = "SET_CURRENT_USER_SORT";
+
+export function setCurrentUserSort(sort) {
+  return {
+    type: SET_CURRENT_USER_SORT,
+    value: sort
+  };
 }

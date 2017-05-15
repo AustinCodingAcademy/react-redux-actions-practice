@@ -12,7 +12,7 @@
 ### Make these reducers
   * ~~currentCount~~
     * ~~if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action~~
-  * ~~specialText
+  * ~~specialText~~
     * if "SET_SPECIAL_TEXT" should return the action value~~
   * ~~currentCity~~
     * ~~if "SET_CURRENT_CITY" should return the action value~~
@@ -26,8 +26,8 @@
     * ~~if "SET_VIDEO_URL" should return action value~~
   * ~~searchText~~
     * ~~if "SET_SEARCH_TEXT" should return action value~~
-  * currentUserSort
-    * if "SET_CURRENT_USER_SORT" should return action value
+  * ~~currentUserSort~~
+    * ~~if "SET_CURRENT_USER_SORT"~~ ~~should return action value~~
   * ~~videoScale~~
     * ~~if "SET_VIDEO_SCALE" should return action value~~
 ### Create Actions in actions/index.js
@@ -99,10 +99,11 @@
   * Call the connect function
   * ~~SpecialTextContainer.js~~
     * ~~map a prop called `text` to the state `specialText`~~
-  * UsersContainer.js
+  * ~~UsersContainer.js~~
     * ~~map a prop called `users` to the state `users`~~
-    * map a prop called `firstNameFilter` to the state `searchText`
-    * map a prop called `sortOn` to the state `currentUserSort`
+    * ~~map a prop called
+    `firstNameFilter` to the state `searchText`~~
+    * ~~map a prop called `sortOn` to the state `currentUserSort`~~
   * ~~CounterContainer.js~~
     * ~~map a prop called `count` to the state `currentCount`~~
   * ~~CurrentCityContainer.js~~

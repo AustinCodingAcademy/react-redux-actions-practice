@@ -10,7 +10,8 @@ import {
   SET_IS_LOADING,
   SET_VIDEO_URL,
   SET_VIDEO_SCALE,
-  SET_SEARCH_TEXT
+  SET_SEARCH_TEXT,
+  SET_CURRENT_USER_SORT
 } from "../actions";
 
 function currentCount(state = 0, action) {
@@ -85,6 +86,13 @@ function searchText(state = "", action) {
   return state;
 }
 
+function currentUserSort(state = [], action) {
+  if (action.type === SET_CURRENT_USER_SORT) {
+    return action.value;
+  }
+  return state;
+}
+
 
 export default combineReducers({
   currentCount,
@@ -95,5 +103,6 @@ export default combineReducers({
   isLoading,
   videoURL,
   videoScale,
-  searchText
+  searchText,
+  currentUserSort
 });
