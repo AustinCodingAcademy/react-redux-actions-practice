@@ -144,9 +144,9 @@
   * ~~VideoTextBoxContainer.js~~
     * ~~import `setVideoURL` action~~
     * ~~map prop `set` to action `setVideoURL`~~
-  * SortUsersContainer.js
-    * import `setCurrentUserSort` action
-    * map prop `set` to action `setCurrentUserSort`
+  * ~~SortUsersContainer.js~~
+    * ~~import `setCurrentUserSort` action~~
+    * ~~map prop `set` to action `setCurrentUserSort`~~
   * ~~ScaleVideoContainer.js~~
     * ~~import `setVideoScale` action~~
     * ~~map prop `set` to action `setVideoScale`~~
@@ -158,6 +158,6 @@
     * ~~map prop `setIsLoading` to action `setIsLoading`~~
 
 ### App
-  * Change App.js
-  * Use containers instead of components
-  * Basically, just add the word Container everywhere a component is referenced
+  * ~~Change App.js~~
+  * ~~Use containers instead of components~~
+  * ~~Basically, just add the word Container everywhere a component is referenced~~
