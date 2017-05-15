@@ -43,15 +43,17 @@ export function setIsLoading(){
   }
 }
 
-export function setTemp(){
+export function setTemp(temp){
   return {
     type:"SET_TEMP",
+    value: temp
   }
 }
 
-export function currentCity(text){
+export function currentCity(city){
   return {
     type:"SET_CURRENT_CITY",
+    value: city
   }
 }
 
