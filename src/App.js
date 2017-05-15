@@ -7,15 +7,15 @@ import UserButtonsContainer from "./components/UserButtonsContainer";
 import ThermostatContainer from "./components/ThermostatContainer";
 import UsersContainer from "./components/UsersContainer";
 import ChangeTemperatureContainer from "./components/ChangeTemperatureContainer";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
+import VideoPlayerContainer from "./components/VideoPlayerContainer";
+import VideoTextBoxContainer from "./components/VideoTextBoxContainer";
 import CurrentCityContainer from "./components/CurrentCityContainer";
 import CityDropDownContainer from "./components/CityDropDownContainer";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import SearchTextBoxContainer from "./components/SearchTextBoxContainer";
+import SortUsersContainer from "./components/SortUsersContainer";
+import ScaleVideoContainer from "./components/ScaleVideoContainer";
+import ModalContainer from "./components/ModalContainer";
+import ShowModalContainer from "./components/ShowModalContainer";
 
 function App() {
   return (
@@ -31,15 +31,15 @@ function App() {
            <br />
           <ChangeTemperatureContainer />
           <br />
-          <SearchTextBox />
+          <SearchTextBoxContainer />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
-          <ScaleVideo />
+          <ScaleVideoContainer />
           <br />
-          <ShowModal />
+          <ShowModalContainer />
         </div>
         <div className="container">
           <Counter />
@@ -50,7 +50,7 @@ function App() {
           <br />
           <ThermostatContainer />
           <br />
-          <VideoPlayer />
+          <VideoPlayerContainer />
           <br />
 
 
@@ -58,7 +58,7 @@ function App() {
         <div className="container">
           <UsersContainer />
         </div>
-        <Modal />
+        <ModalContainer />
       </div>
   );
 }

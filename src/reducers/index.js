@@ -1,3 +1,5 @@
+/* Create all reducers here */
+
 import {combineReducers} from "redux";
 import {
   INCREASE_COUNTER,
@@ -86,12 +88,13 @@ function currentUserSort(state = "", action){
   return state;
 }
 
-function videoScale(state = "", action){
+function videoScale(state = [], action){
   if(action.type === SET_VIDEO_SCALE){
-    return action.valie;
+    return action.value;
   }
   return state;
 }
+
 
 
 export default combineReducers({
@@ -103,5 +106,6 @@ export default combineReducers({
   isLoading,
   videoURL,
   currentUserSort,
-  videoScale
+  videoScale,
+  searchText
 });

@@ -1,3 +1,5 @@
+/* Create all the actions here */
+
 export const INCREASE_COUNTER = "INCREASE_COUNTER";
 
 export function increaseCounter(){
@@ -70,10 +72,10 @@ export function setIsLoading(isLoading){
 
 export const SET_VIDEO_URL = "SET_VIDEO_URL";
 
-export function setVideoURL(URL){
+export function setVideoURL(videoURL){
   return {
     type: SET_VIDEO_URL,
-    value: URL
+    value: videoURL
   };
 }
 

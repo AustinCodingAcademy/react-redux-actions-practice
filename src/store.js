@@ -1,5 +1,9 @@
-import {createStore} from "redux";
+/* Create store.js file */
+import {createStore} from "redux"; // import createStore from redux
 import reducers from "./reducers";
+import state from "./state"; // import state from state.js
+
+// export the store
 
 export default createStore(
   reducers,
