@@ -1,10 +1,11 @@
 import React from "react";
+import propTypes from "prop-types";
 
 function SpecialTextBox(props) {
   return (
     <div>
       Enter Special words:
-      <input onChange={(e) => {
+      <input onInput={(e) => {
         if (props.set) {
           props.set(e.target.value);
         }
@@ -12,5 +13,10 @@ function SpecialTextBox(props) {
     </div>
   );
 }
+
+SpecialTextBox.propTypes = {
+  set: propTypes.func,
+
+};
 
 export default SpecialTextBox;

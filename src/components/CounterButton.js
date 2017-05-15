@@ -1,4 +1,5 @@
 import React from "react";
+import propTypes from "prop-types";
 
 function CounterButton(props) {
   return (
@@ -20,4 +21,10 @@ function CounterButton(props) {
     </div>
   );
 }
+
+CounterButton.propTypes = {
+  decrease: propTypes.func,
+  increase: propTypes.func
+};
+
 export default CounterButton;
