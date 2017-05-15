@@ -12,10 +12,10 @@ export function decreaseCounter(){
   }
 }
 
-export function setSpecialText(txt){
+export function setSpecialText(text){
   return {
     type:"SET_SPECIAL_TEXT",
-    value:txt
+    value:text
   }
 }
 

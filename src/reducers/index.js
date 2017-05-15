@@ -57,21 +57,21 @@ function videoURL(state="", action){
   return state;
 }
 
-unction searchText(state="", action){
+function searchText(state="", action){
   if(action.type === "SET_SEARCH_TEXT"){
 
   }
   return state;
 }
 
-unction currentUserSort(state="first_name", action){
+function currentUserSort(state="first_name", action){
   if(action.type === "SET_CURRENT_USER_SORT"){
 
   }
   return state;
 }
 
-unction videoScale(state=1, action){
+function videoScale(state=1, action){
   if(action.type === "SET_VIDEO_SCALE"){
 
   }
