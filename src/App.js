@@ -11,7 +11,7 @@ import VideoPlayerContainer from "./components/VideoPlayerContainer";
 import VideoTextBoxContainer from "./components/VideoTextBoxContainer";
 import CurrentCityContainer from "./components/CurrentCityContainer";
 import CityDropDownContainer from "./components/CityDropDownContainer";
-import SearchTextBox from "./components/SearchTextBox";
+import SearchTextBoxContainer from "./components/SearchTextBoxContainer";
 import SortUsers from "./components/SortUsers";
 import ScaleVideoContainer from "./components/ScaleVideoContainer";
 import ModalContainer from "./components/ModalContainer";
@@ -31,7 +31,7 @@ function App() {
         <br />
         <ChangeTemperatureContainer />
         <br />
-        <SearchTextBox />
+        <SearchTextBoxContainer />
         <br />
         <VideoTextBoxContainer />
         <br />

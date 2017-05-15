@@ -21,11 +21,11 @@
   * ~~currentTemp~~
     * ~~if "SET_TEMP" should return action value~~
   * ~~isLoading~~
-    * ~~if "SET_IS_LOADING" should~~ ~~return action value~~
+    * ~~if "SET_IS_LOADING" should return action value~~
   * ~~videoURL~~
     * ~~if "SET_VIDEO_URL" should return action value~~
-  * searchText
-    * if "SET_SEARCH_TEXT" should return action value
+  * ~~searchText~~
+    * ~~if "SET_SEARCH_TEXT" should return action value~~
   * currentUserSort
     * if "SET_CURRENT_USER_SORT" should return action value
   * ~~videoScale~~
@@ -43,9 +43,9 @@
   * ~~addUser(user)~~
     * ~~type = "ADD_USER"~~
     * ~~value = user~~
-  * setSearchText(text)
-    * type = "SET_SEARCH_TEXT"
-    * value = text
+  * ~~setSearchText(text)~~
+    * ~~type = "SET_SEARCH_TEXT"~~
+    * ~~value = text~~
   * ~~setIsLoading(isLoading)~~
     * ~~type = "SET_IS_LOADING"~~
     * ~~value = isLoading~~
@@ -82,7 +82,7 @@
 
 
 ### Containers
-  * ~~We need to leave the components alone and create containers~~
+  * We need to leave the components alone and create containers
   * In the container folder, create a container file for each component i.e. SpecialTextContainer.js
   * Import the appropriate component into the container file
   * This is where the connect function and the actions should be imported

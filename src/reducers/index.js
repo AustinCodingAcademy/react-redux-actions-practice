@@ -9,7 +9,8 @@ import {
   SET_TEMP,
   SET_IS_LOADING,
   SET_VIDEO_URL,
-  SET_VIDEO_SCALE
+  SET_VIDEO_SCALE,
+  SET_SEARCH_TEXT
 } from "../actions";
 
 function currentCount(state = 0, action) {
@@ -77,6 +78,13 @@ function videoScale(state = [], action) {
   return state;
 }
 
+function searchText(state = "", action) {
+  if (action.type === SET_SEARCH_TEXT) {
+    return action.value;
+  }
+  return state;
+}
+
 
 export default combineReducers({
   currentCount,
@@ -86,5 +94,6 @@ export default combineReducers({
   currentTemp,
   isLoading,
   videoURL,
-  videoScale
+  videoScale,
+  searchText
 });
