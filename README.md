@@ -134,9 +134,9 @@
     * ~~import the increaseCounter and decreaseCounter actions~~
     * ~~map prop `increase` to action `increaseCounter`~~
     * ~~map prop `decrees` to action `decreaseCounter`~~
-  * SearchTextBoxContainer.js
-    * import `setSearchText` action
-    * map prop `set` to action `setSearchText`
+  * ~~SearchTextBoxContainer.js~~
+    * ~~import `setSearchText` action~~
+    * ~~map prop `set` to action `setSearchText`~~
   * ~~ChangeTemperatureContainer.js~~
     * ~~import `setTemp` action~~
     * ~~map prop `set` to action `setTemp`~~
