@@ -23,16 +23,17 @@ export function addUser(user){
     value:user
   }
 }
-export function removeUser(){
+export function removeUser(user){
   return {
-    type:"REMOVE_USER"
+    type:"REMOVE_USER",
+    value: user
   }
 }
 
-export function setSearchText(text){
+export function setSearchText(txt){
   return {
     type:"SET_SEARCH_TEXT",
-    value:text
+    value:txt
   }
 }
 
@@ -60,12 +61,14 @@ export function currentCity(city){
 export function videoURL(url){
   return {
     type:"SET_VIDEO_URL",
+    value: URL
   }
 }
 
 export function currentUserSort(sortOn){
   return {
     type:"SET_CURRENT_USER_SORT",
+    value: sortOn
   }
 }
 

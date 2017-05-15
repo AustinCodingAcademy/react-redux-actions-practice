@@ -106,7 +106,7 @@
     * ✓ map prop `set` to action `setSearchText`
   * VideoTextBoxContainer.js
     * ✓ import `setVideoURL` action
-    * ✓ map prop `set` to action `setVideoURL`
+    * ✓ 
   * SortUsersContainer.js
     * ✓ import `setCurrentUserSort` action
     * ✓ map prop `set` to action `setCurrentUserSort`

@@ -3,7 +3,7 @@ import SpecialText from "../components/SpecialText";
 
 function mapStateToProps(state){
   return{
-    text:state.text
+    text:state.specialText
   }
 }
 
