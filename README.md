@@ -22,14 +22,14 @@
     * ~~if "SET_TEMP" should return action value~~
   * ~~isLoading~~
     * ~~if "SET_IS_LOADING" should~~ ~~return action value~~
-  * videoURL
-    * if "SET_VIDEO_URL" should return action value
+  * ~~videoURL~~
+    * ~~if "SET_VIDEO_URL" should return action value~~
   * searchText
     * if "SET_SEARCH_TEXT" should return action value
   * currentUserSort
     * if "SET_CURRENT_USER_SORT" should return action value
-  * videoScale
-    * if "SET_VIDEO_SCALE" should return action value
+  * ~~videoScale~~
+    * ~~if "SET_VIDEO_SCALE" should return action value~~
 ### Create Actions in actions/index.js
   * ~~increaseCounter()~~
     * ~~type = "INCREASE_COUNTER"~~
@@ -55,15 +55,15 @@
   * ~~setCurrentCity(city)~~
     * ~~type = "SET_CURRENT_CITY"~~
     * ~~value = city~~
-  * setVideoURL(URL)
-    * type = "SET_VIDEO_URL"
-    * value = URL
+  * ~~setVideoURL(URL)~~
+    * ~~type = "SET_VIDEO_URL"~~
+    * ~~value = URL~~
   * setCurrentUserSort(sort)
     * type = "SET_CURRENT_USER_SORT"
     * value = sort
-  * setVideoScale(scale)
-    * type = "SET_VIDEO_SCALE"
-    * value = scale
+  * ~~setVideoScale(scale)~~
+    * ~~type = "SET_VIDEO_SCALE"~~
+    * ~~value = scale~~
 ### Create Store
   * ~~Create a store.js file~~
   * ~~Import state from state.js~~
@@ -109,9 +109,9 @@
     * ~~map a prop called `text` to the state `currentCity`~~
   * ~~ThermostatContainer.js~~
     * ~~map a prop called `temp` to the state `currentTemp`~~
-  * VideoPlayerContainer.js
-    * map a prop called `URL` to the state `videoURL`
-    * map a prop called `scale` to the state `videoScale`
+  * ~~VideoPlayerContainer.js~~
+    * ~~map a prop called `URL` to the state `videoURL`~~
+    * ~~map a prop called `scale` to the state `videoScale`~~
   * ~~ModalContainer.js~~
     * ~~map a prop called `isLoading` to the state `isLoading`~~
 
@@ -140,15 +140,15 @@
   * ~~ChangeTemperatureContainer.js~~
     * ~~import `setTemp` action~~
     * ~~map prop `set` to action `setTemp`~~
-  * VideoTextBoxContainer.js
-    * import `setVideoURL` action
-    * map prop `set` to action `setVideoURL`
+  * ~~VideoTextBoxContainer.js~~
+    * ~~import `setVideoURL` action~~
+    * ~~map prop `set` to action `setVideoURL`~~
   * SortUsersContainer.js
     * import `setCurrentUserSort` action
     * map prop `set` to action `setCurrentUserSort`
-  * ScaleVideoContainer.js
-    * import `setVideoScale` action
-    * map prop `set` to action `setVideoScale`
+  * ~~ScaleVideoContainer.js~~
+    * ~~import `setVideoScale` action~~
+    * ~~map prop `set` to action `setVideoScale`~~
   * ~~ShowModalContainer.js~~
     * ~~import `setIsLoading` action~~
     * ~~map prop `setIsLoading` to action `setIsLoading`Show~~

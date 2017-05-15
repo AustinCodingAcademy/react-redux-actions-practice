@@ -73,3 +73,12 @@ export function setVideoURL(videoURL) {
     value: videoURL
   };
 }
+
+export const SET_VIDEO_SCALE = "SET_VIDEO_SCALE";
+
+export function setVideoScale(scale) {
+  return {
+    type: SET_VIDEO_SCALE,
+    value: scale
+  };
+}

@@ -8,12 +8,12 @@ import ThermostatContainer from "./components/ThermostatContainer";
 import UsersContainer from "./components/UsersContainer";
 import ChangeTemperatureContainer from "./components/ChangeTemperatureContainer";
 import VideoPlayerContainer from "./components/VideoPlayerContainer";
-import VideoTextBox from "./components/VideoTextBox";
+import VideoTextBoxContainer from "./components/VideoTextBoxContainer";
 import CurrentCityContainer from "./components/CurrentCityContainer";
 import CityDropDownContainer from "./components/CityDropDownContainer";
 import SearchTextBox from "./components/SearchTextBox";
 import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
+import ScaleVideoContainer from "./components/ScaleVideoContainer";
 import ModalContainer from "./components/ModalContainer";
 import ShowModalContainer from "./components/ShowModalContainer";
 
@@ -33,11 +33,11 @@ function App() {
         <br />
         <SearchTextBox />
         <br />
-        <VideoTextBox />
+        <VideoTextBoxContainer />
         <br />
         <SortUsers />
         <br />
-        <ScaleVideo />
+        <ScaleVideoContainer />
         <br />
         <ShowModalContainer />
       </div>

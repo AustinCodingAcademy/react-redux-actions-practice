@@ -8,7 +8,8 @@ import {
   REMOVE_USER,
   SET_TEMP,
   SET_IS_LOADING,
-  SET_VIDEO_URL
+  SET_VIDEO_URL,
+  SET_VIDEO_SCALE
 } from "../actions";
 
 function currentCount(state = 0, action) {
@@ -69,6 +70,13 @@ function videoURL(state = "", action) {
   return state;
 }
 
+function videoScale(state = [], action) {
+  if (action.type === SET_VIDEO_SCALE) {
+    return action.value;
+  }
+  return state;
+}
+
 
 export default combineReducers({
   currentCount,
@@ -77,5 +85,6 @@ export default combineReducers({
   users,
   currentTemp,
   isLoading,
-  videoURL
+  videoURL,
+  videoScale
 });
