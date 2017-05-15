@@ -8,7 +8,7 @@ import UserButtonsContainer from "./containers/UserButtonsContainer";
 import ThermostatContainer from "./containers/ThermostatContainer";
 import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
 import VideoPlayerContainer from "./containers/VideoPlayerContainer";
-import VideoTextBox from "./components/VideoTextBox";
+import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
 import CurrentCityContainer from "./containers/CurrentCityContainer"
 import CityDropdownContainer from "./containers/CityDropdownContainer";
 import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
@@ -34,7 +34,7 @@ function App() {
           <br />
           <SearchTextBoxContainer />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
           <SortUsersContainer />
           <br />

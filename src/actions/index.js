@@ -1,19 +1,19 @@
-export function increaseCounter(number){
+export function increaseCounter(){
   return {
     type:"INCREASE_COUNTER"
   }
 }
 
-export function decreaseCounter(number){
-  return {
+export function decreaseCounter(){
+  return{
     type:"DECREASE_COUNTER"
   }
 }
 
-export function setSpecialText(text){
+export function setSpecialText(txt){
   return {
     type:"SET_SPECIAL_TEXT",
-    value:text
+    value:txt
   }
 }
 
@@ -23,54 +23,56 @@ export function addUser(user){
     value:user
   }
 }
-export function removeUser(user){
+export function removeUser(){
   return {
     type:"REMOVE_USER"
   }
 }
 
-export function searchText(text){
-  return {
+export function setSearchText(txt){
+  return{
     type:"SET_SEARCH_TEXT",
-    value:text
+    value: txt
   }
 }
-
-export function setIsLoading(isLoading) {
-  return {
-    type: "SET_IS_LOADING",
-    value: isLoading
+export function setIsLoading(isLoading){
+  return{
+    type:"SET_IS_LOADING",
+    value:isLoading
   }
 }
-
-export function setTemp(temp) {
-  console.log("setTemp");
-  return {
+export function setTemp(temp){
+  return{
     type: "SET_TEMP",
     value: temp
+
   }
 }
+export function setCurrentCity(city){
+  return{
+    type:"SET_CURRENT_CITY",
+    value:city
 
-export function setCurrentCity(city) {
-  return {
-    type: "SET_CURRENT_CITY",
-    value: city
   }
 }
-
-export function setVideoURL(URL) {
-  return {
-    type: "SET_VIDEO_URL",
+export function setVideoURL(URL){
+  return{
+    type:"SET_VIDEO_URL",
     value: URL
+
   }
 }
+export function setCurrentUserSort(sort){
+  return{
+    type: "SET_CURRENT_USER",
+    value:sort
 
-export function setCurrentUserSort(sort) {
-  type: "SET_CURRENT_USER_SORT"
-  value: sort
+  }
 }
+export function setVideoScale(scale){
+  return{
+    type: "SET_VIDEO_SCALE",
+    value:scale
 
-export function setVideoScale(scale) {
-  type: "SET_VIDEO_SCALE"
-  value: scale
+  }
 }
