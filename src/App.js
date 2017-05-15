@@ -14,8 +14,8 @@ import CityDropDownContainer from "./components/CityDropDownContainer";
 import SearchTextBox from "./components/SearchTextBox";
 import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import ModalContainer from "./components/ModalContainer";
+import ShowModalContainer from "./components/ShowModalContainer";
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
         <br />
         <ScaleVideo />
         <br />
-        <ShowModal />
+        <ShowModalContainer />
       </div>
       <div className="container">
         <CounterContainer />
@@ -58,7 +58,7 @@ function App() {
       <div className="container">
         <UsersContainer />
       </div>
-      <Modal />
+      <ModalContainer />
     </div>
   );
 }

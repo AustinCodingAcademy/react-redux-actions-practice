@@ -6,7 +6,8 @@ import {
   SET_CURRENT_CITY,
   ADD_USER,
   REMOVE_USER,
-  SET_TEMP
+  SET_TEMP,
+  SET_IS_LOADING
 } from "../actions";
 
 function currentCount(state = 0, action) {
@@ -53,6 +54,13 @@ function currentTemp(state = "", action) {
   return state;
 }
 
+function isLoading(state = [], action) {
+  if (action.type === SET_IS_LOADING) {
+    return action.value;
+  }
+  return state;
+}
+
 
 export default combineReducers({
   currentCount,
@@ -60,4 +68,5 @@ export default combineReducers({
   currentCity,
   users,
   currentTemp,
+  isLoading,
 });

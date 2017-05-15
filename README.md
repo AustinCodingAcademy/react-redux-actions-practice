@@ -20,8 +20,8 @@
     * ~~if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user~~
   * ~~currentTemp~~
     * ~~if "SET_TEMP" should return action value~~
-  * isLoading
-    * if "SET_IS_LOADING" should return action value  
+  * ~~isLoading~~
+    * ~~if "SET_IS_LOADING" should~~ ~~return action value~~
   * videoURL
     * if "SET_VIDEO_URL" should return action value
   * searchText
@@ -46,9 +46,9 @@
   * setSearchText(text)
     * type = "SET_SEARCH_TEXT"
     * value = text
-  * setIsLoading(isLoading)
-    * type = "SET_IS_LOADING"
-    * value = isLoading
+  * ~~setIsLoading(isLoading)~~
+    * ~~type = "SET_IS_LOADING"~~
+    * ~~value = isLoading~~
   * ~~setTemp(temp)~~
     * ~~type = "SET_TEMP"~~
     * ~~value = temp~~
@@ -112,8 +112,8 @@
   * VideoPlayerContainer.js
     * map a prop called `URL` to the state `videoURL`
     * map a prop called `scale` to the state `videoScale`
-  * ModalContainer.js
-    * map a prop called `isLoading` to the state `isLoading`
+  * ~~ModalContainer.js~~
+    * ~~map a prop called `isLoading` to the state `isLoading`~~
 
 ### Create these Containers that care about changing the data
   * Import the connect function from react-redux
@@ -149,12 +149,12 @@
   * ScaleVideoContainer.js
     * import `setVideoScale` action
     * map prop `set` to action `setVideoScale`
-  * ShowModalContainer.js
-    * import `setIsLoading` action
-    * map prop `setIsLoading` to action `setIsLoading`Show
-  * ModalContainer.js
-    * import `setIsLoading` action
-    * map prop `setIsLoading` to action `setIsLoading`
+  * ~~ShowModalContainer.js~~
+    * ~~import `setIsLoading` action~~
+    * ~~map prop `setIsLoading` to action `setIsLoading`Show~~
+  * ~~ModalContainer.js~~
+    * ~~import `setIsLoading` action~~
+    * ~~map prop `setIsLoading` to action `setIsLoading`~~
 
 ### App
   * Change App.js
