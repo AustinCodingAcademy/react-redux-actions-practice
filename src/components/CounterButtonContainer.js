@@ -2,14 +2,12 @@ import {connect} from "react-redux";
 import CounterButton from "./CounterButton";
 
 const mapStateToProps = state => {
-  return {
-    CounterIncrease: state.increase
-  };
+  return {};
 };
 
-const mapDispatchToProps = state => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onClick: () => {
+    increase: () => {
       dispatch(increaseCounter())
     }
   };

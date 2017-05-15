@@ -11,7 +11,14 @@ function currentCount(state=0, action){
   return state;
 }
 
-function users(state =[], action){
+function currentCity(state="", action){
+  if(action.type === "SET_CURRENT_CITY"){
+
+  }
+  return state;
+}
+
+function users(state=[], action){
   if(action.type === "ADD_USER"){
 
   }
@@ -29,10 +36,59 @@ function specialText(state =[], action){
   return state;
 }
 
+function currentTemp(state=0, action){
+  if(action.type === "SET_TEMP"){
+
+  }
+  return state;
+}
+
+function isLoading(state=false, action){
+  if(action.type === "SET_IS_LOADING"){
+
+  }
+  return state;
+}
+
+function videoURL(state="", action){
+  if(action.type === "SET_VIDEO_URL"){
+
+  }
+  return state;
+}
+
+unction searchText(state="", action){
+  if(action.type === "SET_SEARCH_TEXT"){
+
+  }
+  return state;
+}
+
+unction currentUserSort(state="first_name", action){
+  if(action.type === "SET_CURRENT_USER_SORT"){
+
+  }
+  return state;
+}
+
+unction videoScale(state=1, action){
+  if(action.type === "SET_VIDEO_SCALE"){
+
+  }
+  return state;
+}
+
 const rootReducer = combineReducers({
   currentCount,
   users,
-  specialText
+  specialText,
+  currentCity,
+  searchText,
+  currentTemp,
+  isLoading,
+  videoURL,
+  currentUserSort,
+  videoScale,
 });
 
 export default rootReducer;
