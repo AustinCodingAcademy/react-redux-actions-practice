@@ -7,7 +7,7 @@ import UserButtonsContainer from "./components/UserButtonsContainer";
 import ThermostatContainer from "./components/ThermostatContainer";
 import UsersContainer from "./components/UsersContainer";
 import ChangeTemperatureContainer from "./components/ChangeTemperatureContainer";
-import VideoPlayer from "./components/VideoPlayer";
+import VideoPlayerContainer from "./components/VideoPlayerContainer";
 import VideoTextBox from "./components/VideoTextBox";
 import CurrentCityContainer from "./components/CurrentCityContainer";
 import CityDropDownContainer from "./components/CityDropDownContainer";
@@ -50,7 +50,7 @@ function App() {
         <br />
         <ThermostatContainer />
         <br />
-        <VideoPlayer />
+        <VideoPlayerContainer />
         <br />
 
 

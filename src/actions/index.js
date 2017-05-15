@@ -64,3 +64,12 @@ export function setIsLoading(isLoading) {
     value: isLoading
   };
 }
+
+export const SET_VIDEO_URL = "SET_VIDEO_URL";
+
+export function setVideoURL(videoURL) {
+  return {
+    type: SET_VIDEO_URL,
+    value: videoURL
+  };
+}
