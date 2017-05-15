@@ -1,24 +1,34 @@
-export function increaseCounter(){
+import {combineReducers} from "redux";
+
+export const INCREASE_COUNTER = "INCREASE_COUNTER";
+export function increaseCounter() {
   return {
-    type:"INCREASE_COUNTER"
-  }
+    type: "INCREASE_COUNTER"
+  };
 }
 
-export function setSpecialText(txt){
+export const SET_SPECIAL_TEXT = "SET_SPECIAL_TEXT";
+export function setSpecialText(txt) {
   return {
-    type:"SET_SPECIAL_TEXT",
-    value:txt
-  }
+    type: "SET_SPECIAL_TEXT",
+    value: txt
+  };
 }
 
-export function addUser(user){
+export const ADD_USER = "ADD_USER";
+export function addUser(user) {
   return {
-    type:"ADD_USER",
-    value:user
-  }
+    type: "ADD_USER",
+    value: user
+  };
 }
-export function removeUser(){
+
+export const REMOVE_USER = "REMOVE_USER";
+export function removeUser() {
   return {
-    type:"REMOVE_USER"
-  }
+    type: "REMOVE_USER"
+  };
 }
+
+export default combineReducers({
+});
