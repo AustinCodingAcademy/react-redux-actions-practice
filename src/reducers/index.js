@@ -7,7 +7,8 @@ import {
   SET_SPECIAL_TEXT,
   ADD_USER,
   REMOVE_USER,
-  SET_CURRENT_CITY
+  SET_CURRENT_CITY,
+  SET_CURRENT_TEMP
 } from "../actions";
 
 
@@ -65,6 +66,9 @@ function searchText(state = "", action) {
 }
 
 function currentTemp(state = 0, action) {
+  if (action.type === SET_CURRENT_TEMP) {
+    return action.value;
+  }
   return state;
 }
 

@@ -42,9 +42,19 @@ export function removeUser() {
 
 export const SET_CURRENT_CITY = "SET_CURRENT_CITY";
 
-export function SetCurrentCity(city) {
+export function setCurrentCity(city) {
   return {
     type: SET_CURRENT_CITY,
     value: city
   };
 }
+
+export const SET_CURRENT_TEMP = "SET_CURRENT_TEMP";
+
+export function setCurrentTemp(temp) {
+  return {
+    type: SET_CURRENT_TEMP,
+    value: temp
+  };
+}
+
