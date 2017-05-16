@@ -1,64 +1,64 @@
 import React from 'react';
-import CounterButton from "../containers/CounterButtonContainer.js";
-import SpecialTextBox from "../containers/SpecialTextBox.js";
-import Counter from "../containers/Counter.js";
-import SpecialText from "../containers/SpecialText.js";
-import UserButtons from "../containers/UserButtons.js";
-import Thermostat from "../containers/Thermostat.js";
-import Users from "../containers/Users.js";
-import ChangeTemperature from "../containers/ChangeTemperature.js";
-import VideoPlayer from "../containers/VideoPlayer.js";
-import VideoTextBox from "../containers/VideoTextBox.js";
-import CurrentCity from "../containers/CurrentCity.js";
-import CityDropDown from "../containers/CityDropDown.js";
-import SearchTextBox from "./containers/SearchTextBox.js";
-import SortUsers from "../containers/SortUsers.js";
-import ScaleVideo from "../containers/ScaleVideo.js";
-import Modal from "../containers/Modal.js";
-import ShowModal from "../containers/ShowModal.js";
+import CounterButtonContainer from "./containers/CounterButtonContainer";
+import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
+import CounterContainer from "./containers/CounterContainer";
+import SpecialTextContainer from "./containers/SpecialTextBoxContainer";
+import UserButtonsContainer from "./containers/UserButtonsContainer";
+import ThermostatContainer from "./containers/ThermostatContainer";
+import UserContainer from "./containers/UserContainer";
+import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
+import VideoPlayerContainer from "./containers/VideoPlayerContainer";
+import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
+import CurrentCityContainer from "./containers/CurrentCityContainer";
+import CityDropDownContainer from "./containers/CityDropDownContainer";
+import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
+import SortUsersContainer from "./containers/SortUsersContainer";
+import ScaleVideoContainer from "./containers/ScaleVideoContainer";
+import ModalContainer from "./containers/ModalContainer";
+import ShowModalContainer from "./containers/ShowModalContainer";
 
 function App() {
   return (
       <div className="App">
         <div className="containers">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
-          <SpecialTextBox />
+          <SpecialTextBoxContainer />
           <br />
-          <UserButtons />
+          <UserButtonsContainer />
           <br />
-          <CityDropDown />
+          <CityDropDownContainer />
            <br />
-          <ChangeTemperature />
+          <ChangeTemperatureContainer />
           <br />
-          <SearchTextBox />
+          <SearchTextBoxContainer />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
-          <ScaleVideo />
+          <ScaleVideoContainer />
           <br />
-          <ShowModal />
+          <ShowModalContainer />
         </div>
         <div className="container">
-          <Counter />
+          <CounterContainer />
           <br />
-          <SpecialText />
+          <SpecialTextContainer />
           <br />
-          <CurrentCity />
+          <CurrentCityContainer />
           <br />
-          <Thermostat />
+          <ThermostatContainer />
           <br />
-          <VideoPlayer />
+          <VideoPlayerContainer />
           <br />
 
 
         </div>
         <div className="container">
-          <Users />
+          <UserContainer />
         </div>
-        <Modal />
+        <ModalContainer />
       </div>
   );
 }
