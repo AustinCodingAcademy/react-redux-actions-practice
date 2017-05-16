@@ -1,18 +1,8 @@
 import {connect} from "react-redux";
-import {setSpecialtext} from "../action/index.js";
+import {setSpecialText} from "../actions";
+import SpecialText from "../components/SpecialText.js";
 
-function SpecialTextBox(props){
-return (
-  <div>
-       Enter Special Text:
-       <input onChange={(e)=>{
-           if(props.set){
-             props.set(e.target.value);
-           }
-       }} />
-     </div>
 
-);
 
 function mapDispatchToProps(dispatch){
    return {
@@ -22,5 +12,5 @@ function mapDispatchToProps(dispatch){
     }
    }
 }
-export default (SpecialTextBox);
-export default SpecialTextBox;
+const SpecialTextBoxContainer = connect(null,mapDispatchToProps)(SpecialText);
+export default SpecialTextBoxContainer
