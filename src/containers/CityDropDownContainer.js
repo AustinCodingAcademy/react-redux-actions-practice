@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import CurrentCity from "../components/CurrentCity";
-import setCurrentCity from "../actions";
+import {setCurrentCity} from "../actions";
 
 const mapDispatchToProps = (dispatch) => {
     return {

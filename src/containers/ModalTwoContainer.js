@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import Modal from "../components/Modal";
-import setIsLoading from "../actions";
+import {setIsLoading} from "../actions";
 
 const mapDispatchToProps = (dispatch) => {
     return {

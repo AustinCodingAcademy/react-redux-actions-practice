@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import Counter from "../components/Counter";
-import increaseCounter from "../actions";
-import decreaseCounter from "../actions";
+import {increaseCounter} from "../actions";
+import {decreaseCounter} from "../actions";
 
 const mapDispatchToProps = (dispatch) => {
     return {

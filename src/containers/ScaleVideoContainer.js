@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import ScaleVideo from "../components/ScaleVideo";
-import setVideoScale from "../actions";
+import {setVideoScale} from "../actions";
 
 const mapDispatchToProps = (dispatch) => {
     return {
