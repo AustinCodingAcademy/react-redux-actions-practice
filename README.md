@@ -17,7 +17,7 @@
   * ✓ videoURL
   * ✓ searchText
   * ✓ currentUserSort
-  * v✓ ideoScale
+  * ✓ ideoScale
 ### Create Actions in actions/index.js
   * ✓ increaseCounter
   * ✓ decreaseCounter
@@ -106,7 +106,7 @@
     * ✓ map prop `set` to action `setSearchText`
   * VideoTextBoxContainer.js
     * ✓ import `setVideoURL` action
-    * ✓ 
+    * ✓
   * SortUsersContainer.js
     * ✓ import `setCurrentUserSort` action
     * ✓ map prop `set` to action `setCurrentUserSort`

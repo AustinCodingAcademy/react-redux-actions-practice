@@ -1,29 +1,51 @@
 import {combineReducers} from 'redux';
 
-function currentCity(state="",action){
+function currentCity(state="", action){
+  if(action.type === "SET_CURRENT_CITY"){
+    return action.value;
+  }
   return state;
 }
 
-function searchText(state="",action){
+function searchText(state="", action){
+  if(action.type === "SET_SEARCH_TEXT"){
+    return action.value;
+  }
   return state;
 }
 
-function currentTemp(state=0,action){
+function currentTemp(state=0, action){
+  if(action.type === "SET_TEMP"){
+    return action.value;
+  }
   return state;
 }
-function isLoading(state=false,action){
+
+function isLoading(state=true, action){
+  if(action.type === "SET_IS_LOADING"){
+    return action.value;
+  }
   return state;
 }
-function videoURL(state="",action){
+
+function videoURL(state="", action){
+  if(action.type === "SET_VIDEO_URL"){
+    return action.value;
+  }
   return state;
 }
-function users(state=[],action){
+
+function currentUserSort(state="", action){
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
   return state;
 }
-function currentUserSort(state="first_name",action){
-  return state;
-}
-function videoScale(state=1,action){
+
+function videoScale(state=0, action){
+  if(action.type === "SET_VIDEO_SCALE"){
+    return action.value;
+  }
   return state;
 }
 

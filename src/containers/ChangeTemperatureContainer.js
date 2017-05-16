@@ -3,16 +3,15 @@ import {setTemp} from '../actions';
 import ChangeTemperature from "../components/ChangeTemperature";
 
 
-const mapDispatchToProps = dispatch => {
+function mapDispatchToProps(dispatch){
   return {
-    set: (temp) => {
-      const action = setTemp(temp);
+    set:function(temp){
+      let action = setTemp(temp);
       dispatch(action);
     }
-  };
-};
+  }
+}
 
 
-
-const ChangeTemperatureContainer = connect(null, mapDispatchToProps)(ChangeTemperature);
+const ChangeTemperatureContainer = connect(null,mapDispatchToProps)(ChangeTemperature);
 export default ChangeTemperatureContainer
