@@ -5,12 +5,14 @@ function VideoTextBox(props) {
       <div>
         Enter URL of YouTube video
         <input 
-      onChange={(e)=>{
-        if(props.set){
-          props.set(e.target.value);
-        }
-      }}
-      type="text" />
+            onChange={(e)=>{
+              console.log(props);
+              if(props.set) {
+                props.set(e.target.value);
+              }
+            }}
+            type="text"
+        />
 
       </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Users(props) {
   var usersDivs = null;
-  if(props.users){
+  if(props.users) {
     var sorted = props.users.sort((a,b) => {
       return a[props.sortOn] > b[props.sortOn];
     });
@@ -10,10 +10,11 @@ function Users(props) {
       return !props.firstNameFilter || 
       (props.firstNameFilter && 
       u.first_name.indexOf(props.firstNameFilter) > -1);
-    })
-    usersDivs = usersDivs.map(function(u){
-      return <div>{u.first_name} {u.last_name}</div>
-    })
+    });
+    usersDivs = usersDivs.map(function(u, k) {
+      return <div key={k}>{u.first_name} {u.last_name}</div>
+    });
+    console.log(usersDivs);
   }
   return (
       <div>
