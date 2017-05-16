@@ -31,7 +31,7 @@ export function setSpecialText(txt){
   }
 }
 
-export function setVideoURL(temp){
+export function setVideoURL(url){
   return {
     type:"SET_VIDEO_URL",
     value:url
