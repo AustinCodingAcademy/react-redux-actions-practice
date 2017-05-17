@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {ScaleVideoContainer} from '../containers/ScaleVideoContainer';
 
 function ScaleVideo(props) {

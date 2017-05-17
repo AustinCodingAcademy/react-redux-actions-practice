@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import {ChangeTemperatureContainer} from '../containers/ChangeTemperatureContainer';
 
 function ChangeTemperature(props){

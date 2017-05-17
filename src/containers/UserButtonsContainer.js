@@ -5,16 +5,16 @@ import {removeUser} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        addUser:function(user) {
+        add:function(user) {
             let action = addUser(user);
             dispatch(action);
         },
-        addUser:function(user) {
-            let action = addUser(user);
+        remove:function(user) {
+            let action = removeUser();
             dispatch(action);
         }
     }
 }
 
-const UserButtonsContainer = connect(mapDispatchToProps, UserButtons);
+const UserButtonsContainer = connect(null, mapDispatchToProps)(UserButtons);
 export default UserButtonsContainer;

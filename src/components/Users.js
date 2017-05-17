@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {UsersContainer} from '../containers/UsersContainer';
 
 function Users(props) {

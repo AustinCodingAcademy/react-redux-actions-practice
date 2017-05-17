@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import DonutChart from "./ignore/DonutChart";
 import {ThermostatContainer} from '../containers/ThermostatContainer';
 

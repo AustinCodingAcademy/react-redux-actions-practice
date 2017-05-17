@@ -4,12 +4,12 @@ import {setSpecialText} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        setSpecialText:function(text) {
+        set:function(text) {
             let action = setSpecialText(text);
             dispatch(action);
         }
     }
 }
 
-const SpecialTextBoxContainer = connect(mapDispatchToProps, SpecialTextBox);
+const SpecialTextBoxContainer = connect(null, mapDispatchToProps)(SpecialTextBox);
 export default SpecialTextBoxContainer;

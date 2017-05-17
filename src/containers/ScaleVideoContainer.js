@@ -4,12 +4,12 @@ import {setVideoScale} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        setVideoScale:function(scale) {
+        set:function(scale) {
             let action = setVideoScale(scale);
             dispatch(action);
         }
     }
 }
 
-const ScaleVideoContainer = connect(mapDispatchToProps, ScaleVideo);
+const ScaleVideoContainer = connect(null, mapDispatchToProps)(ScaleVideo);
 export default ScaleVideoContainer;

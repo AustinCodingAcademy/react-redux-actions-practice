@@ -4,12 +4,12 @@ import {setSearchText} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        setSearchText:function(text) {
+        set:function(text) {
             let action = setSearchText(text);
             dispatch(action);
         }
     }
 }
 
-const SearchTextBoxContainer = connect(mapDispatchToProps, SearchTextBox);
+const SearchTextBoxContainer = connect(null, mapDispatchToProps)(SearchTextBox);
 export default SearchTextBoxContainer;

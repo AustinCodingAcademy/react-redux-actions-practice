@@ -4,12 +4,12 @@ import {setVideoURL} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        setVideoURL:function(URL) {
+        set:function(URL) {
             let action = setVideoURL(URL);
             dispatch(action);
         }
     }
 }
 
-const VideoTextBoxContainer = connect(mapDispatchToProps, VideoTextBox);
+const VideoTextBoxContainer = connect(null, mapDispatchToProps)(VideoTextBox);
 export default VideoTextBoxContainer;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Modal from 'react-modal';
 import {ModalContainer} from '../containers/ModalContainer';
 

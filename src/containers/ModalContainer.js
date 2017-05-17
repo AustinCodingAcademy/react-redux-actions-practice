@@ -17,5 +17,5 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-const ModalContainer = connect(mapStateToProps, mapDispatchToProps, Modal);
+const ModalContainer = connect(mapStateToProps, mapDispatchToProps)(Modal);
 export default ModalContainer;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {ShowModalContainer} from '../containers/ShowModalContainer';
 
 function ShowModal(props) {

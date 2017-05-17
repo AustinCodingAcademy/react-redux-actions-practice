@@ -9,5 +9,5 @@ function mapStateToProps(state) {
     }
 }
 
-const UsersContainer = connect(mapStateToProps, Users);
+const UsersContainer = connect(mapStateToProps)(Users);
 export default UsersContainer;

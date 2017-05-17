@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {CounterContainer} from '../containers/CounterContainer';
 
 function Counter(props) {

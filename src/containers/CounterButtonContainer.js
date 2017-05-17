@@ -5,16 +5,16 @@ import {decreaseCounter} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        increaseCounter:function() {
+        increase:function() {
             let action = increaseCounter();
             dispatch(action);
         },
-        decreaseCounter:function() {
+        decrease:function() {
             let action = decreaseCounter();
             dispatch(action);
         }
     }
 }
 
-const CounterButtonContainer = connect(mapDispatchToProps, CounterButton);
+const CounterButtonContainer = connect(null, mapDispatchToProps)(CounterButton);
 export default CounterButtonContainer;

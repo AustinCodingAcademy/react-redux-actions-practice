@@ -4,12 +4,12 @@ import {setCurrentUserSort} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        setCurrentUserSort:function(sort) {
+        set:function(sort) {
             let action = setCurrentUserSort(sort);
             dispatch(action);
         }
     }
 }
 
-const SortUsersContainer = connect(mapDispatchToProps, SortUsers);
+const SortUsersContainer = connect(null, mapDispatchToProps)(SortUsers);
 export default SortUsersContainer;

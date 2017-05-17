@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {VideoPlayerContainer} from '../containers/VideoPlayerContainer';
 
 function VideoPlayer(props) {

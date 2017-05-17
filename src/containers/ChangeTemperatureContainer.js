@@ -4,12 +4,12 @@ import {setTemp} from '../actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        setTemp:function(temp) {
+        set:function(temp) {
             let action = setTemp(temp);
             dispatch(action);
         }
     }
 }
 
-const ChangeTemperatureContainer = connect(mapDispatchToProps, ChangeTemperature);
+const ChangeTemperatureContainer = connect(null, mapDispatchToProps)(ChangeTemperature);
 export default ChangeTemperatureContainer;

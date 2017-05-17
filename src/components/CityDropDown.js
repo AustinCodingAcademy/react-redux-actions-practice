@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {CityDropDownContainer} from '../containers/CityDropDownContainer';
 
 function CityDropDown(props) {
