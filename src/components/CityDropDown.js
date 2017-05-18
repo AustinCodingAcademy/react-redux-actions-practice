@@ -1,9 +1,10 @@
 import React from 'react';
+import { connect } from "react-redux";
 
 function CityDropDown(props) {
   return (
       <div>
-        CurrentCity: 
+        CurrentCity:
         <select onChange={
           (e)=>{
             if(props.set){

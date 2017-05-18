@@ -1,9 +1,10 @@
 import React from 'react';
+import { connect } from "react-redux";
 
 function SortUsers(props) {
   return (
       <div>
-        Sort Users On: 
+        Sort Users On:
         <select onChange={
           (e)=>{
             if(props.set){
