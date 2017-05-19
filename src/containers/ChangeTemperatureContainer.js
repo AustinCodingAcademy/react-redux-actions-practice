@@ -1,12 +1,16 @@
 import { connect } from "react-redux";
 import ChangeTemperature from "../components/ChangeTemperature";
-import {changeTemp} from "../actions";
+import { setCurrentTemp } from "../actions";
 
-const mapDispatchToProps = (dispatch) => {
+function mapDispatchToProps(dispatch) {
     return {
-        set: (val) => dispatch(changeTemp(val))
-    }
+        set: (temp) => {
+            const action = setCurrentTemp (temp);
+            dispatch(action);
+  }
+ } 
 }
 
 const ChangeTemperatureContainer = connect(null, mapDispatchToProps)(ChangeTemperature);
+
 export default ChangeTemperatureContainer;

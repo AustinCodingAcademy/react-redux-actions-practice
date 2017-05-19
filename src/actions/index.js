@@ -1,13 +1,13 @@
 export function increaseCounter(counter){
   return {
     type:"INCREASE_COUNTER"
-  }
+  };
 }
 
 export function decreaseCounter(counter){
   return {
     type:"DECREASE_COUNTER"
-  }
+  };
 }
 
 export function setSpecialText(text){
@@ -23,7 +23,7 @@ export function addUser(user){
     value:user
   }
 }
-export function removeUser(user){
+export function removeUser(){
   return {
     type:"REMOVE_USER"
   }
@@ -39,6 +39,7 @@ export function setSearchText(text){
 export function setIsLoading(isLoading){
   return {
     type:"SET_IS_LOADING"
+    
   }
 }
 
@@ -76,8 +77,9 @@ export function setVideoScale(scale){
     value: scale
   }
 }
-export function changeTemp() {
+export function setCurrentTemp(temp) {
   return {
-    type:"CHANGE_TEMP"
+    type:"SET_CURRENT_TEMP",
+    value: temp
   }
 }
