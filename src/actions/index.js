@@ -77,6 +77,7 @@ export function setVideoScale(scale){
     value: scale
   }
 }
+
 export function setCurrentTemp(temp) {
   return {
     type:"SET_CURRENT_TEMP",

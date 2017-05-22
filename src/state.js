@@ -3,9 +3,9 @@ export default{
   specialText:"",
   currentCity:"",
   searchText:"",
-  currentTemp: 0,
-  isLoading: false,
-  videoURL: "",
+  currentTemp:0,
+  isLoading:false,
+  videoURL:"",
   currentUserSort:"first_name",
   videoScale:1,
   users: [
