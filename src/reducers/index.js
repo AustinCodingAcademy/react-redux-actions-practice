@@ -52,11 +52,9 @@ function users(state = [], action) {
 
 
 function specialText(state = "", action) {
-  console.log(action.value);
   if (action.type === "SET_SPECIAL_TEXT") {
     return action.value;
   }
-  console.log("state is ", state);
   return state;
 }
 

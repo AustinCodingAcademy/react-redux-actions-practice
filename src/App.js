@@ -1,21 +1,21 @@
 import React from "react";
-import CounterButtonContainer from "./components/CounterButtonContainer";
-import SpecialTextBoxContainer from "./components/SpecialTextBoxContainer";
-import CounterContainer from "./components/CounterContainer";
-import SpecialTextContainer from "./components/SpecialTextContainer";
-import UserButtons from "./components/UserButtons";
-import Thermostat from "./components/Thermostat";
-import Users from "./components/Users";
 import ChangeTemperature from "./components/ChangeTemperature";
+import CityDropDown from "./components/CityDropDown";
+import CounterButtonContainer from "./components/CounterButtonContainer";
+import CounterContainer from "./components/CounterContainer";
+import CurrentCity from "./components/CurrentCity";
+import Modal from "./components/Modal";
+import ScaleVideo from "./components/ScaleVideo";
+import SearchTextBox from "./components/SearchTextBox";
+import ShowModal from "./components/ShowModal";
+import SortUsers from "./components/SortUsers";
+import SpecialTextContainer from "./components/SpecialTextContainer";
+import SpecialTextBoxContainer from "./components/SpecialTextBoxContainer";
+import ThermostatContainer from "./components/ThermostatContainer";
+import UserButtons from "./components/UserButtons";
+import Users from "./components/Users";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
 
 function App() {
   return (
@@ -50,7 +50,7 @@ function App() {
         <br />
         <CurrentCity />
         <br />
-        <Thermostat />
+        <ThermostatContainer />
         <br />
         <VideoPlayer />
         <br />

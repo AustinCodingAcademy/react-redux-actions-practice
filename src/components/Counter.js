@@ -11,7 +11,6 @@ function Counter(props) {
 
 Counter.propTypes = {
   count: PropTypes.number,
-
 };
 
 export default Counter;

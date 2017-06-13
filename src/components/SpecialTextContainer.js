@@ -7,8 +7,6 @@ const mapStateToProps = state => {
   };
 };
 
-
-
 const SpecialTextContainer = connect(
   mapStateToProps,
 )(SpecialText);

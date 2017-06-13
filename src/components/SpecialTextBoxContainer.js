@@ -3,7 +3,6 @@ import SpecialTextBox from "./SpecialTextBox";
 import {setSpecialText} from "../actions";
 
 const mapStateToProps = (state) => {
-  console.log(state.specialText, " from SpBxCont");
   return {};
 };
 
