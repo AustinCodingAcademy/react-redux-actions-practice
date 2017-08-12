@@ -14,12 +14,13 @@ function users(state =[], action){
   if(action.type === "ADD_USER"){
     return [...state, action.value];
   }
-  }
   if(action.type === "REMOVE_USER"){
     return users.slice(1);
   }
   return state;
 }
+  
+
 
 
 function specialText(state = "", action){
