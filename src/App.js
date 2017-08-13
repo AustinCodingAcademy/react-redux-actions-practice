@@ -1,21 +1,21 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
-import UserButtons from "./components/UserButtons";
-import Thermostat from "./components/Thermostat";
-import Users from "./components/Users";
-import ChangeTemperature from "./components/ChangeTemperature";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import CounterButton from "./containers/CounterButton";
+import SpecialTextBox from "./containers/SpecialTextBox";
+import Counter from "./containers/Counter";
+import SpecialText from "./containers/SpecialText";
+import UserButtons from "./containers/UserButtons";
+import Thermostat from "./containers/Thermostat";
+import Users from "./containers/Users";
+import ChangeTemperature from "./containers/ChangeTemperature";
+import VideoPlayer from "./containers/VideoPlayer";
+import VideoTextBox from "./containers/VideoTextBox";
+import CurrentCity from "./containers/CurrentCity";
+import CityDropDown from "./containers/CityDropDown";
+import SearchTextBox from "./containers/SearchTextBox";
+import SortUsers from "./containers/SortUsers";
+import ScaleVideo from "./containers/ScaleVideo";
+import Modal from "./containers/Modal";
+import ShowModal from "./containers/ShowModal";
 
 function App() {
   return (
@@ -52,8 +52,8 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
+
+
         </div>
         <div className="container">
           <Users />

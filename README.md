@@ -2,12 +2,15 @@
 
 ###  Reducers
   * Create Reducers in reducers/index.js
+  ^^^maybe done?
   * Look at state.js and create a reducer for each piece of state
   * Remember reducers take 2 parameters: `state`, and `action`
   * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
   * Remember to return state if the reducer doesn't care about the action
   * You will need to decide which reducer cares about which action type
   * Combine reducers and export
+
+  ^^^^done with section^^^^^
 
 ### Make these reducers
   * currentCount
@@ -16,12 +19,16 @@
     * if "SET_SPECIAL_TEXT" should return the action value
   * currentCity
     * if "SET_CURRENT_CITY" should return the action value
+
   * users
     * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
+    <!--not sure if i did this right  -->
   * currentTemp
     * if "SET_TEMP" should return action value
+    ^^^^done
   * isLoading
     * if "SET_IS_LOADING" should return action value  
+    ^^^done
   * videoURL
     * if "SET_VIDEO_URL" should return action value
   * searchText
@@ -30,6 +37,12 @@
     * if "SET_CURRENT_USER_SORT" should return action value
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
+
+^^^^^done with section
+not sure about users
+also unsure about boolean on isLoading^^^^^^^
+
+
 ### Create Actions in actions/index.js
   * increaseCounter()
     * type = "INCREASE_COUNTER"
@@ -64,6 +77,10 @@
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
     * value = scale
+
+^^^^^^done with section^^^^^
+
+
 ### Create Store
   * Create a store.js file
   * Import state from state.js
@@ -71,6 +88,8 @@
   * import reducers from reducers
   * create the store
   * export the store
+
+  ^^done^^
 
 ### Provide store to components
   * In index.js
@@ -80,6 +99,7 @@
   * Make sure there is no whitespace between Provider and App
   * Give Provider a prop “store” and the value of the store
 
+^^done^^^
 
 ### Containers
   * We need to leave the components alone and create containers
@@ -89,13 +109,13 @@
   * This is where mapStateToProps and mapDispatchToProps should be
   * This is where you should do the connecting
   * Export the container
-
+^^^^^^done
 
 
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container
-  * Create mapStateToProps function 
+  * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
@@ -114,6 +134,8 @@
     * map a prop called `scale` to the state `videoScale`
   * ModalContainer.js
     * map a prop called `isLoading` to the state `isLoading`
+
+^^^^^^^done^^^^^
 
 ### Create these Containers that care about changing the data
   * Import the connect function from react-redux
