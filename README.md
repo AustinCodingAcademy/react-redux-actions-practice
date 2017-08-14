@@ -1,67 +1,67 @@
 # Make sure to do one thing at a time, save and refresh to check for errors
 
 ###  Reducers
-  * Create Reducers in reducers/index.js
-  * Look at state.js and create a reducer for each piece of state
-  * Remember reducers take 2 parameters: `state`, and `action`
-  * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
-  * Remember to return state if the reducer doesn't care about the action
-  * You will need to decide which reducer cares about which action type
-  * Combine reducers and export
+  * xCreate Reducers in reducers/index.js
+  * xLook at state.js and create a reducer for each piece of state
+  * xRemember reducers take 2 parameters: `state`, and `action`
+  * xRemember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
+  * xRemember to return state if the reducer doesn't care about the action
+  * xYou will need to decide which reducer cares about which action type
+  * xCombine reducers and export
 
 ### Make these reducers
-  * currentCount
+  * xcurrentCount
     * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
-  * specialText
+  * xspecialText
     * if "SET_SPECIAL_TEXT" should return the action value
-  * currentCity
+  * xcurrentCity
     * if "SET_CURRENT_CITY" should return the action value
-  * users
+  * xusers
     * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
-  * currentTemp
+  * xcurrentTemp
     * if "SET_TEMP" should return action value
-  * isLoading
+  * xisLoading
     * if "SET_IS_LOADING" should return action value  
-  * videoURL
+  * xvideoURL
     * if "SET_VIDEO_URL" should return action value
-  * searchText
+  * xsearchText
     * if "SET_SEARCH_TEXT" should return action value
-  * currentUserSort
+  * xcurrentUserSort
     * if "SET_CURRENT_USER_SORT" should return action value
-  * videoScale
+  * xvideoScale
     * if "SET_VIDEO_SCALE" should return action value
 ### Create Actions in actions/index.js
-  * increaseCounter()
+  * xincreaseCounter()
     * type = "INCREASE_COUNTER"
-  * decreaseCounter()
+  * xdecreaseCounter()
     * type = "DECREASE_COUNTER"
-  * setSpecialText(text)
+  * xsetSpecialText(text)
     * type = "SET_SPECIAL_TEXT"
     * value = text
-  * removeUser()
+  * xremoveUser()
     * type = "REMOVE_USER"
-  * addUser(user)
+  * xaddUser(user)
     * type = "ADD_USER"
     * value = user
-  * setSearchText(text)
+  * xsetSearchText(text)
     * type = "SET_SEARCH_TEXT"
     * value = text
-  * setIsLoading(isLoading)
+  * xsetIsLoading(isLoading)
     * type = "SET_IS_LOADING"
     * value = isLoading
-  * setTemp(temp)
+  * xsetTemp(temp)
     * type = "SET_TEMP"
     * value = temp
-  * setCurrentCity(city)
+  * xsetCurrentCity(city)
     * type = "SET_CURRENT_CITY"
     * value = city
-  * setVideoURL(URL)
+  * xsetVideoURL(URL)
     * type = "SET_VIDEO_URL"
     * value = URL
-  * setCurrentUserSort(sort)
+  * xsetCurrentUserSort(sort)
     * type = "SET_CURRENT_USER_SORT"
     * value = sort
-  * setVideoScale(scale)
+  * xsetVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
     * value = scale
 ### Create Store
@@ -95,7 +95,7 @@
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container
-  * Create mapStateToProps function 
+  * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
