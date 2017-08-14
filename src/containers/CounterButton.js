@@ -9,10 +9,6 @@ function mapDispatchToProps(dispatch){
      let action = increaseCounter(txt);
      dispatch(action);
    }
- }
- }
- function mapDispatchToProps(dispatch){
-   return {
 
    decrease:function(txt){
      let action = decreaseCounter(txt);
