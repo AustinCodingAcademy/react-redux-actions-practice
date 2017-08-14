@@ -1,4 +1,4 @@
-# Make sure to do one thing at a time, save and refresh to check for errors
+             # Make sure to do one thing at a time, save and refresh to check for errors
 
 ###  Reducers
   * Create Reducers in reducers/index.js

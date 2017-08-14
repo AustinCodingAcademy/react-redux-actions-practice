@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
-// import {setCurrentUser} from "../actions";
+import {setCurrentUser} from "../actions";
+
 import Users from "../components/Users";
 
 //map a prop called users to state.users
