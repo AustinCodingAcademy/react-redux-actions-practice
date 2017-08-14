@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Counter from './Counter';
-import CounterButton from './CounterButton';
+import Counter from './components/Counter';
+import CounterButton from './components/CounterButton';
 import {increaseCounter} from './actions';
 import {decreaseCounter} from './actions';
 
