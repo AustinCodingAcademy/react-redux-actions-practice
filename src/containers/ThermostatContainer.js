@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import Thermostat from './components/Thermostat';
+import Thermostat from '../components/Thermostat';
 
 function mapStateToProps(state){
   return {

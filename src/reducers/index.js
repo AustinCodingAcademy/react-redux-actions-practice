@@ -61,7 +61,7 @@ function isLoading(state = false, action){
   return state;
 }
 
-function videoUrl(state = "", action){
+function videoURL(state = "", action){
   if(action.type === "SET_CURRENT_CITY"){
     return action.value;
   }
@@ -86,7 +86,7 @@ function videoScale(state = 1, action){
 
 const rootReducer = combineReducers({
   currentCount, specialText, currentCity,
-   users, currentTemp, isLoading, videoUrl, 
+   users, currentTemp, isLoading, videoURL, 
    searchText, currentUserSort, videoScale
 })
 export default rootReducer;

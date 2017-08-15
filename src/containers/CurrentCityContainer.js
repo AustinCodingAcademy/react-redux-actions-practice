@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import CurrentCity from "./components/CurrentCity";
+import CurrentCity from "../components/CurrentCity";
 
 function mapStateToProps(state){
   return{

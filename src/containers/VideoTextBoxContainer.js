@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
-import VideoTextBox from "./components";
-import {setVideoURL} from "./actions";
+import VideoTextBox from "../components/VideoTextBox";
+import {setVideoURL} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {

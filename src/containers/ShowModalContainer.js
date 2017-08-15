@@ -1,6 +1,7 @@
 import {connect} from "react-redux";
-import {setIsLoading} from "./actions";
-import ShowModal from "./components";
+import {setIsLoading} from "../actions";
+import ShowModal from "../components/ShowModal";
+
 function mapDispatchToProps(dispatch){
   return {
     setIsLoading: function (){
@@ -8,5 +9,5 @@ function mapDispatchToProps(dispatch){
     dispatch(action);
   }
 }
-
-export default(null, mapDispatchToProps)(ShowModal)
+}
+export default connect(null, mapDispatchToProps)(ShowModal);

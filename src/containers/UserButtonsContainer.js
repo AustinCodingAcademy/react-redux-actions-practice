@@ -1,6 +1,7 @@
+import UserButtons from "../components/UserButtons";
 import {connect} from "react-redux";
-import {addUser} from "./actions";
-import {removeUser} from "./actions";
+import {addUser} from "../actions";
+import {removeUser} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
@@ -15,4 +16,4 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-export default connect(null, mapDispatchToProps)(UserButton);
+export default connect(null, mapDispatchToProps)(UserButtons);
