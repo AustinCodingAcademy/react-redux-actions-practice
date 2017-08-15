@@ -47,9 +47,9 @@ function searchText(state = "", action){
   return state;
 }
 
-function currentTemp(state = 0, action){
+function setTemp(state = 0, action){
   if(action.type === "SET_TEMP"){
-    return action.value;
+    return state = action.value;
   }
   return state;
 }
@@ -86,7 +86,7 @@ function videoScale(state = 1, action){
 
 const rootReducer = combineReducers({
   currentCount, specialText, currentCity,
-   users, currentTemp, isLoading, videoURL, 
+   users, setTemp, isLoading, videoURL, 
    searchText, currentUserSort, videoScale
 })
 export default rootReducer;
