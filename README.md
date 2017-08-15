@@ -65,20 +65,20 @@
     * type = "SET_VIDEO_SCALE"
     * value = scale
 ### Create Store
-  * Create a store.js file
-  * Import state from state.js
-  * import createStore from redux
-  * import reducers from reducers
-  * create the store
-  * export the store
+  * xCreate a store.js file
+  * xImport state from state.js
+  * ximport createStore from redux
+  * ximport reducers from reducers
+  * xcreate the store
+  * xexport the store
 
 ### Provide store to components
-  * In index.js
-  * Import Provider from react-redux
-  * Import store from store.js
-  * Use Provider component to wrap App
-  * Make sure there is no whitespace between Provider and App
-  * Give Provider a prop “store” and the value of the store
+  * xIn index.js
+  * xImport Provider from react-redux
+  * xImport store from store.js
+  * xUse Provider component to wrap App
+  * xMake sure there is no whitespace between Provider and App
+  * xGive Provider a prop “store” and the value of the store
 
 
 ### Containers
@@ -93,19 +93,19 @@
 
 
 ### Create these Containers that care about what the data is
-  * Import connect from react-redux into all containers
-  * Import the appropriate component into the container
-  * Create mapStateToProps function
-  * Call the connect function
-  * SpecialTextContainer.js
+  * xImport connect from react-redux into all containers
+  * xImport the appropriate component into the container
+  * xCreate mapStateToProps function
+  * xCall the connect function
+  * xSpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
-  * UsersContainer.js
+  * xUsersContainer.js
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
     * map a prop called `sortOn` to the state `currentUserSort`
-  * CounterContainer.js
+  * xCounterContainer.js
     * map a prop called `count` to the state `currentCount`
-  * CurrentCityContainer.js
+  * xCurrentCityContainer.js
     * map a prop called `text` to the state `currentCity`
   * ThermostatContainer.js
     * map a prop called `temp` to the state `currentTemp`
@@ -116,11 +116,11 @@
     * map a prop called `isLoading` to the state `isLoading`
 
 ### Create these Containers that care about changing the data
-  * Import the connect function from react-redux
-  * create mapDispatchToProps
-  * connect the component so that it becomes a container
-  * export container
-  * SpecialTextBoxContainer.js
+  * xImport the connect function from react-redux
+  * xcreate mapDispatchToProps
+  * xconnect the component so that it becomes a container
+  * xexport container
+  * xSpecialTextBoxContainer.js
     * import `setSpecialText` action
     * map prop `set` to action `setSpecialText`
   * UserButtonsContainer.js

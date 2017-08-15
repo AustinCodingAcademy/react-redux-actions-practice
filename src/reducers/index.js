@@ -56,7 +56,7 @@ function videoURL(state="", action){
   return state;
 }
 
-function currentUserSort(state="", action){
+function currentUserSort(state=[], action){
   if(action.type === "SET_CURRENT_USER_SORT"){
     return action.value;
   }
