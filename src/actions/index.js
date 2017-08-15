@@ -36,7 +36,7 @@ export function setSearchText(text) {
   };
 }
 
-export setIsLoading(isLoading) {
+export function setIsLoading(isLoading) {
   return {
     type: "SET_IS_LOADING",
     value: isLoading

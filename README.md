@@ -74,12 +74,12 @@
   *- export the store
 
 ### Provide store to components
-  * In index.js
-  * Import Provider from react-redux
-  * Import store from store.js
-  * Use Provider component to wrap App
-  * Make sure there is no whitespace between Provider and App
-  * Give Provider a prop “store” and the value of the store
+  *- In index.js
+  *- Import Provider from react-redux
+  *- Import store from store.js
+  *- Use Provider component to wrap App
+  *- Make sure there is no whitespace between Provider and App
+  *- Give Provider a prop “store” and the value of the store
 
 
 ### Containers
