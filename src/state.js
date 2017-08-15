@@ -73,7 +73,7 @@ export default{
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"
   },
   {
-    "id": 7,
+    "id": 8,
     "first_name": "barney",
     "last_name": "stinson",
     "address": "2640 Primrose Lane, Longview, TX 75604",
@@ -81,6 +81,6 @@ export default{
     "occupation": "wife",
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"
   }
-] 
+]
 
 }

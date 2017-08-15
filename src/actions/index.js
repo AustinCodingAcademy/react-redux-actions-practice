@@ -67,13 +67,13 @@ export function setVideoURL(URL) {
 export function setCurrentUserSort(sort) {
   return {
     type: "SET_CURRENT_USER_SORT",
-    typ: sort
+    value: sort
   };
 }
 
 export function setVideoScale(scale) {
   return {
     type: "SET_VIDEO_SCALE",
-    type: scale
+    value: scale
   };
 }
