@@ -10,25 +10,25 @@
   *- Combine reducers and export
 
 ### Make these reducers
-  * currentCount
+  *- currentCount
     * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
-  * specialText
+  *- specialText
     * if "SET_SPECIAL_TEXT" should return the action value
-  * currentCity
+  *- currentCity
     * if "SET_CURRENT_CITY" should return the action value
-  * users
+  *- users
     * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
-  * currentTemp
+  *- currentTemp
     * if "SET_TEMP" should return action value
-  * isLoading
+  *- isLoading
     * if "SET_IS_LOADING" should return action value  
-  * videoURL
+  *- videoURL
     * if "SET_VIDEO_URL" should return action value
-  * searchText
+  *- searchText
     * if "SET_SEARCH_TEXT" should return action value
-  * currentUserSort
+  *- currentUserSort
     * if "SET_CURRENT_USER_SORT" should return action value
-  * videoScale
+  *- videoScale
     * if "SET_VIDEO_SCALE" should return action value
 ### Create Actions in actions/index.js
   * increaseCounter()
