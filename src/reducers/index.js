@@ -49,7 +49,8 @@ function searchText(state = "", action){
 
 function setTemp(state = 0, action){
   if(action.type === "SET_TEMP"){
-    return state = action.value;
+     state = action.value;
+     return state;
   }
   return state;
 }
