@@ -31,54 +31,54 @@
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
 ### Create Actions in actions/index.js
-  * increaseCounter()
+  <!-- * increaseCounter() -->
     * type = "INCREASE_COUNTER"
-  * decreaseCounter()
+  <!-- * decreaseCounter() -->
     * type = "DECREASE_COUNTER"
-  * setSpecialText(text)
+  <!-- * setSpecialText(text) -->
     * type = "SET_SPECIAL_TEXT"
     * value = text
-  * removeUser()
+  <!-- * removeUser() -->
     * type = "REMOVE_USER"
-  * addUser(user)
+  <!-- * addUser(user) -->
     * type = "ADD_USER"
     * value = user
-  * setSearchText(text)
+  <!-- * setSearchText(text) -->
     * type = "SET_SEARCH_TEXT"
     * value = text
-  * setIsLoading(isLoading)
+  <!-- * setIsLoading(isLoading) -->
     * type = "SET_IS_LOADING"
     * value = isLoading
-  * setTemp(temp)
+  <!-- * setTemp(temp) -->
     * type = "SET_TEMP"
     * value = temp
-  * setCurrentCity(city)
+  <!-- * setCurrentCity(city) -->
     * type = "SET_CURRENT_CITY"
     * value = city
-  * setVideoURL(URL)
+  <!-- * setVideoURL(URL) -->
     * type = "SET_VIDEO_URL"
     * value = URL
-  * setCurrentUserSort(sort)
+  <!-- * setCurrentUserSort(sort) -->
     * type = "SET_CURRENT_USER_SORT"
     * value = sort
-  * setVideoScale(scale)
+  <!-- * setVideoScale(scale) -->
     * type = "SET_VIDEO_SCALE"
     * value = scale
 ### Create Store
-  * Create a store.js file
+  <!-- * Create a store.js file
   * Import state from state.js
   * import createStore from redux
   * import reducers from reducers
   * create the store
-  * export the store
+  * export the store -->
 
 ### Provide store to components
-  * In index.js
+  <!-- * In index.js
   * Import Provider from react-redux
   * Import store from store.js
   * Use Provider component to wrap App
   * Make sure there is no whitespace between Provider and App
-  * Give Provider a prop “store” and the value of the store
+  * Give Provider a prop “store” and the value of the store -->
 
 
 ### Containers
@@ -95,7 +95,7 @@
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container
-  * Create mapStateToProps function 
+  * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`

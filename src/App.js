@@ -1,7 +1,7 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
+import CounterButton from "./containers/CounterButtonContainer";
 import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
+import Counter from "./containers/CounterContainer";
 import SpecialText from "./components/SpecialText";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";
@@ -52,8 +52,8 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
+
+
         </div>
         <div className="container">
           <Users />
