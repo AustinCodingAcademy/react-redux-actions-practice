@@ -1,13 +1,13 @@
 # Make sure to do one thing at a time, save and refresh to check for errors
 
 ###  Reducers
-  * Create Reducers in reducers/index.js
-  * Look at state.js and create a reducer for each piece of state
-  * Remember reducers take 2 parameters: `state`, and `action`
-  * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
-  * Remember to return state if the reducer doesn't care about the action
-  * You will need to decide which reducer cares about which action type
-  * Combine reducers and export
+  *- Create Reducers in reducers/index.js
+  *- Look at state.js and create a reducer for each piece of state
+  *- Remember reducers take 2 parameters: `state`, and `action`
+  *- Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
+  *- Remember to return state if the reducer doesn't care about the action
+  *- You will need to decide which reducer cares about which action type
+  *- Combine reducers and export
 
 ### Make these reducers
   * currentCount
@@ -95,7 +95,7 @@
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container
-  * Create mapStateToProps function 
+  * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
