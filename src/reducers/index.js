@@ -32,9 +32,11 @@ function specialText(state = "", action){
   return state;
 }
 
-function currentCity(state = "", action){
+function currentCity(state = "Austin", action){
   if(action.type === "SET_CURRENT_CITY"){
-    return action.value;
+    console.log(action);
+    state = action.value;
+    return state;
   }
   return state;
 }
@@ -49,7 +51,10 @@ function searchText(state = "", action){
 
 function currentTemp(state = 0, action){
   if(action.type === "SET_TEMP"){
-    return action.value;
+    console.log(state);
+    console.log(action);
+   return action.value 
+
   }
   return state;
 }
