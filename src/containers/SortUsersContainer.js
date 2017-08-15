@@ -4,8 +4,8 @@ import {setCurrentUserSort} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    set: function(){
-      var action = setCurrentUserSort();
+    set: function(sort){
+      var action = setCurrentUserSort(sort);
       dispatch(action);
     }
   }

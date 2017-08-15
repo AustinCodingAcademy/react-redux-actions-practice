@@ -1,11 +1,11 @@
 import {connect} from "react-redux";
 import CityDropDown from "../components/CityDropDown";
-import {setCurrentCity} from "../actions";
+import {currentCity} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    set: function(){
-      var action = setCurrentCity();
+    set: function(city){
+      var action = currentCity(city);
       dispatch(action);
     }
   }

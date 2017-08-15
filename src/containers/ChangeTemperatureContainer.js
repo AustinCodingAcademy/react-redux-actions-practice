@@ -4,8 +4,8 @@ import {setTemp} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    set: function(){
-      var action = setTemp();
+    set: function(temp){
+      var action = setTemp(temp);
       dispatch(action);
     }
   }

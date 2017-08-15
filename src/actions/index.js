@@ -49,7 +49,7 @@ export function setTemp(temp){
   }
 }
 
-export function setCurrentCity(city){
+export function currentCity(city){
   return{
     type: "SET_CURRENT_CITY",
     value: city
@@ -63,9 +63,9 @@ export function setVideoURl(URL){
   }
 }
 
-export function setCurrentUser(sort){
+export function setCurrentUserSort(sort){
   return {
-    type: "SET_CURRENT_USER",
+    type: "SET_CURRENT_USER_SORT",
     value: sort
   }
 }
