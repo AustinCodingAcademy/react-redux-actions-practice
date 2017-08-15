@@ -107,12 +107,12 @@
     * map a prop called `count` to the state `currentCount`
   * xCurrentCityContainer.js
     * map a prop called `text` to the state `currentCity`
-  * ThermostatContainer.js
+  * xThermostatContainer.js
     * map a prop called `temp` to the state `currentTemp`
-  * VideoPlayerContainer.js
+  * xVideoPlayerContainer.js
     * map a prop called `URL` to the state `videoURL`
     * map a prop called `scale` to the state `videoScale`
-  * ModalContainer.js
+  * xModalContainer.js
     * map a prop called `isLoading` to the state `isLoading`
 
 ### Create these Containers that care about changing the data
@@ -123,39 +123,39 @@
   * xSpecialTextBoxContainer.js
     * import `setSpecialText` action
     * map prop `set` to action `setSpecialText`
-  * UserButtonsContainer.js
+  * xUserButtonsContainer.js
     * import `addUser` and `removeUser` action
     * map prop `add` to action `addUser`
     * map prop `remove` to action `removeUser`
-  * CityDropDownContainer.js
+  * xCityDropDownContainer.js
     * import `setCurrentCity` action
     * map prop `set` to action `setCurrentCity`
-  * ChangeTemperatureContainer.js
+  * xChangeTemperatureContainer.js
     * import `setTemp` action
     * map prop `set` to action `setTemp`
-  * CounterButtonContainer.js
+  * xCounterButtonContainer.js
     * import the increaseCounter and decreaseCounter actions
     * map prop `increase` to action `increaseCounter`
     * map prop `decrease` to action `decreaseCounter`
-  * SearchTextBoxContainer.js
+  * xSearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
-  * ChangeTemperatureContainer.js
+  * xChangeTemperatureContainer.js
     * import `setTemp` action
     * map prop `set` to action `setTemp`
-  * VideoTextBoxContainer.js
+  * xVideoTextBoxContainer.js
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`
-  * SortUsersContainer.js
+  * xSortUsersContainer.js
     * import `setCurrentUserSort` action
     * map prop `set` to action `setCurrentUserSort`
-  * ScaleVideoContainer.js
+  * xScaleVideoContainer.js
     * import `setVideoScale` action
     * map prop `set` to action `setVideoScale`
-  * ShowModalContainer.js
+  * xShowModalContainer.js
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`Show
-  * ModalContainer.js
+  * xModalContainer.js
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`
 

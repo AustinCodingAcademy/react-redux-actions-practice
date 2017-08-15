@@ -19,11 +19,8 @@ function specialText(state = "", action){
 }
 
 function currentCity(state="", action){
-  if(action.type === ""){
-    return state;
-  }
-  if(action.type === "hi"){
-    return state;
+  if(action.type === "SET_CURRENT_CITY"){
+    return action.value
   }
   return state;
 }
@@ -42,7 +39,7 @@ function currentTemp(state=0, action){
   return state;
 }
 
-function isLoading(state=false, action){
+function isLoading(state=true, action){
   if(action.type === "SET_IS_LOADING") {
     return action.value;
   }

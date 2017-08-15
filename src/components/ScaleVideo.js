@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+// this function sets state.videoScale
 function ScaleVideo(props) {
   return (
       <div>

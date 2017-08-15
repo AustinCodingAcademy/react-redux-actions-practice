@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+// this function shows the modal (?)
 function ShowModal(props) {
   return (
       <div>

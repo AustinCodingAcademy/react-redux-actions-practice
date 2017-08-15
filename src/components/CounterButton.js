@@ -2,6 +2,7 @@ import React from 'react';
 
 
 
+// this function increase/decreases and sets state.currentCount
 function CounterButton(props) {
   return (
       <div>

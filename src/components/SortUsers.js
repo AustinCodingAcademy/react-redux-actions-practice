@@ -1,9 +1,12 @@
 import React from 'react';
 
+
+
+// this function sets state.currentUserSort
 function SortUsers(props) {
   return (
       <div>
-        Sort Users On: 
+        Sort Users On:
         <select onChange={
           (e)=>{
             if(props.set){

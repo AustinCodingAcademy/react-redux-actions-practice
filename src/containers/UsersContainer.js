@@ -1,7 +1,5 @@
 import Users from '../components/Users';
-import {addUser, removeUser, setCurrentUserSort} from '../actions';
 import {connect} from 'react-redux';
-import state from '../state.js';
 
 
 function mapStateToProps(state) {

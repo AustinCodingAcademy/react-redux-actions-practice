@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+
+// this function sets state.specialText
 function SpecialTextBox(props) {
   return (
       <div>

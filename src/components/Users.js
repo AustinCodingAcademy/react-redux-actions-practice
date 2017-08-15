@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+// this function shows state.users, and performes a sort
 function Users(props) {
   console.log(props);
   var usersDivs = null;

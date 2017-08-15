@@ -1,6 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+
+
+// this function sets a modal (?)
 const customStyles = {
   content : {
     top                   : '50%',
@@ -13,6 +16,7 @@ const customStyles = {
 };
 
 function LoadingModal(props) {
+  console.log(props.isLoading);
   return (
     <Modal
       isOpen={props.isLoading}

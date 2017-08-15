@@ -1,9 +1,12 @@
 import React from 'react';
 
+
+
+// this function establishes the city dropdown list, and sets state.currentCity
 function CityDropDown(props) {
   return (
       <div>
-        CurrentCity: 
+        CurrentCity:
         <select onChange={
           (e)=>{
             if(props.set){

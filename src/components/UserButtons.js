@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+// this function adds or removes a user from state.users
 function UserButtons(props) {
   return (
       <div>

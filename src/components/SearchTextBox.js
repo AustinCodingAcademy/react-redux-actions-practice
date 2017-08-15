@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+// this function sets state.searchText
 function SearchTextBox(props) {
   return (
       <div>

@@ -1,5 +1,7 @@
 import React from "react";
 
+
+//this function will set state.currentTemp
 function ChangeTemperature(props){
     return(
       <div>
