@@ -30,38 +30,39 @@
     * if "SET_CURRENT_USER_SORT" should return action value
   *- videoScale
     * if "SET_VIDEO_SCALE" should return action value
+
 ### Create Actions in actions/index.js
-  * increaseCounter()
+  *- increaseCounter()
     * type = "INCREASE_COUNTER"
-  * decreaseCounter()
+  *- decreaseCounter()
     * type = "DECREASE_COUNTER"
-  * setSpecialText(text)
+  *- setSpecialText(text)
     * type = "SET_SPECIAL_TEXT"
     * value = text
-  * removeUser()
+  *- removeUser()
     * type = "REMOVE_USER"
-  * addUser(user)
+  *- addUser(user)
     * type = "ADD_USER"
     * value = user
-  * setSearchText(text)
+  *- setSearchText(text)
     * type = "SET_SEARCH_TEXT"
     * value = text
-  * setIsLoading(isLoading)
+  *- setIsLoading(isLoading)
     * type = "SET_IS_LOADING"
     * value = isLoading
-  * setTemp(temp)
+  *- setTemp(temp)
     * type = "SET_TEMP"
     * value = temp
-  * setCurrentCity(city)
+  *- setCurrentCity(city)
     * type = "SET_CURRENT_CITY"
     * value = city
-  * setVideoURL(URL)
+  *- setVideoURL(URL)
     * type = "SET_VIDEO_URL"
     * value = URL
-  * setCurrentUserSort(sort)
+  *- setCurrentUserSort(sort)
     * type = "SET_CURRENT_USER_SORT"
     * value = sort
-  * setVideoScale(scale)
+  *- setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
     * value = scale
 ### Create Store
