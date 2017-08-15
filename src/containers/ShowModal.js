@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
-import {setIsLoading} from "../actions";
+import {isLoading} from "../actions";
 import ShowModal from "../components/ShowModal";
 
 function mapDispatchToProps(dispatch){
   return {
-   setIsLoading:function(txt){
-     let action = setIsLoading(txt);
+   isLoading:function(){
+     let action = isLoading();
      dispatch(action);
    }
   }
 }
-
+//removing (txt) in setIsLoading function here also
 
 export default connect(null,mapDispatchToProps)(ShowModal);

@@ -4,10 +4,10 @@ import store from "../store";
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    return currentCount + 1;
+    return state + 1;
   }
   if(action.type === "DECREASE_COUNTER"){
-    return currentCount - 1;
+    return state - 1;
   }
   return state;
 }
@@ -61,7 +61,7 @@ if(action.type === "SET_CURRENT_USER_SORT"){
   return state;
 }
 
-function videoScale(state=0,action){
+function videoScale(state=1,action){
   if(action.type === "SET_VIDEO_SCALE"){
     return action.value;
   }
@@ -70,15 +70,17 @@ function videoScale(state=0,action){
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-    return state.action.value;
+    return [...state.action.value];
   }
+  //spread operator???????
   if(action.type === "REMOVE_USER"){
-    return users.slice(1)
+    var newArray = state.slice(1);
+     return newArray;
   }
   return state;
 }
-const rootReducer = combineReducers({
+var rootReducer = {
   currentCount,users,specialText,currentCity,searchText,currentTemp,isLoading,videoURL,currentUserSort,videoScale
-});
+}
 
-export default rootReducer;
+export default combineReducers(rootReducer);
