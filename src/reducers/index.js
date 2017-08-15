@@ -1,17 +1,19 @@
 import {combineReducers} from "redux";
 
+// currentCount can also be called state
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    return currentCount + 1;
+    return state + 1;
   }
   if(action.type === "DECREASE_COUNTER"){
-    return currentCount - 1;
+    return state - 1;
   }
   return state;
 }   
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
+    
     return [...state, action.value];
   }
   if(action.type === "REMOVE_USER"){
