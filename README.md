@@ -66,12 +66,12 @@
     * type = "SET_VIDEO_SCALE"
     * value = scale
 ### Create Store
-  * Create a store.js file
-  * Import state from state.js
-  * import createStore from redux
-  * import reducers from reducers
-  * create the store
-  * export the store
+  *- Create a store.js file
+  *- Import state from state.js
+  *- import createStore from redux
+  *- import reducers from reducers
+  *- create the store
+  *- export the store
 
 ### Provide store to components
   * In index.js
