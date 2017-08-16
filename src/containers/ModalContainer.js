@@ -2,13 +2,10 @@ import { connect } from "react-redux";
 import Modal from "../components/Modal";
 import { setIsLoading } from "../actions";
 
-function mapDispatchToProps(dispatch) {
+function mapStateToProps(state) {
   return {
-    setIsLoading: function(isLoading) {
-      let action = setIsLoading(isLoading);
-      dispatch(action);
-    },
+    isLoading: state.isLoading
   };
 }
 
-export default connect(null, mapDispatchToProps)(Modal);
+export default connect(mapStateToProps, null)(Modal);
