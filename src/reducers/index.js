@@ -49,7 +49,7 @@ function searchText(state = "", action){
   return state;
 }
 
-function setTemp(state = 0, action){
+function currentTemp(state = 0, action){
   if(action.type === "SET_TEMP"){
     console.log(state);
     console.log(action);
@@ -91,7 +91,7 @@ function videoScale(state = 1, action){
 
 const rootReducer = combineReducers({
   currentCount, specialText, currentCity,
-   users, setTemp, isLoading, videoURL, 
+   users, currentTemp, isLoading, videoURL, 
    searchText, currentUserSort, videoScale
 })
 export default rootReducer;
