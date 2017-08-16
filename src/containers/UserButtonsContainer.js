@@ -5,8 +5,8 @@ import {removeUser} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    add: function(){
-      var action = addUser();
+    add: function(user){
+      var action = addUser(user);
       dispatch(action);
     },
     remove: function(){
