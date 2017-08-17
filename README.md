@@ -90,8 +90,6 @@
   * This is where you should do the connecting
   * Export the container
 
-
-
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container

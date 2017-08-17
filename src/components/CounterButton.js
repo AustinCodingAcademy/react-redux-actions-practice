@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function CounterButton(props) {
   return (
       <div>
@@ -12,7 +13,7 @@ function CounterButton(props) {
         }>Increase Counter By One</button>
         <button onClick={
           ()=>{
-            if(props.increase){
+            if(props.decrease){
               props.decrease();
             }
           }
