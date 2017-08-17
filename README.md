@@ -98,17 +98,17 @@
   * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
-    * map a prop called `text` to the state `specialText`
+    <!-- * map a prop called `text` to the state `specialText` -->
   * UsersContainer.js
-    * map a prop called `users` to the state `users`
-    * map a prop called `firstNameFilter` to the state `searchText`
-    * map a prop called `sortOn` to the state `currentUserSort`
+    <!-- * map a prop called `users` to the state `users` -->
+    <!-- * map a prop called `firstNameFilter` to the state `searchText` -->
+    <!-- * map a prop called `sortOn` to the state `currentUserSort` -->
   * CounterContainer.js
-    * map a prop called `count` to the state `currentCount`
+    <!-- * map a prop called `count` to the state `currentCount` -->
   * CurrentCityContainer.js
     * map a prop called `text` to the state `currentCity`
   * ThermostatContainer.js
-    * map a prop called `temp` to the state `currentTemp`
+    <!-- * map a prop called `temp` to the state `currentTemp` -->
   * VideoPlayerContainer.js
     * map a prop called `URL` to the state `videoURL`
     * map a prop called `scale` to the state `videoScale`
@@ -121,28 +121,28 @@
   * connect the component so that it becomes a container
   * export container
   * SpecialTextBoxContainer.js
-    * import `setSpecialText` action
-    * map prop `set` to action `setSpecialText`
+    <!-- * import `setSpecialText` action -->
+    <!-- * map prop `set` to action `setSpecialText` -->
   * UserButtonsContainer.js
-    * import `addUser` and `removeUser` action
-    * map prop `add` to action `addUser`
-    * map prop `remove` to action `removeUser`
+    <!-- * import `addUser` and `removeUser` action -->
+    <!-- * map prop `add` to action `addUser` -->
+    <!-- * map prop `remove` to action `removeUser` -->
   * CityDropDownContainer.js
     * import `setCurrentCity` action
     * map prop `set` to action `setCurrentCity`
   * ChangeTemperatureContainer.js
-    * import `setTemp` action
-    * map prop `set` to action `setTemp`
+    <!-- * import `setTemp` action -->
+    <!-- * map prop `set` to action `setTemp` -->
   * CounterButtonContainer.js
-    * import the increaseCounter and decreaseCounter actions
-    * map prop `increase` to action `increaseCounter`
-    * map prop `decrease` to action `decreaseCounter`
+    <!-- * import the increaseCounter and decreaseCounter actions -->
+    <!-- * map prop `increase` to action `increaseCounter` -->
+    <!-- * map prop `decrease` to action `decreaseCounter` -->
   * SearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
   * ChangeTemperatureContainer.js
-    * import `setTemp` action
-    * map prop `set` to action `setTemp`
+    <!-- * import `setTemp` action -->
+    <!-- * map prop `set` to action `setTemp` -->
   * VideoTextBoxContainer.js
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`

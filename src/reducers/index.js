@@ -1,4 +1,4 @@
-import combineReducers from "redux";
+import {combineReducers} from "redux";
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
@@ -37,6 +37,9 @@ function currentCity(state = "", action){
 }
 
 function searchText(state = "", action){
+  if(action.type === "SET_SEARCH_TEXT"){
+    return action.value;
+  }
   return state;
 }
 

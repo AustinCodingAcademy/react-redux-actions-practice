@@ -5,8 +5,9 @@ body {
 }
 
 .container{
-  width: 33%;
+  width: 32%;
   height: 700px;
   border: solid black 2px;
   float:left;
+  background-color: yellow;
 }
