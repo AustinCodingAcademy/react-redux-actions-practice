@@ -9,7 +9,7 @@
   * You will need to decide which reducer cares about which action type
   * Combine reducers and export
 
-### Make these reducers - DONE
+### - [x] Make these reducers - DONE
   * currentCount
     * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
   * specialText
@@ -30,7 +30,7 @@
     * if "SET_CURRENT_USER_SORT" should return action value
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
-### Create Actions in actions/index.js - DONE
+- [x] ### Create Actions in actions/index.js - DONE
   * increaseCounter()
     * type = "INCREASE_COUNTER"
   * decreaseCounter()
@@ -64,7 +64,7 @@
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
     * value = scale
-### Create Store - [ x ]
+### Create Store - [x] 
   * Create a store.js file
   * Import state from state.js
   * import createStore from redux
