@@ -4,8 +4,8 @@ import {setVideoScale} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    set: function(){
-      var action = setVideoScale();
+    set: function(scale){
+      var action = setVideoScale(scale);
       dispatch(action);
     }
   }

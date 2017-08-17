@@ -3,7 +3,7 @@ import VideoPlayer from '../components/VideoPlayer';
 
 function mapStateToProps(state){
   return {
-    URL: state.videoUrl,
+    URL: state.videoURL,
     scale: state.videoScale
   }
 }

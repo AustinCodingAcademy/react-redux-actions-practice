@@ -4,8 +4,8 @@ import {setVideoURL} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    set: function(){
-      var action = setVideoURL();
+    set: function(URL){
+      var action = setVideoURL(URL);
       dispatch(action);
     }
 

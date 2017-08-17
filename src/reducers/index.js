@@ -68,7 +68,8 @@ function isLoading(state = false, action){
 }
 
 function videoURL(state = "", action){
-  if(action.type === "SET_CURRENT_CITY"){
+  if(action.type === "SET_VIDEO_URL"){
+    console.log(action.value);
     return action.value;
   }
   return state;
@@ -81,7 +82,7 @@ function currentUserSort(state = "first_name", action){
   return state;
 }
 
-function videoScale(state = 1, action){
+function videoScale(state = 0, action){
   if(action.type === "SET_VIDEO_SCALE"){
     return action.value;
 
