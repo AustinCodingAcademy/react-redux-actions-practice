@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Users(props) {
+  console.log("Users props",props)
   var usersDivs = null;
   if(props.users){
     var sorted = props.users.sort((a,b) => {
