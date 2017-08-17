@@ -4,8 +4,17 @@ import { setIsLoading } from "../actions";
 
 function mapStateToProps(state) {
   return {
-    isLoading: state.isLoading
+    isLoading: state.isLoading,
   };
 }
 
-export default connect(mapStateToProps, null)(Modal);
+function mapDispatchToProps(dispatch) {
+  return {
+    setIsLoading: function(isLoading) {
+      let action = setIsLoading(isLoading);
+      dispatch(action);
+    }
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Modal);
