@@ -4,8 +4,8 @@ import {setSearchText} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    set: function(){
-      var action = setSearchText();
+    set: function(text){
+      var action = setSearchText(text);
       dispatch(action);
     }
   }

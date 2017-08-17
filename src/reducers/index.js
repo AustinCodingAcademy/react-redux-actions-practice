@@ -45,7 +45,7 @@ function currentCity(state = "Austin", action){
 
 function searchText(state = "", action){
   if(action.type === "SET_SEARCH_TEXT"){
-    return action.value.currentUserSort;
+    return action.value;
   }
   return state;
 }
