@@ -4,10 +4,10 @@ import SpecialTextBox from "../components/SpecialTextBox";
 
 function mapDispatchToProps(dispatch){
   return {
-   set:function(txt){
-     let action = setSpecialText(txt);
-     dispatch(action);
-   }
+    set:function(txt){
+      let action = setSpecialText(txt);
+      dispatch(action);
+    }
   }
 }
 

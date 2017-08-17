@@ -5,8 +5,8 @@ import ScaleVideo from "../components/ScaleVideo";
 
 function mapDispatchToProps(dispatch){
   return {
-   set:function(){
-     let action = setVideoScale();
+   set:function(scale){
+     let action = setVideoScale(scale);
      dispatch(action);
    }
   }

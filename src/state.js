@@ -1,13 +1,13 @@
 export default{
   currentCount:0,
   specialText:"",
-  currentCity:"",
+  currentCity:"Austin",
   searchText:"",
   currentTemp: 0,
   isLoading: false,
   videoURL: "",
   currentUserSort:"first_name",
-  videoScale:1,
+  videoScale:0,
   users: [
   {
     "id": 1,
@@ -81,6 +81,6 @@ export default{
     "occupation": "wife",
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"
   }
-] 
+]
 
 }

@@ -8,6 +8,7 @@
     "react-modal": "^1.7.7",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {

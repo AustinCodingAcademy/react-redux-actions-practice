@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import {setCurrentUserSort} from "../actions";
 import Users from "../components/Users";
 
 function mapStateToProps(state){
@@ -12,4 +11,4 @@ function mapStateToProps(state){
 
 
 
-export default connect(mapStateToProps)(Users);
+export default connect(mapStateToProps,null)(Users);

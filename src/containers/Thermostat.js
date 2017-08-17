@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import {setTemp} from "../actions";
 import Thermostat from "../components/Thermostat";
 
 function mapStateToProps(state){

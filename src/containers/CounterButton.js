@@ -1,18 +1,11 @@
 import {connect} from 'react-redux';
-import {increaseCounter} from "../actions";
-import {decreaseCounter} from "../actions";
+import {increaseCounter, decreaseCounter} from "../actions";
 import CounterButton from "../components/CounterButton";
 
 function mapDispatchToProps(dispatch){
   return {
-     incresase:function(){
-     let action = increaseCounter();
-     dispatch(action);
-},
-     decrease:function(){
-     let action = decreaseCounter();
-     dispatch(action);
-   }
+    increase: () => dispatch(increaseCounter()),
+    decrease: () => dispatch(decreaseCounter())
   }
 }
 //there is some way to return both functions in this container but I dont yet know how
