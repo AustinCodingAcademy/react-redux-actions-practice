@@ -64,7 +64,7 @@
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
     * value = scale
-### Create Store - [x]
+### Create Store - [ x ]
   * Create a store.js file
   * Import state from state.js
   * import createStore from redux
