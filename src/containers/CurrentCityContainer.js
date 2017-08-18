@@ -1,0 +1,11 @@
+import CurrentCity from '../components/CurrentCity';
+import {connect} from 'react-redux';
+
+function mapStateToProps(state) {
+  return {
+    text: state.text
+  }
+}
+
+export default connect(mapStateToProps)(CurrentCity);
+

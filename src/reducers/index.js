@@ -1,4 +1,4 @@
-import {combine} from 'redux';
+import { combineReducers } from 'redux';
 
 function currentCount(state = 0, action){
   if(action.type === "INCREASE_COUNTER"){
@@ -67,8 +67,8 @@ function users(state = [], action){
   }
 }
 
-export default combine({
+export default combineReducers({
   currentCount, specialText, currentCity, searchText, currentTemp, 
-  visLoading, ideoURL, currentUserSort, videoScale, users
+  isLoading, videoURL, currentUserSort, videoScale, users
 });
 

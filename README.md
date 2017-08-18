@@ -9,7 +9,7 @@
   * You will need to decide which reducer cares about which action type
   * Combine reducers and export
 
-### - [x] Make these reducers - DONE
+### Make these reducers - DONE
   * currentCount
     * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
   * specialText
@@ -30,7 +30,7 @@
     * if "SET_CURRENT_USER_SORT" should return action value
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
-- [x] ### Create Actions in actions/index.js - DONE
+### Create Actions in actions/index.js - DONE
   * increaseCounter()
     * type = "INCREASE_COUNTER"
   * decreaseCounter()
@@ -64,7 +64,7 @@
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
     * value = scale
-### Create Store - [x] 
+### Create Store - DONE
   * Create a store.js file
   * Import state from state.js
   * import createStore from redux
@@ -72,7 +72,7 @@
   * create the store
   * export the store
 
-### Provide store to components
+### Provide store to components - DONE
   * In index.js
   * Import Provider from react-redux
   * Import store from store.js
@@ -140,9 +140,6 @@
   * SearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
-  * ChangeTemperatureContainer.js
-    * import `setTemp` action
-    * map prop `set` to action `setTemp`
   * VideoTextBoxContainer.js
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`

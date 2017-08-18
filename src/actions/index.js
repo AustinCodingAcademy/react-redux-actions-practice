@@ -68,7 +68,7 @@ export function setVideoURL(url) {
 export function setCurrentSort(sort) {
   return {
     type: "SET_CURRENT_SORT",
-    valye: sort
+    value: sort
   }
 }
 
