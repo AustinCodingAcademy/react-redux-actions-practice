@@ -22,7 +22,6 @@ function App() {
   console.log('...rendering App.js');
   return (
       <div className="App">
-        <div>App.js - Rendering</div>
         <div className="container">
           <CounterButtonContainer />
           <br />
