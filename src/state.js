@@ -7,7 +7,7 @@ export default{
   isLoading: false,
   videoURL: "",
   currentUserSort:"first_name",
-  videoScale: 1,
+  videoScale:1,
   users: [
   {
     "id": 1,
