@@ -17,12 +17,12 @@ import ScaleVideoContainer from "./containers/ScaleVideoContainer";
 import ModalContainer from "./containers/ModalContainer";
 import ShowModalContainer from "./containers/ShowModalContainer";
 
-console.log("App.js is at least being looked at...");
+console.log("App.js: running");
 function App() {
   console.log('...rendering App.js');
   return (
       <div className="App">
-        <div>App.js - check</div>
+        <div>App.js - Rendering</div>
         <div className="container">
           <CounterButtonContainer />
           <br />
