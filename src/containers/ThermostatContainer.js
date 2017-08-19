@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 function mapStateToProps(state) {
   return {
-    temp: state.temp
+    temp: state.currentTemp
   }
 }
 

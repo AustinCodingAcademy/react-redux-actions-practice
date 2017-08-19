@@ -4,8 +4,8 @@ import {connect} from 'react-redux';
 function mapStateToProps(state) {
   return {
     users: state.users,
-    firstNameFilter: state.firstNameFilter,
-    sorton: state.sortOn
+    firstNameFilter: state.searchText,
+    sortOn: state.currentUserSort
   }
 }
 
