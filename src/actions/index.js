@@ -58,10 +58,10 @@ export function setCurrentCity(city) {
   }
 }
 
-export function setVideoURL(url) {
+export function setVideoURL(URL) {
   return {
     type: "SET_VIDEO_URL",
-    value: url
+    value: URL 
   }
 }
 
