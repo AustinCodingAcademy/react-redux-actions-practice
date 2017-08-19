@@ -1,12 +1,10 @@
 export function increaseCounter(){
-  console.log("INCREASE!!");
   return {
     type:"INCREASE_COUNTER"
   }
 }
 
 export function decreaseCounter(){
-  console.log("__decrease__");
   return {
     type:"DECREASE_COUNTER"
   }

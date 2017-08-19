@@ -17,9 +17,7 @@ import ScaleVideoContainer from "./containers/ScaleVideoContainer";
 import ModalContainer from "./containers/ModalContainer";
 import ShowModalContainer from "./containers/ShowModalContainer";
 
-console.log("App.js: running");
 function App() {
-  console.log('...rendering App.js');
   return (
       <div className="App">
         <div className="container">
