@@ -17,9 +17,12 @@ import ScaleVideoContainer from "./containers/ScaleVideoContainer";
 import ModalContainer from "./containers/ModalContainer";
 import ShowModalContainer from "./containers/ShowModalContainer";
 
+console.log("App.js is at least being looked at...");
 function App() {
+  console.log('...rendering App.js');
   return (
       <div className="App">
+        <div>App.js - check</div>
         <div className="container">
           <CounterButtonContainer />
           <br />
@@ -60,5 +63,6 @@ function App() {
       </div>
   );
 }
+
 export default App;
 
