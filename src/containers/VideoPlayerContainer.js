@@ -3,8 +3,8 @@ import {connect} from 'react-redux';
 
 function mapStateToProps(state) {
   return {
-    URL: state.url,
-    scale: state.scale
+    URL: state.videoURL,
+    scale: state.videoScale
    }
 }
 
