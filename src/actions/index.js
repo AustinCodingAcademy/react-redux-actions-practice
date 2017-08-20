@@ -57,7 +57,7 @@ export function setCurrentCity(city){
   }
 }
 
-export function setVideoUrl(URL){
+export function setVideoURL(URL){
   return {
     type:"SET_VIDEO_URL",
     value:URL
