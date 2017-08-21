@@ -1,7 +1,7 @@
 # Make sure to do one thing at a time, save and refresh to check for errors
 
 ###  Reducers
-  * Create Reducers in reducers/index.js
+  <!-- * Create Reducers in reducers/index.js -->
   * Look at state.js and create a reducer for each piece of state
   * Remember reducers take 2 parameters: `state`, and `action`
   * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
@@ -11,7 +11,7 @@
 
 ### Make these reducers
   * currentCount
-    * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
+    <!-- * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action -->
   * specialText
     * if "SET_SPECIAL_TEXT" should return the action value
   * currentCity
@@ -31,10 +31,10 @@
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
 ### Create Actions in actions/index.js
-  * increaseCounter()
-    * type = "INCREASE_COUNTER"
-  * decreaseCounter()
-    * type = "DECREASE_COUNTER"
+  <!-- * increaseCounter()
+    * type = "INCREASE_COUNTER" -->
+  <!-- * decreaseCounter()
+    * type = "DECREASE_COUNTER" -->
   * setSpecialText(text)
     * type = "SET_SPECIAL_TEXT"
     * value = text
@@ -65,9 +65,9 @@
     * type = "SET_VIDEO_SCALE"
     * value = scale
 ### Create Store
-  * Create a store.js file
-  * Import state from state.js
-  * import createStore from redux
+  <!-- * Create a store.js file -->
+  <!-- * Import state from state.js -->
+  <!-- * import createStore from redux -->
   * import reducers from reducers
   * create the store
   * export the store
@@ -95,7 +95,7 @@
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container
-  * Create mapStateToProps function 
+  * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
