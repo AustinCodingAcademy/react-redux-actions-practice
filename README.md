@@ -10,14 +10,14 @@
   * Combine reducers and export
 
 ### Make these reducers
-  * currentCount
+  <!-- * currentCount -->
     <!-- * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action -->
-  * specialText
-    * if "SET_SPECIAL_TEXT" should return the action value
-  * currentCity
-    * if "SET_CURRENT_CITY" should return the action value
-  * users
-    * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
+  <!-- * specialText
+    * if "SET_SPECIAL_TEXT" should return the action value -->
+  <!-- * currentCity
+    * if "SET_CURRENT_CITY" should return the action value -->
+  <!-- * users
+    * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user -->
   * currentTemp
     * if "SET_TEMP" should return action value
   * isLoading
@@ -35,9 +35,9 @@
     * type = "INCREASE_COUNTER" -->
   <!-- * decreaseCounter()
     * type = "DECREASE_COUNTER" -->
-  * setSpecialText(text)
+  <!-- * setSpecialText(text)
     * type = "SET_SPECIAL_TEXT"
-    * value = text
+    * value = text -->
   * removeUser()
     * type = "REMOVE_USER"
   * addUser(user)
@@ -52,9 +52,9 @@
   * setTemp(temp)
     * type = "SET_TEMP"
     * value = temp
-  * setCurrentCity(city)
+  <!-- * setCurrentCity(city)
     * type = "SET_CURRENT_CITY"
-    * value = city
+    * value = city -->
   * setVideoURL(URL)
     * type = "SET_VIDEO_URL"
     * value = URL

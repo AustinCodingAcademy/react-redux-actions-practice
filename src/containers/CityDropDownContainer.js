@@ -4,8 +4,8 @@ import CityDropDown from "../components/CityDropDown";
 
 function mapDispatchToProps(dispatch) {
   return{
-    set: function(){
-      let action = setCurrentCity();
+    set: function(city){
+      let action = setCurrentCity(city);
       dispatch(action);
     }
   }

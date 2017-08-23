@@ -28,12 +28,12 @@ function specialText(state = "", action){
   return state;
 }
 
-// function currentCity(state = "", action){
-//   if(action.type === "SET_CURRENT_CITY"){
-//     return action.value;
-//   }
-//   return state;
-// }
+function currentCity(state = "", action){
+  if(action.type === "SET_CURRENT_CITY"){
+    return action.value;
+  }
+  return state;
+}
 
 function setCurrentCity(state = "", action){
   if(action.type === "SET_CURRENT_CITY"){
@@ -43,6 +43,6 @@ function setCurrentCity(state = "", action){
 }
 
 let reducerfunction = {
-  currentCount, specialText, users, setCurrentCity
+  currentCount, specialText, users, setCurrentCity, currentCity
 }
 export default combineReducers(reducerfunction);
