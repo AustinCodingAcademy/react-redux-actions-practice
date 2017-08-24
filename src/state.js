@@ -1,7 +1,7 @@
 export default{
   currentCount:0,
   specialText:"",
-  currentCity:"",
+  currentCity:"Austin",
   searchText:"",
   currentTemp: 0,
   isLoading: false,
@@ -81,6 +81,6 @@ export default{
     "occupation": "wife",
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"
   }
-] 
+]
 
 }
