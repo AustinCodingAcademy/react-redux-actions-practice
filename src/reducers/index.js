@@ -42,7 +42,14 @@ function setCurrentCity(state = "", action){
   return state;
 }
 
+function currentTemp(state = "", action){
+  if(action.type === "SET_TEMP"){
+    return action.value;
+  }
+  return state;
+}
+
 let reducerfunction = {
-  currentCount, specialText, users, setCurrentCity, currentCity
+  currentCount, specialText, users, setCurrentCity, currentCity, currentTemp
 }
 export default combineReducers(reducerfunction);

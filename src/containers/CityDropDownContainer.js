@@ -12,7 +12,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 //This is the shorter way to export.
-//export default connect(null,mapDispatchToProps)(CounterButton)
+//export default connect(null,mapDispatchToProps)(CityDropDown)
 
 let otherFunction = connect(null, mapDispatchToProps);
 let CityDropDownContainer = otherFunction(CityDropDown)
