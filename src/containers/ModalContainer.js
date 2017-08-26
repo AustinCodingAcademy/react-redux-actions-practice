@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import {setIsLoading} from '../actions';
 import Modal from "../components/Modal";
 
 function mapStateToProps(state){
