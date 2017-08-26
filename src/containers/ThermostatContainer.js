@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ThermostatContainer from "../components/ThermostatContainer";
+import Thermostat from "../components/Thermostat";
 
 function mapStateToProps(state){
   return {
@@ -7,4 +7,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(ThermostatContainer);
+export default connect(mapStateToProps)(Thermostat);

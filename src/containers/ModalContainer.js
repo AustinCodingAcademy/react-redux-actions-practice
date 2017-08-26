@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ModalContainer from "../components/ModalContainer";
+import Modal from "../components/Modal";
 
 function mapStateToProps(state){
   return {
@@ -7,4 +7,12 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(ModalContainer);
+function mapDispatchToProps(dispatch) {
+  return {
+    setIsLoading: function(isLoading) {
+      dispatch(setIsLoading(isLoading))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Modal);
