@@ -65,3 +65,24 @@ export function setCurrentUserSort(sort){
     value: sort
   }
 }
+
+export function setVideoURL(URL){
+  return {
+    type: "SET_VIDEO_URL",
+    value: URL
+  }
+}
+
+export function setVideoScale(scale){
+  return {
+    type: "SET_VIDEO_SCALE",
+    value: scale
+  }
+}
+
+export function setIsLoading(isLoading){
+  return{
+    type: "SET_IS_LOADING",
+    value: isLoading
+  }
+}

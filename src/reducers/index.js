@@ -62,7 +62,28 @@ function currentUserSort(state = "", action){
   return state;
 }
 
+function setVideoScale(state = "", action){
+  if(action.type === "SET_VIDEO_SCALE"){
+    return action.value;
+  }
+  return state;
+}
+
+function setVideoURL(state = "", action){
+  if(action.type === "SET_VIDEO_URL"){
+    return action.value;
+  }
+  return state;
+}
+
+function isLoading(state= "", action){
+  if(action.type === "SET_IS_LOADING"){
+    return action.value;
+  }
+  return state;
+}
+
 let reducerfunction = {
-  currentCount, specialText, users, setCurrentCity, currentCity, currentTemp, currentUserSort, searchText
+  currentCount, specialText, users, setCurrentCity, currentCity, currentTemp, currentUserSort, searchText, setVideoURL, setVideoScale, isLoading
 }
 export default combineReducers(reducerfunction);

@@ -7,15 +7,15 @@ import UserButtons from "./containers/UserButtonsContainer";
 import Thermostat from "./containers/ThermostatContainer";
 import Users from "./containers/UsersContainer";
 import ChangeTemperature from "./containers/ChangeTemperatureContainer";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
+import VideoPlayer from "./containers/VideoPlayerContainer";
+import VideoTextBox from "./containers/VideoTextBoxContainer";
 import CurrentCity from "./containers/CurrentCityContainer";
 import CityDropDown from "./containers/CityDropDownContainer";
 import SearchTextBox from "./containers/SearchTextBoxContainer";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import SortUsers from "./containers/SortUsersContainer";
+import ScaleVideo from "./containers/ScaleVideoContainer";
+import Modal from "./containers/ModalContainer";
+import ShowModal from "./containers/ShowModalContainer";
 
 function App() {
   return (
