@@ -4,11 +4,11 @@ import UserButtons from "../components/UserButtons";
 
 function mapDispatchToProps(dispatch) {
   return{
-    increase: function(){
+    add: function(){
       let action = addUser();
       dispatch(action);
     },
-    decrease: function(){
+    remove: function(){
       let action = removeUser();
       dispatch(action);
     }
@@ -16,7 +16,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 //This is the shorter way to export.
-//export default connect(null,mapDispatchToProps)(CounterButton)
+//export default connect(null,mapDispatchToProps)(UserButtons)
 
 let otherFunction = connect(null, mapDispatchToProps);
 let UserButtonsContainer = otherFunction(UserButtons)

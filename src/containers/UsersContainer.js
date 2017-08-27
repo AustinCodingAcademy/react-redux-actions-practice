@@ -3,7 +3,11 @@ import Users from "../components/Users";
 
 function mapStateToProps(state){
   return{
-    count: state.users
+    //I think I can delete line 7
+    count: state.users,
+    users: state.users,
+    firstNameFilter: state.searchText,
+    sortOn: state.currentUserSort
   }
 }
 

@@ -15,14 +15,20 @@ function users(state =[], action){
     return [...state,action.value];
   }
   if(action.type === "REMOVE_USER"){
-    let newArray = state.slice(1);
-    return state;
+    return state.slice(1);
   }
   return state;
 }
 
 function specialText(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
+    return action.value;
+  }
+  return state;
+}
+
+function searchText(state = "", action){
+  if(action.type === "SET_SEARCH_TEXT"){
     return action.value;
   }
   return state;
@@ -49,7 +55,14 @@ function currentTemp(state = "", action){
   return state;
 }
 
+function currentUserSort(state = "", action){
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
+  return state;
+}
+
 let reducerfunction = {
-  currentCount, specialText, users, setCurrentCity, currentCity, currentTemp
+  currentCount, specialText, users, setCurrentCity, currentCity, currentTemp, currentUserSort, searchText
 }
 export default combineReducers(reducerfunction);

@@ -20,12 +20,21 @@ export function setSpecialText(txt){
 export function addUser(user){
   return {
     type:"ADD_USER",
-    value:user
+    value: user
   }
 }
 export function removeUser(){
   return {
-    type:"REMOVE_USER"
+    type:"REMOVE_USER",
+    //Readme says that there's no need for a value... why?
+    // value: user
+  }
+}
+
+export function setSearchText(text){
+  return {
+    type: "SET_SEARCH_TEXT",
+    value: text
   }
 }
 
@@ -47,5 +56,12 @@ export function setTemp(temp){
   return {
     type: "SET_TEMP",
     value: temp
+  }
+}
+
+export function setCurrentUserSort(sort){
+  return {
+    type: "SET_CURRENT_USER_SORT",
+    value: sort
   }
 }
