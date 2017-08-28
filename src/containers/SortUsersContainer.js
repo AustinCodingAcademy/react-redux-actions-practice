@@ -1,6 +1,6 @@
 import {setCurrentUserSort} from "../actions";
 import {connect} from "react-redux";
-import SortUsers from "../containers/SortUsersContainer";
+import SortUsers from "../components/SortUsers";
 
 function mapDispatchToProps(dispatch) {
   return{
