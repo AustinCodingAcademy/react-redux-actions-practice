@@ -2,6 +2,12 @@ import ChangeTemperature from '../components/ChangeTemperature';
 import {setTemp} from "../actions";
 import {connect} from 'react-redux';
 
+function mapStateToProps(state) {
+  return {
+    users: state.users
+  }
+}
+
 function mapDispatchToProps(dispatch){
   return {
     set: function(temp) {
@@ -11,5 +17,5 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-export default connect(null, mapDispatchToProps)(ChangeTemperature);
+export default connect(mapStateToProps, mapDispatchToProps)(ChangeTemperature);
 
