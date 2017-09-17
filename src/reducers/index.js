@@ -1,10 +1,13 @@
+import {combineReducers} from 'redux';
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    
+    return state + 1;
+    // not state++ because that modifies state. KISS.
+    // btw state is just a variable name, only holding a number in it
   }
   if(action.type === "DECREASE_COUNTER"){
-    
+    return state - 1;
   }
   return state;
 }   
@@ -26,3 +29,8 @@ function specialText(state = "", action){
   }
   return state;
 }
+
+const rootReducer = combineReducers({
+  currentCount,users,specialText
+});
+export default rootReducer;

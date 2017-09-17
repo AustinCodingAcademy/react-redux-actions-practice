@@ -10,7 +10,7 @@
   * Combine reducers and export
 
 ### Make these reducers
-  * currentCount
+ DONE  * currentCount
     * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
   * specialText
     * if "SET_SPECIAL_TEXT" should return the action value
