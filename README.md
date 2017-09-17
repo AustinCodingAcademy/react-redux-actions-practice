@@ -163,3 +163,18 @@
   * Change App.js
   * Use containers instead of components
   * Basically, just add the word Container everywhere a component is referenced
+
+
+ ***STEPS FOR WORKING WITH ACTIONS***
+1. Create an action (woo tells us what to make)
+2. Create a container for the component that requires that action
+3. In that Container, import the action that you need to use
+4. Import the Component that you need to use
+5. import Connect from react-redux(boilerplate thing)
+6. Make a fnc called mapDispatchToProps
+    1. takes dispatch parameter (boilerplate)
+    2. Object will have keys that map to the props of the component
+    3. Values of the keys will be a function. Inside the fnc, call whatever action is appropriate and then send the action in a call to dispatch
+    4. repeat this step for all props on this component
+7. Connect stuff at bottom of Container 
+8. Then go to App.js and change the importing of the Component to the importing of the Container
