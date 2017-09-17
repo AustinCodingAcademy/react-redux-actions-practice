@@ -5,8 +5,8 @@ import SpecialTextBox from "../components/SpecialTextBox";
 
 function mapDispatchToProps(dispatch){
   return {
-   set:function(txt){
-     let action = setSpecialText(txt);
+   set:function(text){
+     let action = setSpecialText(text);
      dispatch(action);
    }
   }

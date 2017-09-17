@@ -5,12 +5,13 @@ import CounterButton from "../components/CounterButton";
 function mapDispatchToProps(dispatch) {
     return {
         increase:function(){
-            var action = increaseCounter();
+            let action = increaseCounter();
             dispatch(action);
             // this part updates the state
         },
-        decrease: function(){
-
+        decrease:function(){
+            let action = decreaseCounter();
+            dispatch(action);
         }
     }
 }
