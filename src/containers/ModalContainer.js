@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import Modal from '../components/Modal';
 import {setIsLoading} from '../actions';
-// import customStyles from '.../components/ChangeTemperature';
 
 function mapStateToProps (state) {
   return {
