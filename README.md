@@ -130,9 +130,6 @@
   * CityDropDownContainer.js
     * import `setCurrentCity` action
     * map prop `set` to action `setCurrentCity`
-  * ChangeTemperatureContainer.js
-    * import `setTemp` action
-    * map prop `set` to action `setTemp`
   * CounterButtonContainer.js
     * import the increaseCounter and decreaseCounter actions
     * map prop `increase` to action `increaseCounter`
