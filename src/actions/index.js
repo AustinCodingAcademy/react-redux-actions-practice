@@ -61,8 +61,7 @@ export function setCurrentCity(city){
 export function setVideoURL(URL){
   return {
     type:"SET_VIDEO_URL",
-    value: 'https://www.youtube.com/watch?v=zUBNPRZO6Yw'
-    // value:URL
+    value:URL
   }
 }
 
