@@ -17,5 +17,4 @@ function mapDispatchToProps (dispatch) {
   };
 }
 
-// export default connect(null,mapDispatchToProps)(customStyles);
 export default connect(mapStateToProps, mapDispatchToProps)(Modal);
