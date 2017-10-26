@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
-import SpecialText from '../components/SpecialText';
+// import {setCurrentUser} from '.../actions';
+import SpecialText from '.../components/SpecialText';
 
 //map a prop called text to the state specialText
 function mapStateToProps(state){

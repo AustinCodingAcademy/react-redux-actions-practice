@@ -1,18 +1,18 @@
 import React from 'react';
 
-function VideoTextBox(props) {
+function VideoTextBox (props) {
   return (
-      <div>
+    <div>
         Enter URL of YouTube video
-        <input 
-      onChange={(e)=>{
-        if(props.set){
+    <input
+      onChange={(e) => {
+        if (props.set) {
           props.set(e.target.value);
         }
       }}
-      type="text" />
+      type='text' />
 
-      </div>
+    </div>
   );
 }
 export default VideoTextBox;
