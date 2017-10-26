@@ -1,7 +1,7 @@
-import React from "react";
-import DonutChart from "./ignore/DonutChart";
+import React from 'react';
+import DonutChart from './ignore/DonutChart';
 
-function Thermostat(props){
+function Thermostat (props) {
   return (<DonutChart value={props.temp || 23} />)
 }
 

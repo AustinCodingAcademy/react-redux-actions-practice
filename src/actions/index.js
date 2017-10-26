@@ -47,7 +47,7 @@ export function setIsLoading(isLoading){
 export function setTemp(temp){
   return {
     type:"SET_TEMP",
-    value:temp
+    value:parseInt((temp),8)
   }
 }
 

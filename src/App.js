@@ -37,9 +37,9 @@ function App() {
           <br />
           <VideoTextBox />
           <br />
-          <SortUsers />
-          <br />
           <ScaleVideo />
+          <br />
+          <SortUsers />
           <br />
           <ShowModal />
         </div>
