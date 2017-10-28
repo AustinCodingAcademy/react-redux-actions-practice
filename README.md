@@ -11,7 +11,7 @@
 
 ### Make these reducers
   * currentCount
-    * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
+    * if "INCREASE_COUNTER" or "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
   * specialText
     * if "SET_SPECIAL_TEXT" should return the action value
   * currentCity
@@ -97,9 +97,9 @@
   * Import the appropriate component into the container
   * Create mapStateToProps function 
   * Call the connect function
-  * SpecialTextContainer.js
+  !* SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
-  * UsersContainer.js
+  !* UsersContainer.js
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
     * map a prop called `sortOn` to the state `currentUserSort`
@@ -130,17 +130,17 @@
   * CityDropDownContainer.js
     * import `setCurrentCity` action
     * map prop `set` to action `setCurrentCity`
-  * ChangeTemperatureContainer.js
+  !* ChangeTemperatureContainer.js
     * import `setTemp` action
     * map prop `set` to action `setTemp`
-  * CounterButtonContainer.js
+  !!!* CounterButtonContainer.js
     * import the increaseCounter and decreaseCounter actions
     * map prop `increase` to action `increaseCounter`
     * map prop `decrease` to action `decreaseCounter`
   * SearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
-  * ChangeTemperatureContainer.js
+  !! ChangeTemperatureContainer.js
     * import `setTemp` action
     * map prop `set` to action `setTemp`
   * VideoTextBoxContainer.js

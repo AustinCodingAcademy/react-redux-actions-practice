@@ -12,7 +12,8 @@ function CounterButton(props) {
         }>Increase Counter By One</button>
         <button onClick={
           ()=>{
-            if(props.increase){
+            console.log(props)
+            if(props.decrease){
               props.decrease();
             }
           }
