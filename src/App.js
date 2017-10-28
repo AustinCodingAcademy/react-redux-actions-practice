@@ -17,6 +17,7 @@ import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
 
+
 function App() {
   return (
       <div className="App">
@@ -52,8 +53,8 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
+
+
         </div>
         <div className="container">
           <Users />
