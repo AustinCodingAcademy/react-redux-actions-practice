@@ -1,5 +1,5 @@
 //Import connect from react-redux
-//import appropriate component: counter
+//import appropriate component: currentCity
 import { connect } from 'react-redux';
 import CurrentCity from "../components/CurrentCity";
 
