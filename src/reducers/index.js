@@ -2,7 +2,7 @@ import {combineReducers} from 'redux';
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    return currentCount+1;
+    return currentCount + 1;
   }
   if(action.type === "DECREASE_COUNTER"){
     return currentCount-1;
@@ -25,7 +25,7 @@ function currentCity(state='', action){
 }
 
 function searchText(state='', action){
-  if(action.type === "SET_CURRENT_CITY"){
+  if(action.type === "SET_SEARCH_TEXT"){
     return action.value;
   }
   return state;
@@ -33,7 +33,7 @@ function searchText(state='', action){
 
 function currentTemp(state=0, action){
   if(action.type === "SET_TEMP"){
-    return action.value;
+    return parseInt(action.value);
   }
   return state;
 }
@@ -47,7 +47,10 @@ function isLoading(state=false, action){
 
 function videoURL(state='', action){
   if(action.type === "SET_VIDEO_URL"){
-    return action.value;
+
+    const updatedURL = action.value.replace("watch?v=", "embed/");
+
+    return updatedURL;
   }
   return state;
 }

@@ -3,7 +3,7 @@
 // import the appropriate component
 import { connect } from 'react-redux';
 import { setCurrentUserSort } from "../actions";
-import sortUsers from "../components/sortUsers";
+import SortUsers from "../components/SortUsers";
 
 // Create mapDispatchToProps
 function mapDispatchToProps(dispatch){
@@ -16,4 +16,4 @@ function mapDispatchToProps(dispatch){
 }
 
 //Connect component to mapDispatchToProps.  export Container.
-export default connect(null,mapDispatchToProps)(sortUsers);
+export default connect(null,mapDispatchToProps)(SortUsers);

@@ -3,7 +3,7 @@
 // import the appropriate component
 import { connect } from 'react-redux';
 import { setVideoScale } from "../actions";
-import scaleVideo from "../components/scaleVideo";
+import ScaleVideo from "../components/ScaleVideo";
 
 // Create mapDispatchToProps
 function mapDispatchToProps(dispatch){
@@ -16,4 +16,4 @@ function mapDispatchToProps(dispatch){
 }
 
 //Connect component to mapDispatchToProps.  export Container.
-export default connect(null,mapDispatchToProps)(scaleVideo);
+export default connect(null,mapDispatchToProps)(ScaleVideo);

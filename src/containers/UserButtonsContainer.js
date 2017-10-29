@@ -11,7 +11,7 @@ function mapDispatchToProps(dispatch){
    add:function(theUser){
      let action = addUser(theUser);
      dispatch(action);
-   }
+   },
    remove:function(){
      let action = removeUser();
      dispatch(action);

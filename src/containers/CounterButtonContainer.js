@@ -11,7 +11,7 @@ function mapDispatchToProps(dispatch){
    increase:function(){
      let action = increaseCounter();
      dispatch(action);
-   }
+   },
    decrease:function(){
      let action = decreaseCounter();
      dispatch(action);
