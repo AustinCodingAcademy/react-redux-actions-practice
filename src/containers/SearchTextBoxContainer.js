@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { setSearchText} from "../actions";
-import SearchText from "../components/SearchText";
+import SearchTextBox from "../components/SearchTextBox";
 
 function mapDispatchToProps(dispatch){
     return {
@@ -11,4 +11,4 @@ function mapDispatchToProps(dispatch){
     }
 }
 
-export default connect (null, mapDispatchToProps)(SearchText);
+export default connect (null, mapDispatchToProps)(SearchTextBox);
