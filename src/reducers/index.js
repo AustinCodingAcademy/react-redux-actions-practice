@@ -47,9 +47,7 @@ function isLoading(state=false, action){
 
 function videoURL(state='', action){
   if(action.type === "SET_VIDEO_URL"){
-
     const updatedURL = action.value.replace("watch?v=", "embed/");
-
     return updatedURL;
   }
   return state;
