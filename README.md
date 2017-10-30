@@ -1,70 +1,72 @@
 # Make sure to do one thing at a time, save and refresh to check for errors
 
 ###  Reducers
-  * Create Reducers in reducers/index.js
-  * Look at state.js and create a reducer for each piece of state
-  * Remember reducers take 2 parameters: `state`, and `action`
-  * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
-  * Remember to return state if the reducer doesn't care about the action
+  * Create Reducers in reducers/index.js - dONE
+  * Look at state.js and create a reducer for each piece of state - DONE
+  * Remember reducers take 2 parameters: `state`, and `action` - DONE
+  * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object - DONE
+  * Remember to return state if the reducer doesn't care about the action - DONE
   * You will need to decide which reducer cares about which action type
-  * Combine reducers and export
+  * Combine reducers and export - DONE
 
 ### Make these reducers
   * currentCount
-    * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
+    * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action - DONE
   * specialText
-    * if "SET_SPECIAL_TEXT" should return the action value
+    * if "SET_SPECIAL_TEXT" should return the action value - DONE
   * currentCity
-    * if "SET_CURRENT_CITY" should return the action value
+    * if "SET_CURRENT_CITY" should return the action value - DONE
   * users
-    * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
+    * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user - DONE
   * currentTemp
-    * if "SET_TEMP" should return action value
+    * if "SET_TEMP" should return action value - DONE
   * isLoading
-    * if "SET_IS_LOADING" should return action value  
+    * if "SET_IS_LOADING" should return action value  - DONE
   * videoURL
-    * if "SET_VIDEO_URL" should return action value
+    * if "SET_VIDEO_URL" should return action value - DONE
   * searchText
-    * if "SET_SEARCH_TEXT" should return action value
+    * if "SET_SEARCH_TEXT" should return action value - DONE
   * currentUserSort
-    * if "SET_CURRENT_USER_SORT" should return action value
+    * if "SET_CURRENT_USER_SORT" should return action value - 
   * videoScale
-    * if "SET_VIDEO_SCALE" should return action value
+    * if "SET_VIDEO_SCALE" should return action value - DONE
 ### Create Actions in actions/index.js
   * increaseCounter()
-    * type = "INCREASE_COUNTER"
+    * type = "INCREASE_COUNTER" - DONE
   * decreaseCounter()
-    * type = "DECREASE_COUNTER"
+    * type = "DECREASE_COUNTER" -DONE
   * setSpecialText(text)
-    * type = "SET_SPECIAL_TEXT"
+    * type = "SET_SPECIAL_TEXT" - DONE
     * value = text
   * removeUser()
-    * type = "REMOVE_USER"
+    * type = "REMOVE_USER" - DONE
   * addUser(user)
-    * type = "ADD_USER"
+    * type = "ADD_USER" - DONE
     * value = user
   * setSearchText(text)
-    * type = "SET_SEARCH_TEXT"
+    * type = "SET_SEARCH_TEXT" - DONE
     * value = text
   * setIsLoading(isLoading)
-    * type = "SET_IS_LOADING"
+    * type = "SET_IS_LOADING" - DONE
     * value = isLoading
   * setTemp(temp)
-    * type = "SET_TEMP"
+    * type = "SET_TEMP" - DONE
     * value = temp
   * setCurrentCity(city)
-    * type = "SET_CURRENT_CITY"
+    * type = "SET_CURRENT_CITY" - DONE
     * value = city
   * setVideoURL(URL)
-    * type = "SET_VIDEO_URL"
+    * type = "SET_VIDEO_URL" - DONE
     * value = URL
   * setCurrentUserSort(sort)
-    * type = "SET_CURRENT_USER_SORT"
+    * type = "SET_CURRENT_USER_SORT" - DONE
     * value = sort
   * setVideoScale(scale)
-    * type = "SET_VIDEO_SCALE"
+    * type = "SET_VIDEO_SCALE" - DONE
     * value = scale
-### Create Store
+
+
+### Create Store - DONE
   * Create a store.js file
   * Import state from state.js
   * import createStore from redux
@@ -72,7 +74,7 @@
   * create the store
   * export the store
 
-### Provide store to components
+### Provide store to components - DONE
   * In index.js
   * Import Provider from react-redux
   * Import store from store.js
@@ -82,9 +84,9 @@
 
 
 ### Containers
-  * We need to leave the components alone and create containers
-  * In the container folder, create a container file for each component i.e. SpecialTextContainer.js
-  * Import the appropriate component into the container file
+  * We need to leave the components alone and create containers - DONE
+  * In the container folder, create a container file for each component i.e. - DONE  SpecialTextContainer.js
+  * Import the appropriate component into the container file - DONE
   * This is where the connect function and the actions should be imported
   * This is where mapStateToProps and mapDispatchToProps should be
   * This is where you should do the connecting
@@ -97,22 +99,22 @@
   * Import the appropriate component into the container
   * Create mapStateToProps function 
   * Call the connect function
-  * SpecialTextContainer.js
+  * SpecialTextContainer.js - dONE 
     * map a prop called `text` to the state `specialText`
-  * UsersContainer.js
+  * UsersContainer.js - DONE
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
     * map a prop called `sortOn` to the state `currentUserSort`
-  * CounterContainer.js
+  * CounterContainer.js - DONE
     * map a prop called `count` to the state `currentCount`
-  * CurrentCityContainer.js
+  * CurrentCityContainer.js - DONE
     * map a prop called `text` to the state `currentCity`
-  * ThermostatContainer.js
+  * ThermostatContainer.js - DONE
     * map a prop called `temp` to the state `currentTemp`
-  * VideoPlayerContainer.js
+  * VideoPlayerContainer.js - DONE
     * map a prop called `URL` to the state `videoURL`
     * map a prop called `scale` to the state `videoScale`
-  * ModalContainer.js
+  * ModalContainer.js  - DONE
     * map a prop called `isLoading` to the state `isLoading`
 
 ### Create these Containers that care about changing the data
@@ -120,42 +122,42 @@
   * create mapDispatchToProps
   * connect the component so that it becomes a container
   * export container
-  * SpecialTextBoxContainer.js
+  * SpecialTextBoxContainer.js - DONE
     * import `setSpecialText` action
     * map prop `set` to action `setSpecialText`
-  * UserButtonsContainer.js
+  * UserButtonsContainer.js - DONE
     * import `addUser` and `removeUser` action
     * map prop `add` to action `addUser`
     * map prop `remove` to action `removeUser`
-  * CityDropDownContainer.js
+  * CityDropDownContainer.js - DONE
     * import `setCurrentCity` action
     * map prop `set` to action `setCurrentCity`
-  * ChangeTemperatureContainer.js
+  * ChangeTemperatureContainer.js - DONE
     * import `setTemp` action
     * map prop `set` to action `setTemp`
-  * CounterButtonContainer.js
+  * CounterButtonContainer.js - DONE
     * import the increaseCounter and decreaseCounter actions
     * map prop `increase` to action `increaseCounter`
     * map prop `decrease` to action `decreaseCounter`
-  * SearchTextBoxContainer.js
+  * SearchTextBoxContainer.js - DONE
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
-  * ChangeTemperatureContainer.js
+  * ChangeTemperatureContainer.js - DONE
     * import `setTemp` action
     * map prop `set` to action `setTemp`
-  * VideoTextBoxContainer.js
+  * VideoTextBoxContainer.js - DONE
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`
-  * SortUsersContainer.js
+  * SortUsersContainer.js - DONE
     * import `setCurrentUserSort` action
     * map prop `set` to action `setCurrentUserSort`
-  * ScaleVideoContainer.js
+  * ScaleVideoContainer.js - DONE
     * import `setVideoScale` action
     * map prop `set` to action `setVideoScale`
-  * ShowModalContainer.js
+  * ShowModalContainer.js - DONE
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`Show
-  * ModalContainer.js
+  * ModalContainer.js - DONE
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`
 
