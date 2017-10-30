@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {adduser, removeUser} from '../actions';
+import {addUser, removeUser} from '../actions';
 import UserButtons from '../components/UserButtons'
 
 

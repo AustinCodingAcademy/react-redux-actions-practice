@@ -10,7 +10,7 @@ function mapDispatchToProps(dispatch) {
     },
     decrease:function(){
       let action = decreaseCounter();
-      dipatch(action);
+      dispatch(action);
     }
   }
 }
