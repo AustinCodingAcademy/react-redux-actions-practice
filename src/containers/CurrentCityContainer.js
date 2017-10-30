@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import SpecialText from "../components/SpecialText";
+import CurrentCity from "../components/CurrentCity";
 
 //map a prop called text to the state specialText
 function mapStateToProps(state){
   return {
-    text: state.specialText
+    text: state.currentCity
   }
 }
 
-export default connect(mapStateToProps)(SpecialText);
+export default connect(mapStateToProps)(CurrentCity);
