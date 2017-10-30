@@ -5,7 +5,7 @@ import UserButtons from '../components/UserButtons'
 
 function mapDispatchToProps(dispatch){
   return {
-    add: function(theUser){
+    add:function(theUser){
       let action = addUser(theUser);
       dispatch(action);
     },
