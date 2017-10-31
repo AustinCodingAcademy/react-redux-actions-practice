@@ -57,7 +57,7 @@ function isLoading(state = false, action){
 }
 
 function videoURL(state = "", action){
-  if(action.type === "SET_VIDEO_UR"){
+  if(action.type === "SET_VIDEO_URL"){
     return action.value;
   }
   return state;
