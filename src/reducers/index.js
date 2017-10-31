@@ -56,21 +56,21 @@ function specialText(state = "", action){
  }
 
  function searchText(state = "", action){
-   if(action.value === "SET_SEARCH_TEXT"){
+   if(action.type === "SET_SEARCH_TEXT"){
      return action.value;
    }
    return state;
  }
 
  function currentUserSort(state = "first_name", action){
-   if(action.value === ""){
+   if(action.type === "SET_CURRENT_USER_SORT"){
      return action.value;
    }
    return state;
  }
 
  function videoScale(state = 1, action){
-   if(action.value === "SET_VIDEO_SCALE"){
+   if(action.type === "SET_VIDEO_SCALE"){
      return action.value;
    }
    return state;

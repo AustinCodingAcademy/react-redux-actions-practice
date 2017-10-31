@@ -39,7 +39,7 @@ export function setCurrentUserSort(sort){
 
 export function setSearchText(txt){
   return {
-    type:"SET_SPECIAL_TEXT",
+    type:"SET_SEARCH_TEXT",
     value:txt
   }
 }
