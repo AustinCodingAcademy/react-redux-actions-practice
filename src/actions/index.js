@@ -6,7 +6,7 @@ export function increaseCounter(){
 
 export function decreaseCounter(){
   return {
-    type:"INCREASE_COUNTER"
+    type:"DECREASE_COUNTER"
   }
 }
 
