@@ -25,7 +25,7 @@ function users(state =[], action){
 
 function specialText(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
-    return action.value;
+    return [...state,action.value];
   }
   return state;
 }
@@ -36,48 +36,55 @@ function currentCity(state = "", action){
 
 function searchText(state = "", action){
   if(action.type === "SET_SEARCH_TEXT"){
-    return action.value;
+    return [...state,action.value];
   }
   return state;
 }
 
 function currentTemp(state = "", action){
   if(action.type === "SET_TEMP"){
-    return action.value;
+    return [...state,action.value];
   }
   return state;
 }
 
 function isLoading(state = false, action){
   if(action.type === "SET_IS_LOADING"){
-    return action.value;
+    return [...state,action.value];
   }
   return state;
 }
 
 function videoURL(state = "", action){
   if(action.type === "SET_VIDEO_URL"){
-    return action.value;
+    return [...state,action.value];
   }
   return state;
 }
 
 function currentUserSort(state = "", action){
   if(action.type === "SET_CURRENT_USER_SORT"){
-    return action.value;
+    return [...state,action.value];
   }
   return state;
 }
 
 function videoScale(state = 1, action){
   if(action.type === "SET_VIDEO_SCALE") {
-    return action.value;
+    return [...state,action.value];
   }
   return state;  
 }
 
 const rootReducer = combineReducers({
-  
-
+  currentCount,
+  users,
+  currentCity,
+  currentTemp,
+  currentUserSort,
+  videoScale,
+  videoURL,
+  isLoading,
+  searchText,
  });
  export default rootReducer;
