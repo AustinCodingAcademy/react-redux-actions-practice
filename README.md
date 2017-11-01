@@ -1,5 +1,5 @@
 # Make sure to do one thing at a time, save and refresh to check for errors
-
+ 
 ###  Reducers
   * Create Reducers in reducers/index.js
   * Look at state.js and create a reducer for each piece of state
@@ -70,7 +70,7 @@
   * import createStore from redux
   * import reducers from reducers
   * create the store
-  * export the store
+  * export the store 
 
 ### Provide store to components
   * In index.js
