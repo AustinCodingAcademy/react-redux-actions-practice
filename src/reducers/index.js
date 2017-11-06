@@ -57,3 +57,39 @@ function isLoading(state = false, action){
   }
   return state;
 }
+
+function videoURL(state = "", action){
+  if(action.type === "SET_VIDEO_URL"){
+    return action.value;
+  }
+  return state;
+}
+
+function currentUserSort(state = "", action){
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
+  return state;
+}
+
+function videoScale(state = "", action){
+  if(action.type === "SET_VIDEO_SCALE"){
+    return action.value;
+  }
+  return state;
+}
+
+var reducerFunction = {
+  currentCount,
+  users,
+  specialText,
+  videoScale,
+  currentUserSort,
+  isLoading,
+  videoURL,
+  currentCity,
+  currentTemp,
+  searchText
+}
+
+export default combineReducers(reducerfunction);
