@@ -1,3 +1,5 @@
+import { increaseCounter } from "../actions";
+import { decreaseCounter } from "../actions";
 import { connect } from 'react-redux';
 import {setSpecialText} from "../actions";
 import CounterButton from "../components/CityDropDown";
@@ -16,6 +18,6 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-var label = connect(mapDispatchToProps);
-var CityDropDownContainer = label(CityDropDown);
-export default CityDropDownContainer;
+var label = connect(null, mapDispatchToProps);
+var CounterButtonContainer = label(CounterButton);
+export default CounterButtonContainer;
