@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ModalContainer from "../components/ModalContainer";
+import Modal from "../components/Modal";
 import { setIsLoading } from "../actions";
 
 
