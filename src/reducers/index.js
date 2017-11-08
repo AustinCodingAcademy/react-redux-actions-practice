@@ -76,4 +76,17 @@ function videoScale(state=0, action) {
   return state;
 }
 
+const rootReducers = combineReducers({
+  currentCount,
+  specialText,
+  currentCity,
+  users,
+  currentTemp,
+  isLoading,
+  videoURL,
+  searchText,
+  currentUserSort,
+  videoScale
+});
+
 export default rootReducers;
