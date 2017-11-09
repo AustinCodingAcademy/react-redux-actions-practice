@@ -9,8 +9,8 @@ function mapStateToProps(state){
   return {
     users: state.users,
     firstNameFilter: state.searchText,
-    sortOn: currentUserSort
+    sortOn: state.currentUserSort
   }
 }
 
-export default connect(mapStateToProps)(users);
+export default connect(mapStateToProps)(Users);

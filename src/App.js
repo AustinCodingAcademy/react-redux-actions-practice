@@ -1,8 +1,8 @@
 import React from 'react';
 import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
+import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
 import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
+import SpecialTextBoxContainer from "./containers/SpecialTextContainer";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";
 import Users from "./components/Users";
@@ -23,7 +23,7 @@ function App() {
         <div className="container">
           <CounterButton />
           <br />
-          <SpecialTextBox />
+        <SpecialTextBoxContainer />
           <br />
           <UserButtons />
           <br />
@@ -44,7 +44,7 @@ function App() {
         <div className="container">
           <Counter />
           <br />
-          <SpecialText />
+        <SpecialTextContainer />
           <br />
           <CurrentCity />
           <br />
@@ -52,8 +52,8 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
+
+
         </div>
         <div className="container">
           <Users />
