@@ -1,3 +1,4 @@
+import {combineReducers} from "redux";
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
@@ -12,10 +13,10 @@ function currentCount(state=0, action){
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-
+    return [state, action.value]
   }
   if(action.type === "REMOVE_USER"){
-    
+    return state.slice(1);
   }
   return state;
 }
