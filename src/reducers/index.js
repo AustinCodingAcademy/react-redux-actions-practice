@@ -10,12 +10,19 @@ function currentCount(state=0, action){
   return state;
 }   
 
+function currentTemp(state=0, action){
+  if(action.type === "SET_TEMP"){
+    return action.value;
+  }
+  return state;
+}
+
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-
+    return [...state,action.value];
   }
   if(action.type === "REMOVE_USER"){
-    
+    return state.slice(1);
   }
   return state;
 }
@@ -31,6 +38,7 @@ function specialText(state = "", action){
 const rootReducer = combineReducers(
   {
     currentCount,
+    currentTemp,
   }
 );
 

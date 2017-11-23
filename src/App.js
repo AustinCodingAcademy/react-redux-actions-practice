@@ -4,9 +4,9 @@ import CounterContainer from "./containers/CounterContainer";
 import SpecialTextBox from "./components/SpecialTextBox";
 import SpecialText from "./components/SpecialText";
 import UserButtons from "./components/UserButtons";
-import Thermostat from "./components/Thermostat";
+import ThermostatContainer from "./containers/ThermostatContainer";
 import Users from "./components/Users";
-import ChangeTemperature from "./components/ChangeTemperature";
+import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
 import CurrentCity from "./components/CurrentCity";
@@ -29,7 +29,7 @@ function App() {
           <br />
           <CityDropDown />
            <br />
-          <ChangeTemperature />
+          <ChangeTemperatureContainer />
           <br />
           <SearchTextBox />
           <br />
@@ -48,7 +48,7 @@ function App() {
           <br />
           <CurrentCity />
           <br />
-          <Thermostat />
+          <ThermostatContainer />
           <br />
           <VideoPlayer />
           <br />

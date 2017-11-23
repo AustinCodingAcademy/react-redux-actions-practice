@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+
 
 export function increaseCounter(){
   return {
@@ -10,6 +10,13 @@ export function decreaseCounter(){
   return {
     type:"DECREASE_COUNTER"
   };
+}
+
+export function setTemp(temp){
+  return {
+    type: "SET_TEMP",
+    value:temp
+  }
 }
 
 export function setSpecialText(txt){
