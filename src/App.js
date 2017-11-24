@@ -1,21 +1,21 @@
 import React from "react";
 import CounterButtonContainer from "./containers/CounterButtonContainer";
 import CounterContainer from "./containers/CounterContainer";
-import SpecialTextBox from "./components/SpecialTextBox";
-import SpecialText from "./components/SpecialText";
-import UserButtons from "./components/UserButtons";
+import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
+import SpecialTextContainer from "./containers/SpecialTextContainer";
+import UserButtonsContainer from "./containers/UserButtonsContainer";
 import ThermostatContainer from "./containers/ThermostatContainer";
-import Users from "./components/Users";
+import UsersContainer from "./containers/UsersContainer";
 import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import VideoPlayerContainer from "./containers/VideoPlayerContainer";
+import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
+import CurrentCityContainer from "./containers/CurrentCityContainer";
+import CityDropDownContainer from "./containers/CityDropDownContainer";
+import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
+import SortUsersContainer from "./containers/SortUsersContainer";
+import ScaleVideoContainer from "./containers/ScaleVideoContainer";
+import ModalContainer from "./containers/ModalContainer";
+import ShowModalContainer from "./containers/ShowModalContainer";
 
 function App() {
   return (
@@ -23,42 +23,42 @@ function App() {
         <div className="container">
           <CounterButtonContainer />
           <br />
-          <SpecialTextBox />
+          <SpecialTextBoxContainer />
           <br />
-          <UserButtons />
+          <UserButtonsContainer />
           <br />
-          <CityDropDown />
+          <CityDropDownContainer />
            <br />
           <ChangeTemperatureContainer />
           <br />
-          <SearchTextBox />
+          <SearchTextBoxContainer />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
-          <ScaleVideo />
+          <ScaleVideoContainer />
           <br />
-          <ShowModal />
+          <ShowModalContainer />
         </div>
         <div className="container">
           <CounterContainer />
           <br />
-          <SpecialText />
+          <SpecialTextContainer />
           <br />
-          <CurrentCity />
+          <CurrentCityContainer />
           <br />
           <ThermostatContainer />
           <br />
-          <VideoPlayer />
+          <VideoPlayerContainer />
           <br />
           
           
         </div>
         <div className="container">
-          <Users />
+          <UsersContainer />
         </div>
-        <Modal />
+        <ModalContainer />
       </div>
   );
 }

@@ -8,8 +8,8 @@ function mapDispatchToProps(dispatch) {
             let action = addUser(user);
             dispatch(action);
         },
-        remove:function(){
-            let action = removeUser();
+        remove:function(user){
+            let action = removeUser(user);
             dispatch(action);
         }
     }

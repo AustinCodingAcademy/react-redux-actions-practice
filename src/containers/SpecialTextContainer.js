@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setCurrentUser, setSpecialText} from "../actions";
+import {setSpecialText} from "../actions";
 import SpecialText from "../components/SpecialText";
 
 
