@@ -76,3 +76,4 @@ export function setVideoScale(scale) {
     type: "SET_VIDEO_SCALE",
     value: scale
   }
+}
