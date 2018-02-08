@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import state from "../state";
-import CurrentCity from "../components/CurrentCity";
+import Counter from "../components/Counter";
 
 
 function mapStateToProps(state){
@@ -9,4 +9,4 @@ function mapStateToProps(state){
    }
   }
 
-export default connect(mapStateToProps, null)(CurrentCity);
+export default connect(mapStateToProps, null)(Counter);

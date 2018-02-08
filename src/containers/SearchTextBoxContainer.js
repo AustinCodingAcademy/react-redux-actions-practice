@@ -12,4 +12,4 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-export default connect(null,mapDispatchToProps)(SearchTextBox);
+export default connect(null, mapDispatchToProps)(SearchTextBox);

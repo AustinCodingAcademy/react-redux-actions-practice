@@ -4,9 +4,10 @@ import state from "../state";
 
 
 function mapStateToProps(state){
-  return {
-   scale: state.videoScale,
-   URL: state.videoURL
+    return {
+     scale: state.videoScale,
+     URL: state.videoURL
+  }
 }
 
-export default connect(null,mapDispatchToProps)(VideoPlayer);
+export default connect(mapStateToProps, null)(VideoPlayer);
