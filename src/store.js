@@ -1,7 +1,7 @@
-import {createStore} from 'redux';
+import { createStore } from 'redux';
 import state from "./state";
-import reducers from "./reducers";
+import allReducers from "./reducers";
 
-var store = createStore(reducers,state);
+const store = createStore(allReducers,state);
 
 export default store;
