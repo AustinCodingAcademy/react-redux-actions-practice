@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {setIsLoading} from "../actions";
 import ShowModal from "../components/ShowModal";
 
 
 function mapDispatchToProps(dispatch){
   return {
-   set:function(isLoading){
+   setIsLoading:function(isLoading){
      let action = setIsLoading(isLoading);
      dispatch(action);
    }

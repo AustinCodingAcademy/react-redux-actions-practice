@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {increaseCounter, decreaseCounter} from "../actions";
 import CounterButton from "../components/CounterButton";
 
 

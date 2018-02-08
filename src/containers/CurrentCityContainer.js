@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import state from "../state";
 import CurrentCity from "../components/CurrentCity";
 
 
@@ -9,4 +9,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(CurrentCity);
+export default connect(mapStateToProps, null)(CurrentCity);

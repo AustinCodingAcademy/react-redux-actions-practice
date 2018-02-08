@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import state from "../state";
 import Thermostat from "../components/Thermostat";
 
 

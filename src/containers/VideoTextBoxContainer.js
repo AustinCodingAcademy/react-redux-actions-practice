@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {setVideoURL} from "../actions";
 import VideoTextBox from "../components/VideoTextBox";
 
 

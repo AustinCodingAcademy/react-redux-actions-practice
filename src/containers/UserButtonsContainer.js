@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {addUser, removeUser} from "../actions";
 import UserButtons from "../components/UserButtons";
 
 

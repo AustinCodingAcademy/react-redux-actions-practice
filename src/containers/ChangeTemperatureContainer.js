@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {setTemp} from "../actions";
 import ChangeTemperature from "../components/ChangeTemperature";
 
 

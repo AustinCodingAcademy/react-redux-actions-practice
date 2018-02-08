@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {setVideoScale} from "../actions";
 import ScaleVideo from "../components/ScaleVideo";
 
 

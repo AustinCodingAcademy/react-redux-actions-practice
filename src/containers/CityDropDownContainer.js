@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {setCurrentCity} from "../actions";
 import CityDropDown from "../components/CityDropDown";
 
 

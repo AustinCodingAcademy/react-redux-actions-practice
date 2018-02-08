@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import {setCurrentUserSort} from "../actions";
 import SortUsers from "../components/SortUsers";
 
 

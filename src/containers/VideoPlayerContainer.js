@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
 import VideoPlayer from "../components/VideoPlayer";
 import state from "../state";
 
