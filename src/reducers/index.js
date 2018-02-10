@@ -54,6 +54,7 @@ const currentTemp = (state = 0, action) => {
 
 const isLoading = (state = false, action) => {
   if(action.type === "SET_IS_LOADING"){
+    console.log(action.value);
     return action.value;
   }
   return state;

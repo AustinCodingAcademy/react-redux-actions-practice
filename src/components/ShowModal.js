@@ -4,7 +4,7 @@ function ShowModal(props) {
   return (
       <div>
         <button onClick={
-          ()=>{
+          ()=> {
             if(props.setIsLoading){
               props.setIsLoading(true);
             }

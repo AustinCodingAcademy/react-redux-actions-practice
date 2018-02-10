@@ -19,6 +19,7 @@ function LoadingModal(props) {
       style={customStyles}
       contentLabel="Example Modal"
     >
+      {console.log(props.isLoading)}
       <button onClick={
         ()=>{
           props.setIsLoading(false);
