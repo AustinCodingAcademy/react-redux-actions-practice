@@ -10,3 +10,17 @@ body {
   border: solid black 2px;
   float:left;
 }
+
+.example {
+  color: #999;
+  font-size: 12px;
+}
+
+.example b {
+  text-decoration: underline;
+  color: #777;
+}
+
+.example i {
+  color: #af5d5d;
+}

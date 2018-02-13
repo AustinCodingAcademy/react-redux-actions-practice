@@ -10,7 +10,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-   set: function(isLoading){
+   setIsLoading: function(isLoading){
      let action = setIsLoading(isLoading);
      dispatch(action);
    }

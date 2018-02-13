@@ -33,7 +33,7 @@ function searchText(state = "", action) {
 
 function currentTemp(state = 0, action) {
   if(action.type === "SET_TEMP") {
-    return action.value;
+    return Number(action.value);
   }
   return state;
 }
@@ -68,10 +68,10 @@ function videoScale(state = 1, action) {
 
 function users(state = [], action) {
   if(action.type === "ADD_USER") {
-    return state.slice(1);
+    return [...state, action.value];
   }
   if(action.type === "REMOVE_USER") {
-    return [...state, action.value];
+    return state.slice(1);
   }
   return state;
 }

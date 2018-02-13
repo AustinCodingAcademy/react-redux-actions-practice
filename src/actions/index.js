@@ -6,7 +6,7 @@ export function increaseCounter(){
 
 export function decreaseCounter() {
   return {
-    type: "DECREASE_COUTNER"
+    type:"DECREASE_COUNTER"
   }
 }
 
@@ -19,8 +19,8 @@ export function setSpecialText(txt){
 
 export function addUser(user){
   return {
-    type:"ADD_USER",
-    value:user
+    type: "ADD_USER",
+    value: user
   }
 }
 
