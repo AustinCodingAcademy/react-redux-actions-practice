@@ -1,12 +1,11 @@
-import { connect } from 'react-redux';
-import {setCurrentUser} from "../actions";
-import SpecialText from "../components/SpecialText";
+import { connect } from 'react-redux';VideoPlayer
+import VideoPlayer from "../components/VideoPlayer";
 
-//map a prop called text to the state specialText
 function mapStateToProps(state){
   return {
-    text: state.specialText
+    URL: state.videoURL,
+    scale: state.videoScale
   }
 }
 
-export default connect(mapStateToProps)(SpecialText);
+export default connect(mapStateToProps)(VideoPlayer);
