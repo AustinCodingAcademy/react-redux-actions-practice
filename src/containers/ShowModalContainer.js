@@ -10,8 +10,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch){
   return {
-    setIsLoading:function(){
-      let action = setIsLoading()
+    setIsLoading:function(isLoading){
+      let action = setIsLoading(isLoading)
       dispatch(action);
     }
   }
