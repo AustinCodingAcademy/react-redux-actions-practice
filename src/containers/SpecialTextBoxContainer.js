@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
-import {setSpecialText} from "../actions";
+import { setSpecialText } from "../actions";
 import SpecialTextBox from "../components/SpecialTextBox";
-
 
 function mapDispatchToProps(dispatch){
   return {

@@ -1,56 +1,56 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
-import UserButtons from "./components/UserButtons";
-import Thermostat from "./components/Thermostat";
+import CounterButtonContainer from "./containers/CounterButtonContainer";
+import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
+import CounterContainer from "./containers/CounterContainer";
+import SpecialTextContainer from "./containers/SpecialTextContainer";
+import UserButtonsContainer from "./containers/UserButtonsContainer";
+import ThermostatContainer from "./containers/ThermostatContainer";
 import UsersContainer from "./containers/UsersContainer";
-import ChangeTemperature from "./components/ChangeTemperature";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
+import VideoPlayerContainer from "./containers/VideoPlayerContainer";
+import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
+import CurrentCityContainer from "./containers/CurrentCityContainer";
+import CityDropDownContainer from "./containers/CityDropDownContainer";
+import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
+import SortUsersContainer from "./containers/SortUsersContainer";
+import ScaleVideoContainer from "./containers/ScaleVideoContainer";
+import ModalContainer from "./containers/ModalContainer";
+import ShowModalContainer from "./containers/ShowModalContainer";
 
 function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
-          <SpecialTextBox />
+          <SpecialTextBoxContainer />
           <br />
-          <UserButtons />
+          <UserButtonsContainer />
           <br />
-          <CityDropDown />
+          <CityDropDownContainer />
            <br />
-          <ChangeTemperature />
+          <ChangeTemperatureContainer />
           <br />
-          <SearchTextBox />
+          <SearchTextBoxContainer />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
-          <ScaleVideo />
+          <ScaleVideoContainer />
           <br />
-          <ShowModal />
+          <ShowModalContainer />
         </div>
         <div className="container">
-          <Counter />
+          <CounterContainer />
           <br />
-          <SpecialText />
+          <SpecialTextContainer />
           <br />
-          <CurrentCity />
+          <CurrentCityContainer />
           <br />
-          <Thermostat />
+          <ThermostatContainer />
           <br />
-          <VideoPlayer />
+          <VideoPlayerContainer />
           <br />
           
           
@@ -58,7 +58,7 @@ function App() {
         <div className="container">
           <UsersContainer />
         </div>
-        <Modal />
+        <ModalContainer />
       </div>
   );
 }

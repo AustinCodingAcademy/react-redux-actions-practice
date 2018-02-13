@@ -1,4 +1,4 @@
-import { connect } from 'react-redux';VideoPlayer
+import { connect } from 'react-redux';
 import VideoPlayer from "../components/VideoPlayer";
 
 function mapStateToProps(state){

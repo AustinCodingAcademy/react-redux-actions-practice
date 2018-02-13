@@ -1,4 +1,4 @@
-import {CombineReducers, combineReducers} from 'redux';
+import {combineReducers} from 'redux';
 
 function currentCount(state = 0, action){
   if(action.type === "INCREASE_COUNTER") {
