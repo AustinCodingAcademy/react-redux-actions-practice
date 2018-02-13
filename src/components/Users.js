@@ -11,8 +11,8 @@ function Users(props) {
       (props.firstNameFilter && 
       u.first_name.indexOf(props.firstNameFilter) > -1);
     })
-    usersDivs = usersDivs.map(function(u){
-      return <div>{u.first_name} {u.last_name}</div>
+    usersDivs = usersDivs.map(function(u, index){
+      return <div key={index}>{u.first_name} {u.last_name}</div>
     })
   }
   return (
@@ -22,4 +22,5 @@ function Users(props) {
       </div>
   );
 }
+
 export default Users;

@@ -3,8 +3,9 @@ import React from 'react';
 function Counter(props) {
   return (
       <div>
-        Counter: {props.count}
+        Counter: {props.currentCount}
       </div>
   );
 }
+
 export default Counter;

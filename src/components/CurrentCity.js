@@ -7,4 +7,5 @@ function CurrentCity(props) {
       </div>
   );
 }
+
 export default CurrentCity;

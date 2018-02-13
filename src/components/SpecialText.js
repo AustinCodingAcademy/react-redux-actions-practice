@@ -7,4 +7,5 @@ function SpecialText(props) {
       </div>
   );
 }
+
 export default SpecialText;

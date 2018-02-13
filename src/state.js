@@ -3,7 +3,7 @@ export default{
   specialText:"",
   currentCity:"",
   searchText:"",
-  currentTemp: 0,
+  currentTemp: 50,
   isLoading: false,
   videoURL: "",
   currentUserSort:"first_name",
@@ -73,7 +73,7 @@ export default{
     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"
   },
   {
-    "id": 7,
+    "id": 8,
     "first_name": "barney",
     "last_name": "stinson",
     "address": "2640 Primrose Lane, Longview, TX 75604",
