@@ -60,7 +60,7 @@ export function setVideoURL(URL){
 
 export function setVideoScale(scale){
   return {
-    type:"SET_VIDEO_URL",
+    type:"SET_VIDEO_SCALE",
     value:scale
   }
 }
