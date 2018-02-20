@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 function CounterButton(props) {
   return (
@@ -20,4 +21,5 @@ function CounterButton(props) {
       </div>
   );
 }
+
 export default CounterButton;

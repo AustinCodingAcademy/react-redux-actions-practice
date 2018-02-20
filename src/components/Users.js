@@ -7,8 +7,8 @@ function Users(props) {
       return a[props.sortOn] > b[props.sortOn];
     });
     usersDivs = sorted.filter(function(u){
-      return !props.firstNameFilter || 
-      (props.firstNameFilter && 
+      return !props.firstNameFilter ||
+      (props.firstNameFilter &&
       u.first_name.indexOf(props.firstNameFilter) > -1);
     })
     usersDivs = usersDivs.map(function(u){
@@ -18,8 +18,10 @@ function Users(props) {
   return (
       <div>
         <h1>Users</h1>
+        {/*console.log("Users: ",props.users)*/}
        {usersDivs}
       </div>
   );
 }
+
 export default Users;

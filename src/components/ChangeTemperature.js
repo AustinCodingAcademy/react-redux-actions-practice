@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function ChangeTemperature(props){
     return(
@@ -6,8 +6,9 @@ function ChangeTemperature(props){
         <br/>
         <label>Change Temp -  Enter a value from 1-100<br/>
           <input onChange={(e)=>{
-            if(props.set)
+            if(props.set){
               props.set(e.target.value);
+            }
           }} type="number" min="0" max="100" />
         </label>
       </div>
