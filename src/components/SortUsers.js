@@ -3,11 +3,12 @@ import React from 'react';
 function SortUsers(props) {
   return (
       <div>
-        Sort Users On: 
+        Sort Users On:
         <select onChange={
           (e)=>{
             if(props.set){
               props.set(e.target.value);
+              console.log("Name to sort by: ",e.target.value);
             }
           }
         }>

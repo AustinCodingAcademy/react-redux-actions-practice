@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 function CityDropDown(props) {
   return (
@@ -23,7 +22,4 @@ function CityDropDown(props) {
       </div>
   );
 }
-
-
-
 export default CityDropDown;

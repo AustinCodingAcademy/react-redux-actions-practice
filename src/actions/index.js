@@ -64,3 +64,17 @@ export function setVideoScale(scale){
     value:scale
   }
 }
+
+export function setSearchText(text){
+  return {
+    type:"SET_SEARCH_TEXT",
+    value:text
+  }
+}
+
+export function setCurrentUserSort(sort){
+  return {
+    type:"SET_CURRENT_USER_SORT",
+    value:sort
+  }
+}

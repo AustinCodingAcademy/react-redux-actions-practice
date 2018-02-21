@@ -62,8 +62,22 @@ function videoScale(state="", action){
   return state;
 }
 
+function currentUserSort(state="", action){
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
+  return state;
+}
+
+function searchText(state="", action){
+  if(action.type === "SET_SEARCH_TEXT"){
+    return action.value;
+  }
+  return state;
+}
+
 const rootReducer = combineReducers({
-  currentCount, users, specialText, currentCity, currentTemp, isLoading, videoURL
+  currentCount, users, specialText, currentCity, currentTemp, isLoading, videoURL, videoScale, currentUserSort, searchText
 });
 
 export default rootReducer;

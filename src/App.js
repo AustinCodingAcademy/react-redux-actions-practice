@@ -13,8 +13,8 @@ import ModalContainer from "./containers/ModalContainer";
 import ShowModalContainer from "./containers/ShowModalContainer";
 import VideoPlayerContainer from "./containers/VideoPlayerContainer";
 import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
+import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
+import SortUsersContainer from "./containers/SortUsersContainer";
 import ScaleVideoContainer from "./containers/ScaleVideoContainer";
 
 function App() {
@@ -31,11 +31,11 @@ function App() {
            <br />
           <ChangeTemperatureContainer />
           <br />
-          <SearchTextBox />
+          <SearchTextBoxContainer />
           <br />
           <VideoTextBoxContainer />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
           <ScaleVideoContainer />
           <br />
