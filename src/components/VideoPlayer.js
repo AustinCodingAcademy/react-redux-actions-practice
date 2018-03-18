@@ -8,7 +8,7 @@ function VideoPlayer(props) {
     height = 200 * props.scale;
   }
   return (
-      <div><iframe title="YouTube video player"  type="text/html" 
+      <div><iframe title="YouTube video player"  type="text/html"
       width={width} height={height} src={props.URL}
       frameBorder="0" allowFullScreen></iframe></div>
   );

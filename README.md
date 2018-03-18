@@ -63,7 +63,8 @@
     * value = sort
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
-    * value = scale
+    * value =
+
 ### Create Store
   * Create a store.js file
   * Import state from state.js
@@ -90,12 +91,10 @@
   * This is where you should do the connecting
   * Export the container
 
-
-
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers
   * Import the appropriate component into the container
-  * Create mapStateToProps function 
+  * Create mapStateToProps function
   * Call the connect function
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
