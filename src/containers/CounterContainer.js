@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 import {setCurrentUser} from "../actions";
-import SpecialText from "../components/SpecialText";
+import Counter from "../components/Counter";
 
 
 function mapStateToProps(state){
   return {
-    text: state.specialText
+    count: state.currentCount
   }
 }
 
-export default connect(mapStateToProps)(SpecialText);
+export default connect(mapStateToProps)(Counter);

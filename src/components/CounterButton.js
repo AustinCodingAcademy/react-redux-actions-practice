@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function CounterButton(props) {
   return (
@@ -12,7 +12,7 @@ function CounterButton(props) {
         }>Increase Counter By One</button>
         <button onClick={
           ()=>{
-            if(props.increase){
+            if(props.decrease){
               props.decrease();
             }
           }
@@ -20,4 +20,6 @@ function CounterButton(props) {
       </div>
   );
 }
+
 export default CounterButton;
+
