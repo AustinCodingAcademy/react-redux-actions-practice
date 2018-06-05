@@ -1,6 +1,6 @@
 export function increaseCounter(){
-  return {
-    type:"INCREASE_COUNTER"
+  return {//the object returned here is called the Action
+    type:"INCREASE_COUNTER"//you MUST have a type, must be a string that describes the action, use uppercase with underscores as convention. This is so we can text for it later.
   }
 }
 
