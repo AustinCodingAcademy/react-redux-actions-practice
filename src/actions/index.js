@@ -1,6 +1,15 @@
+import { combineReducers } from "redux";
+import { currentCount } from "../reducers";
+
 export function increaseCounter(){
   return {
     type:"INCREASE_COUNTER"
+  }
+}
+
+export function decreaseCounter(){
+  return {
+    type:"DECREASE_COUNTER"
   }
 }
 
@@ -22,3 +31,4 @@ export function removeUser(){
     type:"REMOVE_USER"
   }
 }
+
