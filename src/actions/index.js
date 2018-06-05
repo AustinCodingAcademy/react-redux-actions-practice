@@ -18,6 +18,13 @@ export function setSpecialText(text){
   }
 }
 
+export function setCurrentCity(city){
+  return {
+    type:"SET_CURRENT_CITY",
+    value: city
+  }
+}
+
 export function addUser(user){
   return {
     type:"ADD_USER",

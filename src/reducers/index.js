@@ -11,6 +11,13 @@ function currentCount(state=0, action){
   return state;
 }   
 
+function currentCity(state = "", action){
+  if(action.type === "SET_CURRENT_CITY"){
+    return action.value;
+  }
+  return state;
+}
+
 function users(state =[], action){
   if(action.type === "ADD_USER"){
 
@@ -28,12 +35,6 @@ function specialText(state = "", action){
   return state;
 }
 
-function currentCity(state = "", action){
-  if(action.type === "SET_CURRENT_CITY"){
-    return action.value;
-  }
-  return state;
-}
 
 
 
