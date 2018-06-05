@@ -6,6 +6,7 @@ function currentCount(state=0, action){
     return state + 1;
   }
   if(action.type === "DECREASE_COUNTER"){
+    return state - 1;
   }
   return state;
 }   
@@ -28,8 +29,8 @@ function specialText(state = "", action){
 }
 
 const rootReducer = combineReducers({
-  currentCount
-
+  currentCount, specialText
 })
 
-export default rootReducer
+export default rootReducer;
+

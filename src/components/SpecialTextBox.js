@@ -15,12 +15,12 @@ function SpecialTextBox(props) {
   );
 }
 
-function mapDispatchToProps(dispatch){
-  return {
-    set:function(txt){
-      let action = setSpecialText(txt)
-      dispatch(action);
-    }
-  }
-}
+// function mapDispatchToProps(dispatch){
+//   return {
+//     set:function(txt){
+//       let action = setSpecialText(txt)
+//       dispatch(action);
+//     }
+//   }
+// }
 export default (SpecialTextBox);
