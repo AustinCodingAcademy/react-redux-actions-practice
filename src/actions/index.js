@@ -25,6 +25,13 @@ export function setCurrentCity(city){
   }
 }
 
+export function setTemp(temp){
+  return {
+    type:"SET_TEMP",
+    value: temp
+  }
+}
+
 export function addUser(user){
   return {
     type:"ADD_USER",
