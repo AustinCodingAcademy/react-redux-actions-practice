@@ -1,20 +1,27 @@
+import { combineReducers } from "redux";
+
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    
+    return state + 1; 
   }
   if(action.type === "DECREASE_COUNTER"){
-    
+    return state - 1;
   }
   return state;
 }   
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-
+    let addUserArray = [...state];
+    addUserArray.push(action.value);
+    return addUserArray;
   }
   if(action.type === "REMOVE_USER"){
-    
+    //slice
+    let removeUserArray = [...state];
+    removeUserArray.slice(action.value);
+    return removeUserArray;
   }
   return state;
 }
@@ -26,3 +33,9 @@ function specialText(state = "", action){
   }
   return state;
 }
+
+const rootReducer = combineReducers({
+  currentCount
+});
+
+export default rootReducer;
