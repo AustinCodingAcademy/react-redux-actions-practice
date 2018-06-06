@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+
 
 function Users(props) {
   var usersDivs = null;
@@ -24,15 +24,4 @@ function Users(props) {
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    users: state.users,
-    firstNameFilter: state.searchText,
-    sortOn: state.currentUserSort
-}
-}
-// const mapStateToProps = state => ({ orders : state.orders })
-  
-
-  
-export default connect(mapStateToProps)(Users);
+export default Users

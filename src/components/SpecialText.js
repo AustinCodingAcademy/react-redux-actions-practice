@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+
 
 function SpecialText(props) {
   return (
@@ -9,15 +9,6 @@ function SpecialText(props) {
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    text: state.specialText
-}
-}
-// const mapStateToProps = state => ({ orders : state.orders })
-  
 
-  
-export default connect(mapStateToProps)(SpecialText);
 
-// export default SpecialText;
+export default SpecialText;
