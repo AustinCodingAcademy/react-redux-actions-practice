@@ -1,16 +1,16 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
+import CounterButtonContainer from "./containers/CounterButtonContainer";
+import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
+import CounterContainer from "./containers/CounterContainer";
+import SpecialTextContainer from "./containers/SpecialTextContainer";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";
 import Users from "./components/Users";
 import ChangeTemperature from "./components/ChangeTemperature";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
+import CurrentCityContainer from "./containers/CurrentCityContainer";
+import CityDropDownContainer from "./containers/CityDropDownContainer";
 import SearchTextBox from "./components/SearchTextBox";
 import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
@@ -21,13 +21,13 @@ function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
-          <SpecialTextBox />
+          <SpecialTextBoxContainer />
           <br />
           <UserButtons />
           <br />
-          <CityDropDown />
+          <CityDropDownContainer />
            <br />
           <ChangeTemperature />
           <br />
@@ -42,11 +42,11 @@ function App() {
           <ShowModal />
         </div>
         <div className="container">
-          <Counter />
+          <CounterContainer />
           <br />
-          <SpecialText />
+          <SpecialTextContainer />
           <br />
-          <CurrentCity />
+          <CurrentCityContainer />
           <br />
           <Thermostat />
           <br />
