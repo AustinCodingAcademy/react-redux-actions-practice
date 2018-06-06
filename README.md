@@ -31,7 +31,7 @@
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
 ### Create Actions in actions/index.js
-  * increaseCounter()
+  <!-- * increaseCounter()
     * type = "INCREASE_COUNTER"
   * decreaseCounter()
     * type = "DECREASE_COUNTER"
@@ -63,7 +63,7 @@
     * value = sort
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
-    * value = scale
+    * value = scale -->
 ### Create Store
   * Create a store.js file
   * Import state from state.js
