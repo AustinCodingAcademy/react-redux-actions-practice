@@ -44,9 +44,18 @@ function specialText(state = "", action){
   return state;
 }
 
+function searchText(state = "", action){
+  if(action.type === "SET_SEARCH_TEXT"){
+    return action.value;
+  }
+  return state;
+}
+
+
+
 
 const rootReducer = combineReducers({
-  currentCount, specialText, currentCity, currentTemp, users
+  currentCount, specialText, currentCity, currentTemp, users, searchText
 })
 
 export default rootReducer;
