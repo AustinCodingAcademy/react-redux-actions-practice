@@ -12,7 +12,7 @@ import VideoTextBox from "./components/VideoTextBox";
 import CurrentCityContainer from "./containers/CurrentCityContainer";
 import CityDropDownContainer from "./containers/CityDropDownContainer";
 import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
-import SortUsers from "./components/SortUsers";
+import SortUsersContainer from "./containers/SortUsersContainer";
 import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
@@ -35,7 +35,7 @@ function App() {
           <br />
           <VideoTextBox />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
           <ScaleVideo />
           <br />`

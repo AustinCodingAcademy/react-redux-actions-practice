@@ -51,3 +51,10 @@ export function setSearchText(text){
   }
 }
 
+export function setCurrentUserSort(sort){
+  return {
+    type: "SET_CURRENT_USER_SORT",
+    value: sort
+  }
+}
+

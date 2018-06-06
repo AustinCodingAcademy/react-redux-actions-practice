@@ -51,11 +51,16 @@ function searchText(state = "", action){
   return state;
 }
 
-
+function currentUserSort(state = "", action){
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
+  return state;
+}
 
 
 const rootReducer = combineReducers({
-  currentCount, specialText, currentCity, currentTemp, users, searchText
+  currentCount, specialText, currentCity, currentTemp, users, searchText, currentUserSort
 })
 
 export default rootReducer;
