@@ -23,4 +23,4 @@ function mapDispatchToProps(dispatch){
     }
   }
 }
-export default (SpecialTextBox);
+export default connect(null,mapDispatchToProps)(SpecialTextBox);

@@ -1,14 +1,14 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
+import CounterButtonContainer from "./containers/CounterButtonContainer";
 import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
+import CounterContainer from "./containers/CounterContainer";
 import SpecialText from "./components/SpecialText";
-import UserButtons from "./components/UserButtons";
+import UserButtonsContainer from "./containers/UserButtonsContainer";
 import Thermostat from "./components/Thermostat";
 import Users from "./components/Users";
 import ChangeTemperature from "./components/ChangeTemperature";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
+import VideoPlayerContainer from "./containers/VideoPlayerContainer";
+import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
 import CurrentCity from "./components/CurrentCity";
 import CityDropDown from "./components/CityDropDown";
 import SearchTextBox from "./components/SearchTextBox";
@@ -21,11 +21,11 @@ function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
           <SpecialTextBox />
           <br />
-          <UserButtons />
+          <UserButtonsContainer />
           <br />
           <CityDropDown />
            <br />
@@ -33,7 +33,7 @@ function App() {
           <br />
           <SearchTextBox />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
           <SortUsers />
           <br />
@@ -42,7 +42,7 @@ function App() {
           <ShowModal />
         </div>
         <div className="container">
-          <Counter />
+          <CounterContainer />
           <br />
           <SpecialText />
           <br />
@@ -50,7 +50,7 @@ function App() {
           <br />
           <Thermostat />
           <br />
-          <VideoPlayer />
+          <VideoPlayerContainer />
           <br />
           
           
