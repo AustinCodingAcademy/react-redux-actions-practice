@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 
 function Users(props) {
   var usersDivs = null;
@@ -22,4 +23,9 @@ function Users(props) {
       </div>
   );
 }
-export default Users;
+
+const msp = (state) => {return{users:state.users}}
+
+const UsersContainer = connect(msp)(Users)
+
+export default UsersContainer;
