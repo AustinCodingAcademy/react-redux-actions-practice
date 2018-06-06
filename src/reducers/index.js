@@ -24,6 +24,13 @@ function currentCity(state = "", action){
   return state;
 }
 
+function currentTemp(state = 0, action) {
+  if (action.type === "SET_TEMP") {
+    return action.value;
+  }
+  return state;
+}
+
 function searchText(state = "", action){
   if(action.type === "SET_SEARCH_TEXT"){
     return action.value;
@@ -46,6 +53,7 @@ function users(state =[], action){
 const rootReducer = combineReducers({
   currentCount,
   specialText,
-  currentCity
+  currentCity,
+  currentTemp
 });
 export default rootReducer;
