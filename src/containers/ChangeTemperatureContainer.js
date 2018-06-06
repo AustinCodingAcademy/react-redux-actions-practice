@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
 import {setTemp} from "../actions";
-import CityDropDown from "../components/CityDropDown";
+import ChangeTemperature from "../components/ChangeTemperature";
 
 
 function mapDispatchToProps(dispatch){
   return {
-   set:function(city){
-     let action = setCurrentCity(city);
+   set:function(temp){
+     let action = setTemp(temp);
      dispatch(action);
    }
   }
 }
 
-export default connect(null,mapDispatchToProps)(CityDropDown);
+export default connect(null,mapDispatchToProps)(ChangeTemperature);
