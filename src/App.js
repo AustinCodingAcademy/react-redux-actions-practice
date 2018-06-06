@@ -5,17 +5,17 @@ import CounterContainer from "./containers/CounterContainer";
 import SpecialTextContainer from "./containers/SpecialTextContainer";
 import UserButtons from "./components/UserButtons";
 import ThermostatContainer from "./containers/ThermostatContainer";
-import Users from "./components/Users";
+import UsersContainer from "./containers/UsersContainer";
 import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
+import VideoPlayerContainer from "./containers/VideoPlayerContainer";
+import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
 import CurrentCityContainer from "./containers/CurrentCityContainer";
 import CityDropDownContainer from "./containers/CityDropDownContainer";
 import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
-import SortUsers from "./components/SortUsers";
+import SortUsersContainer from "./containers/SortUsersContainer";
 import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import ModalContainer from "./containers/ModalContainer";
+import ShowModalContainer from "./containers/ShowModalContainer";
 
 function App() {
   return (
@@ -33,13 +33,13 @@ function App() {
           <br />
           <SearchTextBoxContainer />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
-          <SortUsers />
+          <SortUsersContainer />
           <br />
           <ScaleVideo />
           <br />
-          <ShowModal />
+          <ShowModalContainer />
         </div>
         <div className="container">
           <CounterContainer />
@@ -50,15 +50,15 @@ function App() {
           <br />
           <ThermostatContainer />
           <br />
-          <VideoPlayer />
+          <VideoPlayerContainer />
           <br />
           
           
         </div>
         <div className="container">
-          <Users />
+          <UsersContainer />
         </div>
-        <Modal />
+        <ModalContainer />
       </div>
   );
 }

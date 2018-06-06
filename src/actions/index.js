@@ -38,6 +38,27 @@ export function setSearchText(txt) {
   };
 }
 
+export function setCurrentUserSort(sort) {
+  return {
+    type: 'SET_CURRENT_USER_SORT',
+    value: sort,
+  };
+}
+
+export function setVideoURL(URL) {
+  return {
+    type: 'SET_VIDEO_URL',
+    value: URL,
+  }
+}
+
+export function setIsLoading(isLoading) {
+  return {
+    type: 'SET_IS_LOADING',
+    value: isLoading,
+  }
+}
+
 export function addUser(user) {
   return {
     type: 'ADD_USER',

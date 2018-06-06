@@ -38,6 +38,13 @@ function searchText(state = "", action){
   return state;
 }
 
+function currentUserSort(state = "", action) {
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
+  return state;  
+}
+
 function users(state =[], action){
   if(action.type === "ADD_USER"){
 
@@ -48,12 +55,29 @@ function users(state =[], action){
   return state;
 }
 
+function videoURL(state = "", action) {
+  if (action.type === "SET_VIDEO_URL") {
+    return action.value;
+  }
+  return state;
+}
 
+function isLoading(state = false, action) {
+  if (action.type === "SET_IS_LOADING") {
+    return action.value;
+  }
+  return state;
+}
 
 const rootReducer = combineReducers({
   currentCount,
   specialText,
   currentCity,
-  currentTemp
+  currentTemp,
+  searchText,
+  currentUserSort,
+  videoURL,
+  users,
+  isLoading
 });
 export default rootReducer;
