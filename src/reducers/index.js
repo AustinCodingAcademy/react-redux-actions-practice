@@ -26,7 +26,7 @@ function currentTemp(state = 0, action){
 }
 
 function users(state =[], action){
-  console.log("user");
+ 
   
   if(action.type === "ADD_USER"){    
    return [...state,action.value]
@@ -66,6 +66,7 @@ function isLoading(state = false, action){
 }
 
 function videoURL(state = "", action){
+  console.log(action.value);
   if(action.type === "SET_VIDEO_URL"){
     return action.value;
   }

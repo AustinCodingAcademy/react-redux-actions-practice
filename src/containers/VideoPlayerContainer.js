@@ -1,15 +1,13 @@
 import { connect } from 'react-redux';
-import {setVideoURL} from "../actions";
 import VideoPlayer from "../components/VideoPlayer";
 
 
-function mapDispatchToProps(dispatch){
+function mapStateToProps(state){
   return {
-   set:function(URL){
-     let action = setVideoURL(URL);
-     dispatch(action);
-   }
-  }
+    URL: state.videoURL,
+    scale: state.videoScale
+  }  
 }
 
-export default connect(null,mapDispatchToProps)(VideoPlayer);
+export default connect(mapStateToProps)(VideoPlayer);
+

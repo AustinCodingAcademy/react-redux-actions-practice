@@ -78,3 +78,4 @@ export function setVideoScale(scale){
     value: scale
   }
 }
+

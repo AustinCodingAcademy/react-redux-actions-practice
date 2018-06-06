@@ -1,10 +1,14 @@
 import React from 'react';
 
+//https://www.youtube.com/embed/t1Cp4djuo3Y    "https://www.youtube.com/embed/RETB7MkHxOI"
+
+
 function VideoPlayer(props) {
-  let width = 200;
+  console.log(props.URL)
+  let width = 300;
   let height = 200;
   if(props.scale){
-    width = 200 * props.scale;
+    width = 300 * props.scale;
     height = 200 * props.scale;
   }
   return (

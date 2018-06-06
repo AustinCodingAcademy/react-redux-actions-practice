@@ -11,7 +11,7 @@ function ScaleVideo(props) {
             }
           }
         }
-         type="range" min="1" max="10" step="1" />
+         type="range" min="1" max="2" step=".1" />
       </div>
   );
 }

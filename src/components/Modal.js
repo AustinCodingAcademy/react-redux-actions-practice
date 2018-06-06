@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+// import VideoPlayerContainer from "../containers/VideoPlayerContainer"
 
 const customStyles = {
   content : {
@@ -19,6 +20,7 @@ function LoadingModal(props) {
       style={customStyles}
       contentLabel="Example Modal"
     >
+    {/* <VideoPlayerContainer /> */}
       <button onClick={
         ()=>{
           props.setIsLoading(false);
