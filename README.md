@@ -1,16 +1,16 @@
 # Make sure to do one thing at a time, save and refresh to check for errors
 
 ###  Reducers
-  * Create Reducers in reducers/index.js
-  * Look at state.js and create a reducer for each piece of state
-  * Remember reducers take 2 parameters: `state`, and `action`
-  * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object
-  * Remember to return state if the reducer doesn't care about the action
-  * You will need to decide which reducer cares about which action type
-  * Combine reducers and export
+  <!-- * Create Reducers in reducers/index.js -->
+  <!-- * Look at state.js and create a reducer for each piece of state -->
+  <!-- * Remember reducers take 2 parameters: `state`, and `action` -->
+  <!-- * Remember to give state a default value appropriate for what type it is in the reducer. Number, string, array, object -->
+  <!-- * Remember to return state if the reducer doesn't care about the action -->
+  <!-- * You will need to decide which reducer cares about which action type -->
+  <!-- * Combine reducers and export -->
 
 ### Make these reducers
-  * currentCount
+  <!-- * currentCount
     * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
   * specialText
     * if "SET_SPECIAL_TEXT" should return the action value
@@ -29,7 +29,7 @@
   * currentUserSort
     * if "SET_CURRENT_USER_SORT" should return action value
   * videoScale
-    * if "SET_VIDEO_SCALE" should return action value
+    * if "SET_VIDEO_SCALE" should return action value -->
 ### Create Actions in actions/index.js
   <!-- * increaseCounter()
     * type = "INCREASE_COUNTER"
@@ -65,20 +65,20 @@
     * type = "SET_VIDEO_SCALE"
     * value = scale -->
 ### Create Store
-  * Create a store.js file
-  * Import state from state.js
-  * import createStore from redux
-  * import reducers from reducers
-  * create the store
-  * export the store
+  <!-- * Create a store.js file -->
+  <!-- * Import state from state.js -->
+  <!-- * import createStore from redux -->
+  <!-- * import reducers from reducers -->
+  <!-- * create the store -->
+  <!-- * export the store -->
 
 ### Provide store to components
-  * In index.js
-  * Import Provider from react-redux
-  * Import store from store.js
-  * Use Provider component to wrap App
-  * Make sure there is no whitespace between Provider and App
-  * Give Provider a prop “store” and the value of the store
+  <!-- * In index.js -->
+  <!-- * Import Provider from react-redux -->
+  <!-- * Import store from store.js -->
+  <!-- * Use Provider component to wrap App -->
+  <!-- * Make sure there is no whitespace between Provider and App -->
+  <!-- * Give Provider a prop “store” and the value of the store -->
 
 
 ### Containers
