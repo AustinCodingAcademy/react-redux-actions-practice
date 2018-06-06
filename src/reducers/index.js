@@ -62,6 +62,13 @@ function videoURL(state = "", action) {
   return state;
 }
 
+function videoScale(state = 1, action) {
+  if (action.type === "SET_VIDEO_SCALE") {
+    return action.value;
+  }
+  return state;
+}
+
 function isLoading(state = false, action) {
   if (action.type === "SET_IS_LOADING") {
     return action.value;
@@ -78,6 +85,7 @@ const rootReducer = combineReducers({
   currentUserSort,
   videoURL,
   users,
-  isLoading
+  isLoading,
+  videoScale
 });
 export default rootReducer;
