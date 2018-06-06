@@ -3,7 +3,7 @@ import CounterButtonContainer from "./containers/CounterButtonContainer";
 import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
 import CounterContainer from "./containers/CounterContainer";
 import SpecialTextContainer from "./containers/SpecialTextContainer";
-import UserButtons from "./components/UserButtons";
+import UserButtonsContainer from "./containers/UserButtonsContainer";
 import ThermostatContainer from "./containers/ThermostatContainer";
 import UsersContainer from "./containers/UsersContainer";
 import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
@@ -25,7 +25,7 @@ function App() {
           <br />
           <SpecialTextBoxContainer />
           <br />
-          <UserButtons />
+          <UserButtonsContainer />
           <br />
           <CityDropDownContainer />
            <br />
