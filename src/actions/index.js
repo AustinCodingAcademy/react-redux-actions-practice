@@ -32,7 +32,7 @@ export function setTemp(temp){
   }
 }
 
-export function addUser(user){
+export function addUser(user){  
   return {
     type:"ADD_USER",
     value: user

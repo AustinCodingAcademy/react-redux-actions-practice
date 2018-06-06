@@ -3,9 +3,9 @@ import CounterButton from "./components/CounterButton";
 import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
 import Counter from "./components/Counter";
 import SpecialTextContainer from "./containers/SpecialTextContainer";
-import UserButtons from "./components/UserButtons";
+import UserButtonsContainer from "./containers/UserButtonsContainer";
 import ThermostatContainer from "./containers/ThermostatContainer";
-import Users from "./components/Users";
+import UsersContainer from "./containers/UsersContainer";
 import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
@@ -25,7 +25,7 @@ function App() {
           <br />
           <SpecialTextBoxContainer />
           <br />
-          <UserButtons />
+          <UserButtonsContainer />
           <br />
           <CityDropDownContainer />
            <br />
@@ -56,7 +56,7 @@ function App() {
           
         </div>
         <div className="container">
-          <Users />
+          <UsersContainer />
         </div>
         <Modal />
       </div>

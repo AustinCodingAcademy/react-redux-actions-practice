@@ -26,11 +26,13 @@ function currentTemp(state = 0, action){
 }
 
 function users(state =[], action){
-  if(action.type === "ADD_USER"){
-
+  console.log("user");
+  
+  if(action.type === "ADD_USER"){    
+   return [...state,action.value]
   }
   if(action.type === "REMOVE_USER"){
-    
+    return state.slice(1)
   }
   return state;
 }
@@ -43,10 +45,8 @@ function specialText(state = "", action){
 }
 
 
-
-
 const rootReducer = combineReducers({
-  currentCount, specialText, currentCity, currentTemp
+  currentCount, specialText, currentCity, currentTemp, users
 })
 
 export default rootReducer;
