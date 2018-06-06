@@ -89,4 +89,5 @@ const rootReducer = combineReducers({
   videoURL, 
   videoScale
 });
+
 export default rootReducer;
