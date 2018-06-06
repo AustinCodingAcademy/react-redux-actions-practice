@@ -152,9 +152,9 @@
   * ShowModalContainer.js
     * import `setIsLoading` action
     * map prop `setIsLoading` to action `setIsLoading`Show
-  * ModalContainer.js
+  <!-- * ModalContainer.js
     * import `setIsLoading` action
-    * map prop `setIsLoading` to action `setIsLoading`
+    * map prop `setIsLoading` to action `setIsLoading` -->
 
 ### App
   * Change App.js

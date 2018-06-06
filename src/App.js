@@ -1,27 +1,27 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
+import CounterButtonContainer from "./containers/CounterButtonContainer";
 import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
-import Counter from "./components/Counter";
+import CounterContainer from "./containers/CounterContainer";
 import SpecialTextContainer from "./containers/SpecialTextContainer";
 import UserButtonsContainer from "./containers/UserButtonsContainer";
 import ThermostatContainer from "./containers/ThermostatContainer";
 import UsersContainer from "./containers/UsersContainer";
 import ChangeTemperatureContainer from "./containers/ChangeTemperatureContainer";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
+import VideoPlayerContainer from "./containers/VideoPlayerContainer";
+import VideoTextBoxContainer from "./containers/VideoTextBoxContainer";
 import CurrentCityContainer from "./containers/CurrentCityContainer";
 import CityDropDownContainer from "./containers/CityDropDownContainer";
 import SearchTextBoxContainer from "./containers/SearchTextBoxContainer";
 import SortUsersContainer from "./containers/SortUsersContainer";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import ScaleVideoContainer from "./containers/ScaleVideoContainer";
+import ModalContainer from "./containers/ModalContainer";
+import ShowModalContainer from "./containers/ShowModalContainer";
 
 function App() {
   return (
       <div className="App">
         <div className="container">
-          <CounterButton />
+          <CounterButtonContainer />
           <br />
           <SpecialTextBoxContainer />
           <br />
@@ -33,16 +33,16 @@ function App() {
           <br />
           <SearchTextBoxContainer />
           <br />
-          <VideoTextBox />
+          <VideoTextBoxContainer />
           <br />
           <SortUsersContainer />
           <br />
-          <ScaleVideo />
+          <ScaleVideoContainer />
           <br />`
-          <ShowModal />
+          <ShowModalContainer />
         </div>
         <div className="container">
-          <Counter />
+          <CounterContainer />
           <br />
           <SpecialTextContainer />
           <br />
@@ -50,7 +50,7 @@ function App() {
           <br />
           <ThermostatContainer />
           <br />
-          <VideoPlayer />
+          <VideoPlayerContainer />
           <br />
           
           
@@ -58,7 +58,7 @@ function App() {
         <div className="container">
           <UsersContainer />
         </div>
-        <Modal />
+        <ModalContainer />
       </div>
   );
 }
