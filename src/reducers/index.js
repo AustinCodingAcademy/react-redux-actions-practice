@@ -16,14 +16,15 @@ function currentCount(state=0, action){
 // to remove the first user or [...state,action.value] to add a user
 function users(state=[], action){
   if(action.type === "ADD_USER"){
+    console.log("adding user")
     let addUserArray = [...state];
     addUserArray.push(action.value);
     return addUserArray;
   }
   if(action.type === "REMOVE_USER"){
+    console.log("trying to remove user")
     let removeUserArray = [...state];
-    removeUserArray.slice(action.value);
-    return removeUserArray;
+    return removeUserArray.slice(1);
   }
   return state;
 }
