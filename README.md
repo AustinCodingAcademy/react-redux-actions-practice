@@ -97,8 +97,8 @@
   * Import the appropriate component into the container
   * Create mapStateToProps function 
   * Call the connect function
-  * SpecialTextContainer.js
-    * map a prop called `text` to the state `specialText`
+  <!-- * SpecialTextContainer.js
+    * map a prop called `text` to the state `specialText` -->
   * UsersContainer.js
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
@@ -107,8 +107,8 @@
     * map a prop called `count` to the state `currentCount`
   * CurrentCityContainer.js
     * map a prop called `text` to the state `currentCity`
-  * ThermostatContainer.js
-    * map a prop called `temp` to the state `currentTemp`
+  <!-- * ThermostatContainer.js
+    * map a prop called `temp` to the state `currentTemp` -->
   * VideoPlayerContainer.js
     * map a prop called `URL` to the state `videoURL`
     * map a prop called `scale` to the state `videoScale`
@@ -120,9 +120,9 @@
   * create mapDispatchToProps
   * connect the component so that it becomes a container
   * export container
-  * SpecialTextBoxContainer.js
+  <!-- * SpecialTextBoxContainer.js
     * import `setSpecialText` action
-    * map prop `set` to action `setSpecialText`
+    * map prop `set` to action `setSpecialText` -->
   * UserButtonsContainer.js
     * import `addUser` and `removeUser` action
     * map prop `add` to action `addUser`
@@ -137,9 +137,9 @@
   * SearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
-  * ChangeTemperatureContainer.js
+  <!-- * ChangeTemperatureContainer.js
     * import `setTemp` action
-    * map prop `set` to action `setTemp`
+    * map prop `set` to action `setTemp` -->
   * VideoTextBoxContainer.js
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`
