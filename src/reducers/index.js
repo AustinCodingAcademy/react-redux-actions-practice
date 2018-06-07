@@ -1,6 +1,5 @@
 import { combineReducers } from "redux";
 
-//working
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
     return state + 1; 
@@ -11,9 +10,6 @@ function currentCount(state=0, action){
   return state;
 }   
 
-// * users
-// * if "REMOVE_USER" OR "ADD_USER" should return slice(1) 
-// to remove the first user or [...state,action.value] to add a user
 function users(state=[], action){
   if(action.type === "ADD_USER"){
     console.log("adding user")
@@ -35,9 +31,6 @@ function specialText(state = "", action){
   }
   return state;
 }
-
-//name the function equal to the state
-//action type is what is in action folder
 
 // * currentCity
 // * if "SET_CURRENT_CITY" should return the action value
@@ -84,8 +77,6 @@ function videoURL(state="", action){
   return state;
 }  
 
-// * currentUserSort
-// * if "SET_CURRENT_USER_SORT" should return action value
 function currentUserSort(state="", action){
   if(action.type === "SET_CURRENT_USER_SORT"){
     return action.value;

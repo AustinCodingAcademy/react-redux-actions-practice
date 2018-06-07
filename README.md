@@ -99,12 +99,12 @@
   * Call the connect function
   <!-- * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText` -->
-  * UsersContainer.js
+  <!-- * UsersContainer.js
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
-    * map a prop called `sortOn` to the state `currentUserSort`
-  * CounterContainer.js
-    * map a prop called `count` to the state `currentCount`
+    * map a prop called `sortOn` to the state `currentUserSort` -->
+  <!-- * CounterContainer.js
+    * map a prop called `count` to the state `currentCount` -->
   * CurrentCityContainer.js
     * map a prop called `text` to the state `currentCity`
   <!-- * ThermostatContainer.js
