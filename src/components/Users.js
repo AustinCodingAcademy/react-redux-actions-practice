@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux'
 
 function Users(props) {
   var usersDivs = null;
@@ -24,13 +23,4 @@ function Users(props) {
   );
 }
 
-const msp = (state) => {return{
-    users:state.users,
-    firstNameFilter: state.searchText,
-    sortOn: state.currentUserSort
-  }
-}
-
-const UsersContainer = connect(msp)(Users)
-
-export default UsersContainer;
+export default Users

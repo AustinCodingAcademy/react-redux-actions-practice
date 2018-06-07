@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { currentCity } from '../actions'
 
 function CityDropDown(props) {
   return (
@@ -25,13 +23,6 @@ function CityDropDown(props) {
   );
 }
 
-const mdp = dispatch =>{
-  return{
-    set:function(city){
-      dispatch(currentCity(city))}
-  }
-}
-
-export default connect(null, mdp)(CityDropDown)
+export default CityDropDown
 
 

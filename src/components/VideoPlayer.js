@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux'
 
 
 function VideoPlayer(props) {
@@ -16,13 +15,4 @@ function VideoPlayer(props) {
   );
 }
 
-const msp = (state) =>{
-  return{
-    scale:state.videoScale,
-    URL:state.videoURL
-  }
-}
-
-const VideoPlayerContainer = connect(msp)(VideoPlayer)
-
-export default VideoPlayerContainer;
+export default VideoPlayer

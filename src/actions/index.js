@@ -10,7 +10,7 @@ export function decreaseCounter(){
   }
 }
 
-export function specialText(txt){
+export function setSpecialText(txt){
   return {
     type:"SET_SPECIAL_TEXT",
     value:txt

@@ -1,6 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { currentUserSort } from '../actions'
+
 
 function SortUsers(props) {
   return (
@@ -20,14 +19,6 @@ function SortUsers(props) {
   );
 }
 
-const mdp = (dispatch)=>{
-  return{
-    set:function(user){
-      dispatch(currentUserSort(user))
-    }
-  }
-}
 
-export default connect(null,mdp)(SortUsers)
 
-// export default SortUsers;
+export default SortUsers;

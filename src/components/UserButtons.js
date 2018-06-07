@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { addUser, removeUser } from '../actions'
 
 function UserButtons(props) {
   return (
@@ -30,17 +28,4 @@ function UserButtons(props) {
       </div>
   );
 }
-
-function mdp(dispatch){
-  return{
-    add:function(user){
-      dispatch(addUser(user))
-      },
-    remove:function(){
-      dispatch(removeUser())
-    }
-    }
-  
-}
-
-export default connect(null,mdp)(UserButtons);
+export default UserButtons
