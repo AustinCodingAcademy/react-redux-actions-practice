@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 
 function SpecialText(props) {
   return (
@@ -7,4 +8,9 @@ function SpecialText(props) {
       </div>
   );
 }
-export default SpecialText;
+
+const msp = state =>{return{text:state.specialText}}
+
+const SpecialTextContainer = connect(msp)(SpecialText)
+
+export default SpecialTextContainer;

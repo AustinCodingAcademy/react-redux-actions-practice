@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 
 function CurrentCity(props) {
   return (
@@ -7,4 +8,9 @@ function CurrentCity(props) {
       </div>
   );
 }
-export default CurrentCity;
+
+const msp = (state)=>{return{text:state.currentCity}}
+
+const CurrentCityContainer = connect(msp)(CurrentCity)
+
+export default CurrentCityContainer

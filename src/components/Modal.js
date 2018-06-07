@@ -1,5 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
+import { connect } from 'react-redux'
+import { setIsLoading } from '../actions'
 
 const customStyles = {
   content : {
@@ -29,4 +31,17 @@ function LoadingModal(props) {
     </Modal>
   );
 }
-export default LoadingModal;
+
+const mdp =(dispatch)=>{
+  return{
+    setIsLoading:function(load){
+      dispatch(setIsLoading(load))
+    }
+  }
+}
+
+const msp=(state)=>{return{isLoading:state.isLoading}}
+
+const LoadingModalContainer = connect(msp,mdp)(LoadingModal)
+
+export default LoadingModalContainer;

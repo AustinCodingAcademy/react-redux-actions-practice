@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux'
+
 
 function VideoPlayer(props) {
   let width = 200;
@@ -13,4 +15,14 @@ function VideoPlayer(props) {
       frameBorder="0" allowFullScreen></iframe></div>
   );
 }
-export default VideoPlayer;
+
+const msp = (state) =>{
+  return{
+    scale:state.videoScale,
+    URL:state.videoURL
+  }
+}
+
+const VideoPlayerContainer = connect(msp)(VideoPlayer)
+
+export default VideoPlayerContainer;
