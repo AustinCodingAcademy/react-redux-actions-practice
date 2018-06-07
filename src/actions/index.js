@@ -13,7 +13,7 @@ export function decreaseCounter(){
   }
 }
 
-export function setSpecialText(txt){
+export function setSpecialText(text){
   return {
     type:"SET_SPECIAL_TEXT",
     value:text
@@ -60,7 +60,7 @@ export function setCurrentCity(city){
   }
 }
 
-export function setVideoUrl(URL){
+export function setVideoURL(URL){
   return {
     type:"SET_VIDEO_URL",
     value:URL 
@@ -77,6 +77,6 @@ export function setCurrentUserSort(sort){
 export function setVideoScale(scale){
   return {
     type:"SET_VIDEO_SCALE",
-    value:text 
+    value:scale 
   }
 }
