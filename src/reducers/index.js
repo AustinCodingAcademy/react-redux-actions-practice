@@ -88,7 +88,7 @@ function videoURL(state="", action){
 // * if "SET_CURRENT_USER_SORT" should return action value
 function currentUserSort(state="", action){
   if(action.type === "SET_CURRENT_USER_SORT"){
-    return //something
+    return action.value;
   }
   return state;
 }  
