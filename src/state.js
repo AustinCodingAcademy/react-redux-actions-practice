@@ -5,7 +5,7 @@ export default{
   searchText:"",
   currentTemp: 0,
   isLoading: false,
-  videoURL: "",
+  videoURL: "https://www.youtube.com/embed/66tQR7koR_Q",
   currentUserSort:"first_name",
   videoScale:1,
   users: [
