@@ -28,8 +28,6 @@ function users(state=[], action){
   return state;
 }
 
-// * specialText
-// * if "SET_SPECIAL_TEXT" should return the action value
 function specialText(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
     return action.value;
@@ -58,11 +56,10 @@ function searchText(state="", action){
   return state;
 }  
 
-// * currentTemp
-// * if "SET_TEMP" should return action value
 function currentTemp(state=0, action){
   if(action.type === "SET_TEMP"){
-    return //something
+    console.log(action.value);
+    return action.value;
   }
   return state;
 }  
@@ -88,7 +85,7 @@ function videoURL(state="", action){
 
 // * currentUserSort
 // * if "SET_CURRENT_USER_SORT" should return action value
-function currentUserSort(state=first_name, action){
+function currentUserSort(state="", action){
   if(action.type === "SET_CURRENT_USER_SORT"){
     return //something
   }
