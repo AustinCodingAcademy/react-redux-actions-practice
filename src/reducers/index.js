@@ -32,8 +32,6 @@ function specialText(state = "", action){
   return state;
 }
 
-// * currentCity
-// * if "SET_CURRENT_CITY" should return the action value
 function currentCity(state="", action){
   if(action.type === "SET_CURRENT_CITY"){
     return action.value; 
@@ -45,7 +43,7 @@ function currentCity(state="", action){
 // * if "SET_SEARCH_TEXT" should return action value
 function searchText(state="", action){
   if(action.type === "SET_SEARCH_TEXT"){
-    return //something
+    return action.value;
   }
   return state;
 }  
@@ -62,7 +60,7 @@ function currentTemp(state=0, action){
 // * if "SET_IS_LOADING" should return action value 
 function isLoading(state=false, action){
   if(action.type === "SET_IS_LOADING"){
-    return //something
+    return action.value;
   }
   return state;
 }  
@@ -72,7 +70,7 @@ function isLoading(state=false, action){
 // * if "SET_VIDEO_URL" should return action value
 function videoURL(state="", action){
   if(action.type === "SET_VIDEO_URL"){
-    return //something
+    return action.value;
   }
   return state;
 }  
@@ -88,7 +86,7 @@ function currentUserSort(state="", action){
 // * if "SET_VIDEO_SCALE" should return action value
 function videoScale(state=1, action){
   if(action.type === "SET_VIDEO_SCALE"){
-    return //something
+    return action.value;
   }
   return state;
 }  

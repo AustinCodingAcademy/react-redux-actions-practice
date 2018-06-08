@@ -105,8 +105,8 @@
     * map a prop called `sortOn` to the state `currentUserSort` -->
   <!-- * CounterContainer.js
     * map a prop called `count` to the state `currentCount` -->
-  * CurrentCityContainer.js
-    * map a prop called `text` to the state `currentCity`
+  <!-- * CurrentCityContainer.js
+    * map a prop called `text` to the state `currentCity` -->
   <!-- * ThermostatContainer.js
     * map a prop called `temp` to the state `currentTemp` -->
   * VideoPlayerContainer.js
@@ -123,17 +123,17 @@
   <!-- * SpecialTextBoxContainer.js
     * import `setSpecialText` action
     * map prop `set` to action `setSpecialText` -->
-  * UserButtonsContainer.js
+  <!-- * UserButtonsContainer.js
     * import `addUser` and `removeUser` action
     * map prop `add` to action `addUser`
-    * map prop `remove` to action `removeUser`
-  * CityDropDownContainer.js
+    * map prop `remove` to action `removeUser` -->
+  <!-- * CityDropDownContainer.js
     * import `setCurrentCity` action
-    * map prop `set` to action `setCurrentCity`
-  * CounterButtonContainer.js
+    * map prop `set` to action `setCurrentCity` -->
+  <!-- * CounterButtonContainer.js
     * import the increaseCounter and decreaseCounter actions
     * map prop `increase` to action `increaseCounter`
-    * map prop `decrease` to action `decreaseCounter`
+    * map prop `decrease` to action `decreaseCounter` -->
   * SearchTextBoxContainer.js
     * import `setSearchText` action
     * map prop `set` to action `setSearchText`
@@ -143,9 +143,9 @@
   * VideoTextBoxContainer.js
     * import `setVideoURL` action
     * map prop `set` to action `setVideoURL`
-  * SortUsersContainer.js
+  <!-- * SortUsersContainer.js
     * import `setCurrentUserSort` action
-    * map prop `set` to action `setCurrentUserSort`
+    * map prop `set` to action `setCurrentUserSort` -->
   * ScaleVideoContainer.js
     * import `setVideoScale` action
     * map prop `set` to action `setVideoScale`
