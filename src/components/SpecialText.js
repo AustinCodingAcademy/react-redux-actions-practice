@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function SpecialText(props) {
   return (
       <div>
@@ -7,4 +8,6 @@ function SpecialText(props) {
       </div>
   );
 }
+
 export default SpecialText;
+

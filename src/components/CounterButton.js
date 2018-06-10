@@ -1,4 +1,6 @@
 import React from 'react';
+import {increaseCounter, decreaseCounter} from "../actions";
+import {connect} from 'react-redux';
 
 function CounterButton(props) {
   return (
