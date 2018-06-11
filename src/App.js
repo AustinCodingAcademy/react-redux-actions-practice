@@ -41,6 +41,7 @@ function App() {
           <br />
           <ShowModalContainer />
         </div>
+
         <div className="container">
           <CounterContainer />
           <br />
@@ -51,15 +52,17 @@ function App() {
           <ThermostatContainer />
           <br />
           <VideoPlayerContainer />
-          <br />
-          
-          
+          <br /> 
         </div>
+
         <div className="container">
           <UsersContainer />
         </div>
+
         <ModalContainer />
+      
       </div>
   );
 }
+
 export default App;

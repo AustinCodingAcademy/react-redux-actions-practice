@@ -14,8 +14,6 @@ function mapDispatchToProps(dispatch){
         dispatch(action);
       }
     }
-    }
-  
-    
+}
   
 export default connect(null,mapDispatchToProps)(UserButtons);
