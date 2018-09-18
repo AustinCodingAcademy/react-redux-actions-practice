@@ -1,11 +1,14 @@
 import { connect } from 'react-redux';
+import {setIsLoading} from "../actions";
 import Modal from "../components/Modal";
 
-//map a prop called text to the state specialText
-function mapStateToProps(state){
+function mapDispatchToProps(dispatch){
   return {
-    isLoading: state.isLoading
+    setIsLoading:function(isLoading){
+     let action = setIsLoading(isLoading);
+     dispatch(action);
+   }
   }
 }
 
-export default connect(mapStateToProps)(Modal);
+export default connect(null,mapDispatchToProps)(Modal);
