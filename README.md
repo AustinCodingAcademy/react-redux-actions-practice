@@ -11,13 +11,13 @@
 
 ### Make these reducers
   * currentCount
-    * if "INCREASE_COUNTER" of "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
+    * if "INCREASE_COUNTER" or "DECREASE_COUNTER" should return the current count plus one or minus one, depending on the action
   * specialText
     * if "SET_SPECIAL_TEXT" should return the action value
   * currentCity
     * if "SET_CURRENT_CITY" should return the action value
   * users
-    * if "REMOVE_USER" OR "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
+    * if "REMOVE_USER" or "ADD_USER" should return slice(1) to remove the first user or [...state,action.value] to add a user
   * currentTemp
     * if "SET_TEMP" should return action value
   * isLoading
@@ -30,6 +30,7 @@
     * if "SET_CURRENT_USER_SORT" should return action value
   * videoScale
     * if "SET_VIDEO_SCALE" should return action value
+    
 ### Create Actions in actions/index.js
   * increaseCounter()
     * type = "INCREASE_COUNTER"
@@ -64,6 +65,7 @@
   * setVideoScale(scale)
     * type = "SET_VIDEO_SCALE"
     * value = scale
+
 ### Create Store
   * Create a store.js file
   * Import state from state.js
@@ -80,7 +82,6 @@
   * Make sure there is no whitespace between Provider and App
   * Give Provider a prop “store” and the value of the store
 
-
 ### Containers
   * We need to leave the components alone and create containers
   * In the container folder, create a container file for each component i.e. SpecialTextContainer.js
@@ -89,8 +90,6 @@
   * This is where mapStateToProps and mapDispatchToProps should be
   * This is where you should do the connecting
   * Export the container
-
-
 
 ### Create these Containers that care about what the data is
   * Import connect from react-redux into all containers

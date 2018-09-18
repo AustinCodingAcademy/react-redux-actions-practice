@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import SpecialText from "../components/SpecialText";
+import Modal from "../components/Modal";
 
 //map a prop called text to the state specialText
 function mapStateToProps(state){
   return {
-    text: state.specialText
+    isLoading: state.isLoading
   }
 }
 
-export default connect(mapStateToProps)(SpecialText);
+export default connect(mapStateToProps)(Modal);
