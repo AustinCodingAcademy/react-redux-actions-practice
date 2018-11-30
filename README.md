@@ -3,7 +3,7 @@
 Fork, clone, npm i, npm start
 
 ### Intro
-View this video to see how the app should work once you are done coding. [Video](https://youtu.be/R8VFic_ZZUc). This project is to practice using redux actions to control data that is changed through user interactions. On the left hand side of the page is a collection of different inputs that are available on a web page. When the user interacts with the input it will change some data that should update the right hand side of the page. All you need to do is code the redux containers such that it will connect redux actions and data to the components. You do not need to alter the existing components themselves.
+View this video to see how the app should work once you are done coding. [Video](https://youtu.be/R8VFic_ZZUc). This project is to practice using redux actions to control data that is changed through user interactions. On the left hand side of the page is a collection of different inputs that are available on a web page. When the user interacts with the input it will change some data that should update the right hand side of the page. All you need to do is code the redux containers such that it will connect redux actions and data to the components. You do not need to alter the existing components themselves. There is nothing out of the ordinary that needs to be done here so if you do not undersand the instruction exactly, try to relate it to how you already know what to do with redux.
 
 
 
