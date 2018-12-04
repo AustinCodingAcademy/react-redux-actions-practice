@@ -78,5 +78,6 @@ function videoScale(state = 0, action) {
 
 
 export default combineReducers({
-  currentCount, users, specialText
+  currentCount, specialText, currentCity, users, currentTemp, isLoading,
+  videoURL, searchText, currentUserSort, videoScale, specialText
 })

@@ -28,3 +28,52 @@ export function removeUser() {
     type: "REMOVE_USER"
   }
 }
+
+export function setSearchText(text) {
+  return {
+    type: "SET_SEARACH_TEXT",
+    value: text
+  }
+}
+
+export function setIsLoading(isLoading) {
+  return {
+    type: "SET_IS_LOADING",
+    value: isLoading
+  }
+}
+
+export function setTemp(temp) {
+  return {
+    type: "SET_TEMP",
+    value: temp
+  }
+}
+
+export function setCurrentCity(city) {
+  return {
+    type: "SET_CURRENT_CITY",
+    value: city
+  }
+}
+
+export function setVideoURL(URL) {
+  return {
+    type: "SET_VIDEO_URL",
+    value: sort
+  }
+}
+
+export function setCurrentUserSort(sort) {
+  return {
+    type: "SET_CURRENT_USER_SORT",
+    value: sort
+  }
+}
+
+export function setVideoSCale(scale) {
+  return {
+    type: "SET_VIDEO_SCALE",
+    value: scale
+  }
+}
