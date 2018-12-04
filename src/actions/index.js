@@ -1,24 +1,30 @@
-export function increaseCounter(){
+export function increaseCounter() {
   return {
-    type:"INCREASE_COUNTER"
+    type: "INCREASE_COUNTER"
   }
 }
 
-export function setSpecialText(txt){
+export function decreaseCounter() {
   return {
-    type:"SET_SPECIAL_TEXT",
-    value:txt
+    type: "DECREASE_COUNTER"
   }
 }
 
-export function addUser(user){
+export function setSpecialText(txt) {
   return {
-    type:"ADD_USER",
-    value:user
+    type: "SET_SPECIAL_TEXT",
+    value: txt
   }
 }
-export function removeUser(){
+
+export function addUser(user) {
   return {
-    type:"REMOVE_USER"
+    type: "ADD_USER",
+    value: user
+  }
+}
+export function removeUser() {
+  return {
+    type: "REMOVE_USER"
   }
 }

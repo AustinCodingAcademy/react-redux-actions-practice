@@ -36,4 +36,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapDispatchToProps)(CounterButton);
+export default connect(null, mapDispatchToProps)(CounterButton);
