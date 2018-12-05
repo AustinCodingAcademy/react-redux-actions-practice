@@ -10,3 +10,5 @@ function mapDispatchToProps(dispatch) {
     }
   }
 }
+
+export default connect(mapDispatchToProps)(CityDropDown);
