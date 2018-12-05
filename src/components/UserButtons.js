@@ -1,7 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { addUser, removeUser } from '../actions/index';
-
 
 function UserButtons(props) {
   return (
@@ -32,17 +29,4 @@ function UserButtons(props) {
   );
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    add: function () {
-      const action = addUser();
-      dispatch(action);
-    },
-    remove: function () {
-      const action = removeUser();
-      dispatch(action);
-    }
-  }
-}
-
-export default connect(null, mapDispatchToProps)(UserButtons);
+export default UserButtons;

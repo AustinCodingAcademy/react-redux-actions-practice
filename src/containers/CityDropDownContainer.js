@@ -11,4 +11,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapDispatchToProps)(CityDropDown);
+export default connect(null, mapDispatchToProps)(CityDropDown);

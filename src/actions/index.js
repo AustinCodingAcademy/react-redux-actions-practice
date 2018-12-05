@@ -31,7 +31,7 @@ export function removeUser() {
 
 export function setSearchText(text) {
   return {
-    type: "SET_SEARACH_TEXT",
+    type: "SET_SEARCH_TEXT",
     value: text
   }
 }
