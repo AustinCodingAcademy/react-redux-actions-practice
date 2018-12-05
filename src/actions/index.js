@@ -60,7 +60,7 @@ export function setCurrentCity(city) {
 export function setVideoURL(URL) {
   return {
     type: "SET_VIDEO_URL",
-    value: sort
+    value: URL
   }
 }
 
@@ -71,7 +71,7 @@ export function setCurrentUserSort(sort) {
   }
 }
 
-export function setVideoSCale(scale) {
+export function setVideoScale(scale) {
   return {
     type: "SET_VIDEO_SCALE",
     value: scale

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import Counter from '../components/Counter';
 
-mapStateToProps(state) {
+function mapStateToProps(state) {
   return {
     count: state.currentCount
   }

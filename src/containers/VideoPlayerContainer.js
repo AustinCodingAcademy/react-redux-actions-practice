@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 import VideoPlayer from '../components/VideoPlayer';
-import { setVideoURL } from '../actions';
+import { setVideoURL, setVideoScale } from '../actions';
 
 function mapStateToProps(state) {
   return {
     URL: setVideoURL,
-    scale: videoScale
+    scale: setVideoScale
   }
 }
 
