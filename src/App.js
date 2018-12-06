@@ -1,7 +1,7 @@
 import React from 'react';
 import CounterButton from "./components/CounterButton";
 import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
+import Counter from "./containers/CounterContainer"; //change path to container when connecting to redux
 import SpecialText from "./components/SpecialText";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";

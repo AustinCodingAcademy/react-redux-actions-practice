@@ -1,4 +1,5 @@
 import React from 'react';
+import Users from './Users';
 
 function UserButtons(props) {
   return (
@@ -28,4 +29,5 @@ function UserButtons(props) {
       </div>
   );
 }
+
 export default UserButtons;
