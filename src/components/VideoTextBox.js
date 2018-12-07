@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function VideoTextBox(props) {
   return (
       <div>
@@ -14,5 +15,6 @@ function VideoTextBox(props) {
 
       </div>
   );
-}
+};
+
 export default VideoTextBox;

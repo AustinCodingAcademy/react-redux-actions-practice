@@ -11,8 +11,8 @@ export default{
   users: [
   {
     "id": 1,
-    "first_name": "george",
-    "last_name": "bluth",
+    "first_name": "Jon",
+    "last_name": "Woo",
     "address": "4116 Magnolia Drive, Portland, ME 04103",
     "phone": 15551234567,
     "occupation": "father",
@@ -20,8 +20,8 @@ export default{
   },
   {
     "id": 2,
-    "first_name": "lucille",
-    "last_name": "ball",
+    "first_name": "Dan",
+    "last_name": "Cumming",
     "address": "6428 3rd Street East, Zion, IL 60099",
     "phone": 15552345678,
     "occupation": "mother",
@@ -29,8 +29,8 @@ export default{
   },
   {
     "id": 3,
-    "first_name": "oscar",
-    "last_name": "grouch",
+    "first_name": "Chris",
+    "last_name": "Lofton",
     "address": "4797 Sycamore Lane, Dover, NH 03820",
     "phone": 15553456789,
     "occupation": "uncle",
@@ -38,8 +38,8 @@ export default{
   },
   {
     "id": 4,
-    "first_name": "steve",
-    "last_name": "holt",
+    "first_name": "Clayton",
+    "last_name": "Berger",
     "address": "3722 Circle Drive, Bristow, VA 20136",
     "phone": 15554567890,
     "occupation": "friend",
@@ -47,8 +47,8 @@ export default{
   },
   {
     "id": 5,
-    "first_name": "gob",
-    "last_name": "bluth",
+    "first_name": "Nichole",
+    "last_name": "Bennett",
     "address": "959 Hilltop Road, Apple Valley, CA 92307",
     "phone": 15555678901,
     "occupation": "brother",
@@ -56,8 +56,8 @@ export default{
   },
   {
     "id": 6,
-    "first_name": "tracey",
-    "last_name": "ulman",
+    "first_name": "Eric",
+    "last_name": "Barrs",
     "address": "2640 Primrose Lane, Longview, TX 75604",
     "phone": 15556789012,
     "occupation": "wife",
@@ -65,8 +65,8 @@ export default{
   },
   {
     "id": 7,
-    "first_name": "ted",
-    "last_name": "mosbey",
+    "first_name": "Rene",
+    "last_name": "Dudley",
     "address": "959 Hilltop Road, Apple Valley, CA 92307",
     "phone": 15555678901,
     "occupation": "brother",
@@ -74,8 +74,8 @@ export default{
   },
   {
     "id": 7,
-    "first_name": "barney",
-    "last_name": "stinson",
+    "first_name": "Zecharias",
+    "last_name": "Mengis",
     "address": "2640 Primrose Lane, Longview, TX 75604",
     "phone": 15556789012,
     "occupation": "wife",

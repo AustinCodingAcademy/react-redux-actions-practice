@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function VideoPlayer(props) {
   let width = 200;
   let height = 200;
@@ -12,5 +13,6 @@ function VideoPlayer(props) {
       width={width} height={height} src={props.URL}
       frameBorder="0" allowFullScreen></iframe></div>
   );
-}
+};
+
 export default VideoPlayer;

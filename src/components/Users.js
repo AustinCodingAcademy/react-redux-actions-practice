@@ -21,5 +21,6 @@ function Users(props) {
        {usersDivs}
       </div>
   );
-}
+};
+
 export default Users;

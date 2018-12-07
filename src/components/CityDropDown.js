@@ -3,7 +3,7 @@ import React from 'react';
 function CityDropDown(props) {
   return (
       <div>
-        CurrentCity: 
+        Current Planet: 
         <select onChange={
           (e)=>{
             if(props.set){
@@ -11,15 +11,18 @@ function CityDropDown(props) {
             }
           }
         }>
-          <option value="Austin">Austin</option>
-          <option value="New York">New York</option>
-          <option value="New Olreans">New Olreans</option>
-          <option value="Las Vegas">Las Vegas</option>
-          <option value="Seattle">Seattle</option>
-          <option value="San Fransisco">San Fransisco</option>
-          <option value="Washington D.C.">Washington D.C.</option>
+          <option value="Earth">Earth</option>
+          <option value="Mars">Mars</option>
+          <option value="Saturn">Saturn</option>
+          <option value="Uranus">Uranus</option>
+          <option value="Jupiter">Jupiter</option>
+          <option value="Neptune">Neptune</option>
+          <option value="Pluto">Pluto</option>
         </select>
       </div>
   );
 }
-export default CityDropDown;
+
+export default CityDropDown
+
+

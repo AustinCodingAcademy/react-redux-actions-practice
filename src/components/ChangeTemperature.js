@@ -12,6 +12,6 @@ function ChangeTemperature(props){
         </label>
       </div>
     )
-}
+};
 
-export default ChangeTemperature;
+export default ChangeTemperature

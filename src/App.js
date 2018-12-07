@@ -1,26 +1,27 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
-import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
-import UserButtons from "./components/UserButtons";
-import Thermostat from "./components/Thermostat";
-import Users from "./components/Users";
-import ChangeTemperature from "./components/ChangeTemperature";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import CounterButton from "./containers/CounterButtonContainer";
+import SpecialTextBox from "./containers/SpecialTextBoxContainer";
+import Counter from "./containers/CounterContainer";
+import SpecialText from "./containers/SpecialTextContainer";
+import UserButtons from "./containers/UserButtonsContainer";
+import Thermostat from "./containers/ThermostatContainer";
+import Users from "./containers/UsersContainer";
+import ChangeTemperature from "./containers/ChangeTempContainer";
+import VideoPlayer from "./containers/VideoPlayerContainer";
+import VideoTextBox from "./containers/VideoTextBoxContainer";
+import CurrentCity from "./containers/CurrentCityContainer";
+import CityDropDown from "./containers/CityDropDownContainer";
+import SearchTextBox from "./containers/SearchTextBoxContainer";
+import SortUsers from "./containers/SortUsersContainer";
+import ScaleVideo from "./containers/ScaleVideoContainer";
+import Modal from "./containers/ModalContainer";
+import ShowModal from "./containers/ShowModalContainer";
 
 function App() {
   return (
       <div className="App">
         <div className="container">
+        <div className="left-padding">
           <CounterButton />
           <br />
           <SpecialTextBox />
@@ -40,8 +41,10 @@ function App() {
           <ScaleVideo />
           <br />
           <ShowModal />
+          </div>
         </div>
         <div className="container">
+        <div className="center-padding">
           <Counter />
           <br />
           <SpecialText />
@@ -53,12 +56,14 @@ function App() {
           <VideoPlayer />
           <br />
           
-          
+          </div>
         </div>
         <div className="container">
+        <div className="right-padding">
           <Users />
         </div>
         <Modal />
+      </div>
       </div>
   );
 }

@@ -27,5 +27,7 @@ function UserButtons(props) {
         }>Remove User</button>
       </div>
   );
-}
+};
+
+
 export default UserButtons;

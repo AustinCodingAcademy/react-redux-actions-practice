@@ -6,5 +6,6 @@ function Counter(props) {
         Counter: {props.count}
       </div>
   );
-}
+};
+
 export default Counter;

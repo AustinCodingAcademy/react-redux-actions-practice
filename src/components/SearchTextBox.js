@@ -11,6 +11,6 @@ function SearchTextBox(props) {
         }} />
       </div>
   );
-}
+};
 
 export default SearchTextBox;

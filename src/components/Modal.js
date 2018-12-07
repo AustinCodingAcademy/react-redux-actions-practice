@@ -28,5 +28,6 @@ function LoadingModal(props) {
 
     </Modal>
   );
-}
+};
+
 export default LoadingModal;

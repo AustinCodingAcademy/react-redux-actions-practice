@@ -3,8 +3,9 @@ import React from 'react';
 function CurrentCity(props) {
   return (
       <div>
-        CurrentCity: {props.text}
+        Current Planet: {props.text}
       </div>
   );
 }
-export default CurrentCity;
+
+export default CurrentCity

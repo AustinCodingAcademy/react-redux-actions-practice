@@ -6,5 +6,6 @@ function SpecialText(props) {
         Special Text: {props.text}
       </div>
   );
-}
+};
+
 export default SpecialText;

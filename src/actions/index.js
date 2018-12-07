@@ -4,6 +4,12 @@ export function increaseCounter(){
   }
 }
 
+export function decreaseCounter(){
+  return {
+    type:"DECREASE_COUNTER"
+  }
+}
+
 export function setSpecialText(txt){
   return {
     type:"SET_SPECIAL_TEXT",
@@ -20,5 +26,53 @@ export function addUser(user){
 export function removeUser(){
   return {
     type:"REMOVE_USER"
+  }
+}
+export function currentCity(city){
+  return{
+    type:"SET_CURRENT_CITY",
+    value:city
+  }
+}
+
+export function changeTemp(temp){
+  return{
+    type:"CHANGE_TEMP",
+    value:temp
+  }
+}
+
+export function setSearchText(text){
+  return{
+    type:"SET_SEARCH_TEXT",
+    value: text
+  }
+}
+
+export function setIsLoading(isLoading){
+  return{
+    type: 'SET_IS_LOADING',
+    value: isLoading
+  }
+}
+
+export function setVideoURL(URL){
+  return{
+    type: 'SET_VIDEO_URL',
+    value: URL
+  }
+}
+
+export function currentUserSort(sort){
+  return{
+    type: 'SET_CURRENT_USER_SORT',
+    value: sort
+  }
+}
+
+export function setVideoScale(scale){
+  return{
+    type: 'SET_VIDEO_SCALE',
+    value: scale
   }
 }
