@@ -8,4 +8,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(SpecialTextContainer);
+export default connect(mapStateToProps)(SpecialText);
