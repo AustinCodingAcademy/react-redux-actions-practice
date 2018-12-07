@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import {addUser, removeUser} from '../actions';
 import UserButtons from "../components/UserButtons";
 
+
 function mapDispatchToProps(dispatch){
     return {
         add: function(user){
