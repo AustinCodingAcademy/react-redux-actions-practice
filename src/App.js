@@ -3,9 +3,9 @@ import CounterButton from "./components/CounterButton";
 import SpecialTextBox from "./containers/SpecialTextBoxContainer";
 import Counter from "./containers/CounterContainer"; //change path to container when connecting to redux
 import SpecialText from "./containers/SpecialTextContainer";
-import UserButtons from "./components/UserButtons";
+import UserButtons from "./containers/UserButtonsContainer";
 import Thermostat from "./components/Thermostat";
-import Users from "./components/Users";
+import Users from "./containers/UsersContainer";
 import ChangeTemperature from "./components/ChangeTemperature";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
