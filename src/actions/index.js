@@ -35,3 +35,9 @@ export function setCurrentCity(city){
     value: city
   }
 }
+export function setTemp(temp){
+  return{
+  type: "SET_TEMP",
+  value: temp
+  }
+}
