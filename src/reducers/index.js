@@ -52,6 +52,24 @@ function isLoading(state="", action){
   }
   return state;
 }
+function videoURL(state ="", action){
+  if(action.type === "SET_VIDEO_URL"){
+    return action.value;
+  }
+  return state;
+}
+function currentUsersSort(state="", action){
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
+  return state;
+}
+// function videoScale(state=1, action){
+//   if(action.type === "SET_VIDEO_SCALE"){
+//     return action.value;
+//   }
+//   return state;
+// }
 
 const rootReducer = combineReducers({
   currentCount,
@@ -60,7 +78,10 @@ const rootReducer = combineReducers({
   currentCity,
   currentTemp,
   searchText,
-  isLoading
+  isLoading,
+  videoURL,
+  currentUsersSort,
+  // videoScale
 
 });
 export default rootReducer;

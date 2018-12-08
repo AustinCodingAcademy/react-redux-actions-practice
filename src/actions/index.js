@@ -53,4 +53,22 @@ export function setIsLoading(isLoading){
     value: isLoading
   }
 }
+export function setVideoURL(URL){
+  return{
+    type: "SET_VIDEO_URL",
+    value: URL
+  }
+}
+export function setCurrentUsersSort(sort){
+  return{
+    type: "SET_CURRENT_USER_SORT",
+    value: sort
+  }
+}
+export function setVideoScale(scale){
+  return {
+    type: "SET_VIDEO_SCALE",
+    value: scale
+  }
+}
 
