@@ -40,12 +40,27 @@ function currentTemp(state="", action){
   }
   return state;
 }
+function searchText(state="", action){
+  if(action.type === "SET_SEARCH_TEXT"){
+    return action.value;
+  }
+  return state;
+}
+function isLoading(state="", action){
+  if(action.type === "SET_IS_LOADING"){
+    return action.value;
+  }
+  return state;
+}
 
 const rootReducer = combineReducers({
   currentCount,
   specialText,
   users,
   currentCity,
-  currentTemp
+  currentTemp,
+  searchText,
+  isLoading
+
 });
 export default rootReducer;

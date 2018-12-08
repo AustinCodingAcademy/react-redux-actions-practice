@@ -41,3 +41,16 @@ export function setTemp(temp){
   value: temp
   }
 }
+export function setSearchText(text){
+  return {
+    type: "SET_SEARCH_TEXT",
+    value: text
+  }
+}
+export function setIsLoading(isLoading){
+  return {
+    type: "SET_IS_LOADING",
+    value: isLoading
+  }
+}
+
