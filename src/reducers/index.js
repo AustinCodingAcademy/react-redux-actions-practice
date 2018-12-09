@@ -12,10 +12,10 @@ function currentCount(state=0, action){
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-
+//needs function. not sure where the data is coming from 
   }
   if(action.type === "REMOVE_USER"){
-    return users.slice(1) 
+    return state.slice(1) 
   }
   return state;
 }
