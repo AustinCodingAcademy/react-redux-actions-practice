@@ -9,10 +9,17 @@ export function decreaseCounter(){
     type: "DECREASE_COUNTER"
   }
 }
-export function setSpecialText(txt){
+export function setSpecialText(text){
   return {
     type:"SET_SPECIAL_TEXT",
-    value:txt
+    value:text
+  }
+}
+
+export function setCurrentCity(city){
+  return {
+    type:"SET_CURRENT_CITY",
+    value:city
   }
 }
 

@@ -12,4 +12,5 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-export default connect(null,mapDispatchToProps)(SpecialTextBox);
+const specialTextBoxContainer = connect(null, mapDispatchToProps)(SpecialTextBox)
+export default specialTextBoxContainer;
