@@ -13,4 +13,4 @@ function SearchTextBox(props) {
   );
 }
 
-export default SearchTextBox;
+export default (SearchTextBox);

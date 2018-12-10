@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Counter(props) {
   return (
       <div>
@@ -7,4 +8,5 @@ function Counter(props) {
       </div>
   );
 }
-export default Counter;
+
+ export default (Counter);
