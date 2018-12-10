@@ -65,10 +65,4 @@ export function setCurrentUsersSort(sort){
     value: sort
   }
 }
-export function setVideoScale(scale){
-  return {
-    type: "SET_VIDEO_SCALE",
-    value: scale
-  }
-}
 
