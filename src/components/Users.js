@@ -1,4 +1,6 @@
 import React from 'react';
+//import {connect} from "react-redux";
+
 
 function Users(props) {
   var usersDivs = null;

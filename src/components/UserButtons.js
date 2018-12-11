@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from "react-redux";
+
 
 function UserButtons(props) {
   return (
@@ -28,4 +30,19 @@ function UserButtons(props) {
       </div>
   );
 }
+
+// function mapDispatchToProps(dispatch){
+//   return {
+//     //increase is the name of the prop you're setting up
+//     add:function(){
+//       const action = addUser();
+//       dispatch(action);
+//     },
+//     remove:function(){
+//       const action = removeUser();
+//       dispatch(action);
+//     }
+//   }
+//   }
+// export default connect(null,mapDispatchToProps)(UserButtons);
 export default UserButtons;
