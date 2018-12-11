@@ -7,7 +7,7 @@ import ShowModal from "../components/ShowModal";
 
 function mapDispatchToProps(dispatch){
   return {
-   set:function(isLoading){
+   setIsLoading:function(isLoading){
      let action = setIsLoading(isLoading);
      dispatch(action);
    }
