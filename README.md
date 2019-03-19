@@ -168,3 +168,13 @@ View this video to see how the app should work once you are done coding. [Video]
   * Change App.js
   * Use containers instead of components
   * Basically, just add the word Container everywhere a component is referenced
+
+### Bonus - fetch
+Currently, the users are hard coded in the state.js file. How could we change this so that the data is coming from an api. https://jsonplaceholder.typicode.com/users
+There is no new special thing we have to do. We have all the knowledge we need to do this with redux. We just need to figure out how to use them together.
+* We should know how to make a fetch call by now. Where does the fetch call go? 
+* What do you do with the data when the fetch call is complete? Not setState.
+* Is there an action message that could represent that the redux store needs to be updated with the list of users you just fetched from the api.
+* Does any reducer need to be aware of this message?
+
+
