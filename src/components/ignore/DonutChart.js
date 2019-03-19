@@ -1,20 +1,14 @@
 import React from "react";
 
-const DonutChart = React.createClass({
-  propTypes: {
-    value: React.PropTypes.number,        // value the chart should show
-    valuelabel: React.PropTypes.string,   // label for the chart
-    size: React.PropTypes.number,         // diameter of chart
-    strokewidth: React.PropTypes.number   // width of chart line
-  },
-  getDefaultProps() {
-    return {
-      value:33,
-      valuelabel:'Degrees',
-      size:116,
-      strokewidth:26
-    };
-  },
+class DonutChart extends React.Component
+{
+
+  static defaultProps = {
+    value:33,
+    valuelabel:'Degrees',
+    size:116,
+    strokewidth:26
+  }
   render() {
 
     const halfsize = (this.props.size * 0.5);
@@ -39,6 +33,6 @@ const DonutChart = React.createClass({
       </svg>
     );
   }
-})
+}
 
 export default DonutChart;

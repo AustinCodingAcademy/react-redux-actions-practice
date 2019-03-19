@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": "*",
+    "react-dom": "*",
     "react-modal": "^1.7.7",
-    "react-redux": "^5.0.4",
-    "redux": "^3.6.0",
+    "react-redux": "*",
+    "redux": "*",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "*"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
