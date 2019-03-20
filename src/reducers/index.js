@@ -12,10 +12,20 @@ function currentCount(state = 0, action) {
 
 function users(state = [], action) {
   if (action.type === "ADD_USER") {
+    // state = []
+    // action.value = {} //user object
+    // state.push(action.value)
 
+    // let newArray = state.map(p => p);
+    // newArray.push(action.value);
+    // return newArray;
+
+    return [...state,//state.map(p => p);
+    action.value //newArray.push(action.value);
+    ]
   }
   if (action.type === "REMOVE_USER") {
-
+    //return state.splice
   }
   return state;
 }
