@@ -1,8 +1,8 @@
 import React from 'react';
 import CounterButton from "./components/CounterButton";
-import SpecialTextBox from "./components/SpecialTextBox";
+import SpecialTextBox from "./containers/SpecialTextBoxContainer";
 import Counter from "./components/Counter";
-import SpecialText from "./components/SpecialText";
+import SpecialText from "./containers/SpecialTextContainer";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";
 import Users from "./components/Users";
@@ -19,47 +19,47 @@ import ShowModal from "./components/ShowModal";
 
 function App() {
   return (
-      <div className="App">
-        <div className="container">
-          <CounterButton />
-          <br />
-          <SpecialTextBox />
-          <br />
-          <UserButtons />
-          <br />
-          <CityDropDown />
-           <br />
-          <ChangeTemperature />
-          <br />
-          <SearchTextBox />
-          <br />
-          <VideoTextBox />
-          <br />
-          <SortUsers />
-          <br />
-          <ScaleVideo />
-          <br />
-          <ShowModal />
-        </div>
-        <div className="container">
-          <Counter />
-          <br />
-          <SpecialText />
-          <br />
-          <CurrentCity />
-          <br />
-          <Thermostat />
-          <br />
-          <VideoPlayer />
-          <br />
-          
-          
-        </div>
-        <div className="container">
-          <Users />
-        </div>
-        <Modal />
+    <div className="App">
+      <div className="container">
+        <CounterButton />
+        <br />
+        <SpecialTextBox />
+        <br />
+        <UserButtons />
+        <br />
+        <CityDropDown />
+        <br />
+        <ChangeTemperature />
+        <br />
+        <SearchTextBox />
+        <br />
+        <VideoTextBox />
+        <br />
+        <SortUsers />
+        <br />
+        <ScaleVideo />
+        <br />
+        <ShowModal />
       </div>
+      <div className="container">
+        <Counter />
+        <br />
+        <SpecialText />
+        <br />
+        <CurrentCity />
+        <br />
+        <Thermostat />
+        <br />
+        <VideoPlayer />
+        <br />
+
+
+      </div>
+      <div className="container">
+        <Users />
+      </div>
+      <Modal />
+    </div>
   );
 }
 export default App;
