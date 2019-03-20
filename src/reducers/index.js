@@ -46,24 +46,21 @@ function currentCity(state = "", action) {
 }
 
 function searchText(state = "", action) {
-  if (action.type === "SEARCH_TEXT") {
+  if (action.type === "SET_SEARCH_TEXT") {
     return action.value;
   }
   return state;
 }
 
 function currentTemp(state = "", action) {
-  if (action.type === "SET_CURRENT_TEMP") {
+  if (action.type === "SET_TEMP") {
     return action.value;
   }
   return state;
 }
 
 function isLoading(state = "", action) {
-  if (action.type === "IS_LOADING") {
-    return action.value;
-  }
-  if (action.type === "IS_NOT_LOADING") {
+  if (action.type === "SET_IS_LOADING") {
     return action.value;
   }
   return state;
@@ -77,17 +74,14 @@ function videoURL(state = "", action) {
 }
 
 function currentUserSort(state = "", action) {
-  if (action.type === "FIRST_NAME") {
-    return action.value;
-  }
-  if (action.type === "LAST_NAME") {
+  if (action.type === "SET_CURRENT_USER_SORT") {
     return action.value;
   }
   return state;
 }
 
 function videoScale(state = "", action) {
-  if (action.type === "SET_VIDEO_SIZE") {
+  if (action.type === "SET_VIDEO_SCALE") {
     return action.value;
   }
   return state;
