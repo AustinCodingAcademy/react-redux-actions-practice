@@ -1,8 +1,8 @@
 import React from 'react';
-import {connect} from "react-redux";
-import {setSpecialText} from "../actions";
+// import {connect} from "react-redux";
+// import {setSpecialText} from "../actions";
 
-function SpecialTextBox(props) {
+export default function SpecialTextBox(props) {
   return (
       <div>
         Enter Special Text:
@@ -15,12 +15,8 @@ function SpecialTextBox(props) {
   );
 }
 
-function mapDispatchToProps(dispatch){
-  return {
-    set:function(txt){
-      let action = setSpecialText(txt)
-      dispatch(action);
-    }
-  }
-}
-export default (SpecialTextBox);
+// let mapDispatchToProps={
+//   set:setSpecialText
+// }
+
+// export default connect(null,mapDispatchToProps)(SpecialTextBox);
