@@ -176,5 +176,3 @@ There is no new special thing we have to do. We have all the knowledge we need t
 * What do you do with the data when the fetch call is complete? Not setState.
 * Is there an action message that could represent that the redux store needs to be updated with the list of users you just fetched from the api.
 * Does any reducer need to be aware of this message?
-
-
