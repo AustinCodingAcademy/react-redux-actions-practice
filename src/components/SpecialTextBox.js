@@ -1,8 +1,6 @@
 import React from 'react';
-import {connect} from "react-redux";
-import {setSpecialText} from "../actions";
 
-function SpecialTextBox(props) {
+export default function SpecialTextBox(props) {
   return (
       <div>
         Enter Special Text:
@@ -15,12 +13,11 @@ function SpecialTextBox(props) {
   );
 }
 
-function mapDispatchToProps(dispatch){
-  return {
-    set:function(txt){
-      let action = setSpecialText(txt)
-      dispatch(action);
-    }
-  }
-}
-export default (SpecialTextBox);
+//store.dispatch({type:"dksdjslj"}) this is replaced by mapDispatchToProps
+
+// This dispatch can be put into it's own container since it only pertains to Redux
+// function mapDispatchToProps(dispatch){
+//     set:setSpecialText    
+// }
+
+// export default connect(null,mapDispatchToProps)(SpecialTextBox);
