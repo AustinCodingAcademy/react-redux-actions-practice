@@ -6,7 +6,7 @@
     "react": "*",
     "react-dom": "*",
     "react-modal": "^1.7.7",
-    "react-redux": "*",
+    "react-redux": "^6.0.1",
     "redux": "*",
     "whatwg-fetch": "^2.0.3"
   },

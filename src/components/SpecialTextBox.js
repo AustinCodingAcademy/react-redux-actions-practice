@@ -16,11 +16,9 @@ function SpecialTextBox(props) {
 }
 
 function mapDispatchToProps(dispatch){
-  return {
-    set:function(txt){
-      let action = setSpecialText(txt)
-      dispatch(action);
-    }
+  let mapDispatchToProps={
+    set:setSpecialText
+    
   }
 }
-export default (SpecialTextBox);
+export default connect(null,mapDispatchToProps)(SpecialTextBox)
