@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-// import currentCount from "../../reducers/index"
+import { currentCount } from "../"
 import Counter from "../components/Counter";
 
 //map a prop called text to the state specialText
