@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from "react-redux";
-import { setSpecialText } from "../actions";
 
 export default function SpecialTextBox(props) {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import CounterButton from "./components/CounterButton";
+import CounterButtonContainer from "./containers/CounterButtonContainer";
 import SpecialTextBox from "./containers/SpecialTextBoxContainer";
-import Counter from "./components/Counter";
+import CounterContainer from "./containers/CounterContainer";
 import SpecialText from "./containers/SpecialTextContainer";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./components/Thermostat";
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <CounterButton />
+        <CounterButtonContainer />
         <br />
         <SpecialTextBox />
         <br />
@@ -42,7 +42,7 @@ function App() {
         <ShowModal />
       </div>
       <div className="container">
-        <Counter />
+        <CounterContainer />
         <br />
         <SpecialText />
         <br />
