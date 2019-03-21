@@ -39,7 +39,7 @@ function users(state =[], action){
     return [...state, action.value];
   }
   if(action.type === "REMOVE_USER"){
-    return 
+    return []
   }
   return state;
 }
