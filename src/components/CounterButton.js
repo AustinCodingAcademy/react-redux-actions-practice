@@ -20,4 +20,5 @@ function CounterButton(props) {
       </div>
   );
 }
+
 export default CounterButton;

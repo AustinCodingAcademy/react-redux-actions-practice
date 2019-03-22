@@ -2,19 +2,21 @@ import { combineReducers } from "redux";
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    return state+1
+    let newCount = state+1;
+    return newCount;
   }
   if(action.type === "DECREASE_COUNTER"){
-    return state-1
+    let newCount = state-1;
+    return newCount;
   }
   return state;
 }   
 
-function currentCity(state="", action){
-  if(action.type === ""){
-
+function setCurrentCity(state="Austin", action){
+  if(action.type === "SET_CURRENT_CITY"){
+    return action.value
   }
-  return state
+  return state;
 }
 
 function searchText(state="", action){
@@ -82,7 +84,7 @@ function specialText(state = "", action){
 }
 
 let reducers = combineReducers({
-  currentCount,users,specialText,currentCity,searchText, currentTemp,isLoading,videoURL,currentUserSort,videoScale
+  currentCount,users,specialText,setCurrentCity,searchText, currentTemp,isLoading,videoURL,currentUserSort,videoScale
 })
 
 export default reducers;

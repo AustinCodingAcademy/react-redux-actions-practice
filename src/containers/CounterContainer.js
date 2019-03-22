@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
-import {increaseCounter} from "../actions";
-import {decreaseCounter} from "../actions";
 import Counter from "../components/Counter";
 
-const mapDispatchToProps = {
-   set:setSpecialText
+function mapStateToProps (state){
+   return {
+     count:state.currentCount
+   }
   }
 
-export default connect(null,mapDispatchToProps)(Counter);
+export default connect(mapStateToProps)(Counter);
