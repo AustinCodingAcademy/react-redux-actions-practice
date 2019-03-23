@@ -26,9 +26,9 @@ function searchText(state="", action){
   return state
 }
 
-function currentTemp(state=0, action){
-  if(action.type === ""){
-
+function currentTemp(state=23, action){
+  if(action.type === "SET_TEMP"){
+    return action.value
   }
   return state
 }
@@ -63,14 +63,10 @@ function videoScale(state=1, action){
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-    // let newArray = state.map(p=>p);
-    // newArray.push(action.value);
-    // return newArray;
-
     return [...state, action.value];
   }
   if(action.type === "REMOVE_USER"){
-    return state.splice()
+    return []
   }
   return state;
 }
@@ -84,7 +80,7 @@ function specialText(state = "", action){
 }
 
 let reducers = combineReducers({
-  currentCount,users,specialText,setCurrentCity,searchText, currentTemp,isLoading,videoURL,currentUserSort,videoScale
+  currentCount,users,specialText,setCurrentCity,searchText,currentTemp,isLoading,videoURL,currentUserSort,videoScale
 })
 
 export default reducers;
