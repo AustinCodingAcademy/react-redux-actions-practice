@@ -1,10 +1,12 @@
+import {combineReducers} from "redux";
+
 
 function currentCount(state=0, action){
-  if(action.type === "INCREASE_COUNTER"){
-    
+  if (action.type === "INCREASE_COUNTER"){
+    state += 1;
   }
-  if(action.type === "DECREASE_COUNTER"){
-    
+  else if( action.type === "DECREASE_COUNTER"){
+    state -= 1;
   }
   return state;
 }   
@@ -12,9 +14,14 @@ function currentCount(state=0, action){
 function users(state =[], action){
   if(action.type === "ADD_USER"){
 
+    //let tmp = state.map(p=>p);
+    //tmp.push(action.value);
+    //return tmp;
+
+    return [...state, action.value];
   }
   if(action.type === "REMOVE_USER"){
-    
+    return state.splice();
   }
   return state;
 }
@@ -27,3 +34,9 @@ function specialText(state = "", action){
   return state;
 }
 
+let reducers = combineReducers({
+  currentCount,
+  users,
+  specialText
+})
+export default reducers;
