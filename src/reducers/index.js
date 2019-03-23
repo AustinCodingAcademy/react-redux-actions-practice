@@ -42,10 +42,20 @@ function currentCity(state = "", action) {
   return state;
 }
 
+
+function currentTemp(state=0, action) {
+  if (action.type === "SET_CURRENT_TEMPERATURE") {
+    return action.value
+  }
+  return state;
+}
+
+
 let reducers = combineReducers({
   currentCount,
   users,
   specialText,
-  currentCity
+  currentCity,
+  currentTemp
 })
 export default reducers;

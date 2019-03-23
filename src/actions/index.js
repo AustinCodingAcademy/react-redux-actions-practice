@@ -35,3 +35,10 @@ export function setCurrentCity(city) {
     value: city
   }
 }
+
+export function setCurrentTemperature(temperature) {
+  return {
+    type: "SET_CURRENT_TEMPERATURE",
+    value: temperature
+  }
+}
