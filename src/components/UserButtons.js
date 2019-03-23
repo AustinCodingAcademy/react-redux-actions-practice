@@ -8,8 +8,7 @@ function UserButtons(props) {
             if(props.add){
               props.add({
                 "id": 1,
-                "first_name": "george",
-                "last_name": "bluth",
+                "name": "George Bluth",
                 "address": "4116 Magnolia Drive, Portland, ME 04103",
                 "phone": 15551234567,
                 "occupation": "father",
