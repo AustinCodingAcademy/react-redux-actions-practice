@@ -50,12 +50,20 @@ function currentTemp(state=0, action) {
   return state;
 }
 
+function videoURL(state="", action) {
+  if (action.type === "SET_VIDEO_URL") {
+    return action.value
+  }
+  return state;
+}
+
 
 let reducers = combineReducers({
   currentCount,
   users,
   specialText,
   currentCity,
-  currentTemp
+  currentTemp,
+  videoURL
 })
 export default reducers;

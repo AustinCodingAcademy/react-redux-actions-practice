@@ -42,3 +42,10 @@ export function setCurrentTemperature(temperature) {
     value: temperature
   }
 }
+
+export function setVideoUrl(url) {
+  return {
+    type: "SET_VIDEO_URL",
+    value: url
+  }
+}
