@@ -34,9 +34,18 @@ function specialText(state = "", action){
   return state;
 }
 
+
+function currentCity(state = "", action) {
+  if (action.type === "SET_CURRENT_CITY") {
+    return action.value;
+  }
+  return state;
+}
+
 let reducers = combineReducers({
   currentCount,
   users,
-  specialText
+  specialText,
+  currentCity
 })
 export default reducers;

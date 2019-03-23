@@ -11,6 +11,7 @@ function CityDropDown(props) {
             }
           }
         }>
+          <option value="none">---</option>
           <option value="Austin">Austin</option>
           <option value="New York">New York</option>
           <option value="New Olreans">New Olreans</option>
