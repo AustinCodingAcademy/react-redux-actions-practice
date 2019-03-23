@@ -58,7 +58,7 @@ export function modalToggle(txt){
     value: txt
   }
 }
-export function currentUserSort(txt){
+export function currentUserSorter(txt){
   return {
     type:"SORT_USER",
     value: txt

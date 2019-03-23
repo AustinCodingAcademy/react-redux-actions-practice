@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
-import {currentUserSort} from "../actions";
+import {currentUserSorter} from "../actions";
 import SortUsers from "../components/SortUsers";
 
 
 const mapDispatchToProps = {
-    set:currentUserSort
+    set:currentUserSorter
 }
 
 
