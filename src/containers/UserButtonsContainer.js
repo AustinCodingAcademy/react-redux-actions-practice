@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 import UserButtons from "../components/UserButtons";
-import { addUser, removeUser } from "../actions";
+import { add, removeUser } from "../actions";
 
 function mapDispatchToProps(dispatch) {
     return {
         add: function (user) {
-            let action = addUser(user);
+            let action = add(user);
             dispatch(action)
         },
         remove: function () {

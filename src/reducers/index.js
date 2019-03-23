@@ -12,10 +12,10 @@ function currentCount(state = 0, action) {
 
 function users(state = [], action) {
   if (action.type === "ADD_USER") {
-    return [...state,//state.map(p => p);
-    action.value //newArray.push(action.value);
-    ]
+    console.log(state)
+    return [...state, action.value]
   }
+
   if (action.type === "REMOVE_USER") {
     return state.slice(1);
   }
