@@ -49,3 +49,11 @@ export function setVideoUrl(url) {
     value: url
   }
 }
+
+
+export function setFirstNameFilter(firstName) {
+  return {
+    type: "SET_FIRST_NAME",
+    value: firstName
+  }
+}

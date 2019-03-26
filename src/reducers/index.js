@@ -57,6 +57,12 @@ function videoURL(state="", action) {
   return state;
 }
 
+function searchText(state="", action) {
+  if (action.type == "SET_FIRST_NAME") {
+    return action.value;
+  }
+  return state;
+}
 
 let reducers = combineReducers({
   currentCount,
@@ -64,6 +70,7 @@ let reducers = combineReducers({
   specialText,
   currentCity,
   currentTemp,
-  videoURL
+  videoURL,
+  searchText
 })
 export default reducers;
