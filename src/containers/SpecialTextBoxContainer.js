@@ -4,7 +4,7 @@ import SpecialTextBox from "../components/SpecialTextBox";
 
 
 const mapDispatchToProps = {
-   set:setSpecialText
+   set:setSpecialText,
   }
 
 

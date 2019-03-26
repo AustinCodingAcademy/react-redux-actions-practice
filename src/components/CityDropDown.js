@@ -1,10 +1,13 @@
 import React from 'react';
 
+
+
 function CityDropDown(props) {
+  props.set("Austin")
   return (
       <div>
         CurrentCity: 
-        <select onChange={
+        <select id={"CityView"} onChange={
           (e)=>{
             if(props.set){
               props.set(e.target.value);

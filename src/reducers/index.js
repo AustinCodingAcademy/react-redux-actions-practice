@@ -13,10 +13,10 @@ function currentCount(state=0, action){
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-    return [...state,action.value]
+    return [action.value,...state]
   }
   if(action.type === "REMOVE_USER"){
-    return []
+    return state.slice(1)
   }
   return state;
 }
@@ -29,8 +29,58 @@ function specialText(state = "", action){
   return state;
 }
 
-let reducers = combineReducers({
-  currentCount,users,specialText
+const currentCity = (state="",action)=>{
+  if(action.type === "SET_CURRENT_CITY"){
+    return action.value;
+  }
+  return state;
+}
+
+const currentTemp = (state="",action) =>{
+  if(action.type === "SET_TEMP"){
+    return action.value
+  }
+  return state;
+}
+
+const searchText = (state="",action) =>{
+  if(action.type === "SET_SEARCH_TEXT"){
+    return action.value;
+  }
+  return state;
+}
+
+const videoScale = (state="",action)=>{
+  if(action.type === "SET_VIDEO_SCALE"){
+    return action.value;
+  }
+  return state;
+}
+
+const currentUserSort = (state="",action)=>{
+  if(action.type === "SET_CURRENT_USER_SORT"){
+    return action.value;
+  }
+  return state;
+}
+
+const videoURL = (state="",action)=>{
+  if(action.type === "SET_VIDEO_URL"){
+    return action.value;
+  }
+  return state;
+}
+
+const isLoading = (state="true",action)=>{
+  if(action.type==="SET_IS_LOADING"){
+    return action.value;
+  }
+  return state;
+}
+
+const reducers = combineReducers({
+  currentCount,users,specialText,currentCity,currentTemp,
+  searchText,videoScale,currentUserSort,videoURL,isLoading
 })
 
 export default reducers;

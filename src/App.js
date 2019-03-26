@@ -4,20 +4,36 @@ import SpecialTextBox from "./containers/SpecialTextBoxContainer";
 import Counter from "./containers/CounterTextContainer";
 import SpecialText from "./containers/SpecialTextContainer";
 import UserButtons from "./containers/UserButtonsContainer";
-import Thermostat from "./components/Thermostat";
+import Thermostat from "./containers/ThermostatContainer";
 import Users from "./containers/UsersContainer";
-import ChangeTemperature from "./components/ChangeTemperature";
-import VideoPlayer from "./components/VideoPlayer";
-import VideoTextBox from "./components/VideoTextBox";
-import CurrentCity from "./components/CurrentCity";
-import CityDropDown from "./components/CityDropDown";
-import SearchTextBox from "./components/SearchTextBox";
-import SortUsers from "./components/SortUsers";
-import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import ChangeTemperature from "./containers/ChangeTemperatureContainer";
+import VideoPlayer from "./containers/VideoPlayerContainer";
+import VideoTextBox from "./containers/VideoTextBoxContainer";
+import CurrentCity from "./containers/CurrentCityContainer";
+import CityDropDown from "./containers/CityDropDownContainer";
+import SearchTextBox from "./containers/SearchTextBoxContainer";
+import SortUsers from "./containers/SortUsersContainer";
+import ScaleVideo from "./containers/ScaleVideoContainer";
+import Modal from "./containers/ModalContainer";
+import ShowModal from "./containers/ShowModalContainer";
 
-function App() {
+const loadUser = (url,callback) =>{
+  console.log(url)
+  fetch(url)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    myJson.forEach(user => {
+      callback(user)
+    })
+  });
+  
+}
+
+
+function App(props) {
+  loadUser(props.url,props.loadData)
   return (
       <div className="App">
         <div className="container">

@@ -1,6 +1,7 @@
 import {createStore} from 'redux';
-import state from "./state";
 import reducers from "./reducers";
+
+const state = []
 
 var store = createStore(reducers,state);
 
