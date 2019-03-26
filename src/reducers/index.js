@@ -2,10 +2,10 @@ import {combineReducers} from "redux";
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
-    return state++
+    return state+1
   }
   if(action.type === "DECREASE_COUNTER"){
-    return state--
+    return state-1
   }
   return state;
 }   
@@ -19,11 +19,7 @@ function users(state =[], action){
     //[...state] === state.map(p=>p)
   }
   if(action.type === "REMOVE_USER"){
-    // let newArray = state.map(u=>u);
-    // newArray.splice
-    //use state.splice
-
-    // return state.splice(<?>,1)??
+    return state.splice(1)
   }
   return state;
 }

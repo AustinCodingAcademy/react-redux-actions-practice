@@ -1,7 +1,5 @@
 import { connect } from 'react-redux';
 import Users from "../components/Users";
-import SearchTextBox from "../components/SearchTextBox";
-import SortUsers from "../components/SortUsers";
 
 function mapStateToProps(state){
     return {
@@ -11,4 +9,4 @@ function mapStateToProps(state){
     }
   }
 
-  export default connect(mapStateToProps)(Users,SearchTextBox,SortUsers);
+  export default connect(mapStateToProps)(Users);
