@@ -3,7 +3,9 @@ import Users from "../components/Users";
 
 function mapStateToProps(state) {
     return {
-        users: state.users
+        users: state.users,
+        firstNameFilter: state.searchText,
+        sortOn: state.currentUserSort
     }
 }
 
