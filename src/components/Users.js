@@ -9,10 +9,10 @@ function Users(props) {
     usersDivs = sorted.filter(function (u) {
       return !props.firstNameFilter ||
         (props.firstNameFilter &&
-          u.name.indexOf(props.firstNameFilter) > -1);
+          u.first_name.indexOf(props.firstNameFilter) > -1);
     })
     usersDivs = usersDivs.map(function (u) {
-      return <div>{u.name}</div>
+      return <div>{u.first_name} {u.last_name}</div>
     })
   }
   return (

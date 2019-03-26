@@ -51,9 +51,10 @@ export function setTemp(temp) {
   }
 }
 
-export function setIsLoading() {
+export function setIsLoading(isLoading) {
   return {
-    type: "SET_IS_LOADING"
+    type: "SET_IS_LOADING",
+    value: isLoading
   }
 }
 
@@ -64,15 +65,16 @@ export function setVideoURL(txt) {
   }
 }
 
-export function setCurrentUserSort(txt) {
+export function setCurrentUserSort(sort) {
   return {
     type: "SET_CURRENT_USER_SORT",
-    value: txt
+    value: sort
   }
 }
 
-export function setVideoScale() {
+export function setVideoScale(num) {
   return {
-    type: "SET_VIDEO_SCALE"
+    type: "SET_VIDEO_SCALE",
+    value: num
   }
 }

@@ -50,7 +50,7 @@ function currentTemp(state = "", action) {
   return state;
 }
 
-function isLoading(state = "", action) {
+function isLoading(state = false, action) {
   if (action.type === "SET_IS_LOADING") {
     return action.value;
   }
