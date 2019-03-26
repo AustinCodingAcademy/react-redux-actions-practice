@@ -5,7 +5,7 @@ import Counter from "./containers/CounterContainer";
 import SpecialText from "./containers/SpecialTextContainer";
 import UserButtons from "./components/UserButtons";
 import Thermostat from "./containers/ThermostatContainer";
-import Users from "./components/Users";
+import Users from "./containers/UsersContainer";
 import ChangeTemperature from "./containers/ChangeTemperatureContainer";
 import VideoPlayer from "./containers/VideoPlayerContainer";
 import VideoTextBox from "./containers/VideoTextBoxContainer";

@@ -11,8 +11,8 @@ function Users(props) {
       (props.firstNameFilter && 
       u.name.indexOf(props.firstNameFilter) > -1);
     })
-    usersDivs = usersDivs.map(function(u){
-      return <div>{u.name}</div>
+    usersDivs = usersDivs.map(function(u, i){
+      return <div key={i}>{u.name}</div>
     })
   }
   return (
