@@ -44,10 +44,10 @@ export function setSearchText(txt) {
   }
 }
 
-export function setTemp(num) {
+export function setTemp(temp) {
   return {
     type: "SET_TEMP",
-    value: num
+    value: temp
   }
 }
 
