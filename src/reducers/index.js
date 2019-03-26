@@ -12,7 +12,6 @@ function currentCount(state = 0, action) {
 
 function users(state = [], action) {
   if (action.type === "ADD_USER") {
-    console.log(state)
     return [...state, action.value]
   }
 

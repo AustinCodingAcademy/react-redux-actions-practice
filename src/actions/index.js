@@ -30,9 +30,10 @@ export function removeUser() {
   }
 }
 
-export function setCurrentCity() {
+export function setCurrentCity(city) {
   return {
-    type: "SET_CURRENT_CITY"
+    type: "SET_CURRENT_CITY",
+    value: city
   }
 }
 
