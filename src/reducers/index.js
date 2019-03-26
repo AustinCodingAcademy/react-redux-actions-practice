@@ -71,7 +71,7 @@ const videoURL = (state="",action)=>{
   return state;
 }
 
-const isLoading = (state="true",action)=>{
+const isLoading = (state="false",action)=>{
   if(action.type==="SET_IS_LOADING"){
     return action.value;
   }

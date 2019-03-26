@@ -1,7 +1,7 @@
 import {createStore} from 'redux';
 import reducers from "./reducers";
 
-const state = []
+const state = {isLoading: false}
 
 var store = createStore(reducers,state);
 

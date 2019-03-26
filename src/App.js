@@ -18,7 +18,6 @@ import Modal from "./containers/ModalContainer";
 import ShowModal from "./containers/ShowModalContainer";
 
 const loadUser = (url,callback) =>{
-  console.log(url)
   fetch(url)
   .then(function(response) {
     return response.json();
