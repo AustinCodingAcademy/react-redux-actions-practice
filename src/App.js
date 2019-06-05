@@ -16,50 +16,64 @@ import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
+import store from './store';
 
-function App() {
-  return (
-      <div className="App">
-        <div className="container">
-          <CounterButton />
-          <br />
-          <SpecialTextBox />
-          <br />
-          <UserButtons />
-          <br />
-          <CityDropDown />
-           <br />
-          <ChangeTemperature />
-          <br />
-          <SearchTextBox />
-          <br />
-          <VideoTextBox />
-          <br />
-          <SortUsers />
-          <br />
-          <ScaleVideo />
-          <br />
-          <ShowModal />
+class App extends React.Component {
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then(users => {
+        let message = {value: users, type:'USERS_LOADED'};
+        store.dispatch(message)
+      })
+  }
+
+  render() {
+  
+    return (
+        <div className="App">
+          <div className="container">
+            <CounterButton />
+            <br />
+            <SpecialTextBox />
+            <br />
+            <UserButtons />
+            <br />
+            <CityDropDown />
+            <br />
+            <ChangeTemperature />
+            <br />
+            <SearchTextBox />
+            <br />
+            <VideoTextBox />
+            <br />
+            <SortUsers />
+            <br />
+            <ScaleVideo />
+            <br />
+            <ShowModal />
+          </div>
+          <div className="container">
+            <Counter />
+            <br />
+            <SpecialText />
+            <br />
+            <CurrentCity />
+            <br />
+            <Thermostat />
+            <br />
+            <VideoPlayer />
+            <br />
+            
+            
+          </div>
+          <div className="container">
+            <Users />
+          </div>
+          <Modal />
         </div>
-        <div className="container">
-          <Counter />
-          <br />
-          <SpecialText />
-          <br />
-          <CurrentCity />
-          <br />
-          <Thermostat />
-          <br />
-          <VideoPlayer />
-          <br />
-          
-          
-        </div>
-        <div className="container">
-          <Users />
-        </div>
-        <Modal />
-      </div>
-  );
+    )
+  };
 }
 export default App;
