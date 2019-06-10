@@ -4,9 +4,9 @@ import SpecialTextBox from "./containers/SpecialTextBoxContainer";
 import Counter from "./components/Counter";
 import SpecialText from "./containers/SpecialTextContainer";
 import UserButtons from "./components/UserButtons";
-import Thermostat from "./components/Thermostat";
+import Thermostat from "./containers/ThermostatContainer";
 import Users from "./components/Users";
-import ChangeTemperature from "./components/ChangeTemperature";
+import ChangeTemperature from "./containers/ChangeTempContainer";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoTextBox from "./components/VideoTextBox";
 import CurrentCity from "./containers/CurrentCityContainer";
@@ -14,8 +14,8 @@ import CityDropDown from "./containers/CityDropDownContainer";
 import SearchTextBox from "./components/SearchTextBox";
 import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
-import Modal from "./components/Modal";
-import ShowModal from "./components/ShowModal";
+import Modal from "./containers/ModalContainer";
+import ShowModal from "./containers/ShowModalContainer";
 import store from './store';
 
 class App extends React.Component {

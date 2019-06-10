@@ -9,7 +9,7 @@ function currentCount(state=0, action){
     return state - 1;
   }
   return state;
-}   
+}
 
 function users(state =[], action){
   if(action.type === 'USERS_LOADED'){
@@ -23,7 +23,6 @@ function users(state =[], action){
   }
   return state;
 }
-
 
 function specialText(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
@@ -39,9 +38,25 @@ function currentCity(state='', action) {
   return state;
 }
 
+function currentTemp(state='', action) {
+  if(action.type === 'SET_TEMP') {
+    return action.value;
+  }
+  return state;
+}
+
+function isLoading(state=false, action) {
+  if(action.type === 'SET_IS_LOADING') {
+    return action.value;
+  }
+  return state;
+}
+
 export default combineReducers({
   currentCount,
   users,
   specialText,
-  currentCity
+  currentCity,
+  currentTemp,
+  isLoading
 })
