@@ -52,11 +52,19 @@ function isLoading(state=false, action) {
   return state;
 }
 
+function videoURL(state='', action) {
+  if(action.type === 'SET_VIDEO_URL') {
+    return action.value;
+  }
+  return state;
+}
+
 export default combineReducers({
   currentCount,
   users,
   specialText,
   currentCity,
   currentTemp,
-  isLoading
+  isLoading,
+  videoURL
 })

@@ -9,7 +9,7 @@ function VideoPlayer(props) {
   }
   return (
       <div><iframe title="YouTube video player"  type="text/html" 
-      width={width} height={height} src={props.URL}
+      width={width} height={height} src={props.url}
       frameBorder="0" allowFullScreen></iframe></div>
   );
 }

@@ -51,3 +51,10 @@ export function setIsLoading(isLoading) {
     value: isLoading
   }
 }
+
+export function setVideoURL(url) {
+  return {
+    type: 'SET_VIDEO_URL',
+    value: url
+  }
+}
