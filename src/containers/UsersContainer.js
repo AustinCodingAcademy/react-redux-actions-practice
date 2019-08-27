@@ -2,7 +2,7 @@ import User from '../components/Users';
 import {connect} from 'react-redux';
 import state from '../state';
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
     return {
         users: state.users,
         firstNameFilter: state.searchText,

@@ -2,7 +2,7 @@ import CurrentCity from '../components/CurrentCity';
 import {connect} from 'react-redux';
 import state from '../state';
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
     return {
         text: state.currentCity
     }

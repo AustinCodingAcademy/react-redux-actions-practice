@@ -1,7 +1,7 @@
 import Thermostat from '../components/Thermostat';
 import {connect} from 'react-redux';
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
     return {
         temp: state.currentTemp
     }

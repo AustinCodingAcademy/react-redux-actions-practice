@@ -1,11 +1,9 @@
-import ChangeTemparature from '../components/ChangeTemperature'
-import {connect} from 'react-redux'
-import state from '../state';
+import ChangeTemparature from '../components/ChangeTemperature';
+import {connect} from 'react-redux';
+import {setTemp} from '../actions';
 
-const mapStateToProps = () => {
-    return {
-        text: state.specialText
-    }
+const mapDispatchToProps = {
+    set: setTemp
 }
 
-export default connect(mapStateToProps)(ChangeTemparture)
+export default connect(null, mapDispatchToProps)(ChangeTemparature);

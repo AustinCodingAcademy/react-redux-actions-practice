@@ -2,7 +2,7 @@ import VideoPlayer from '../components/VideoPlayer';
 import {connect} from 'react-redux';
 import state from '../state';
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
     return {
         URL: state.videoURL,
         scale: state.videoScale
