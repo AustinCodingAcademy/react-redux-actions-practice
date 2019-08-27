@@ -1,3 +1,4 @@
+import {combineReducers} from 'react'
 
 function currentCount(state=0, action){
   if(action.type === "INCREASE_COUNTER"){
@@ -27,3 +28,48 @@ function specialText(state = "", action){
   return state;
 }
 
+function currentCity(state = "", action) {
+  if(action.value === "SET_CURRENT_CITY") {
+    return action.value
+  }
+  return state
+}
+
+function isLoading(state = false, action) {
+  if(action.value === "SET_IS_LOADING") {
+    return action.value;
+  }
+  return state;
+}
+
+function videoURL(state = "", action) {
+  if(action.value === "SET_VIDEO_URL") {
+    return action.value;
+  }
+  return state;
+}
+
+function currentUserSort(state = "", action) {
+  if(action.value === "SET_CURRENT_USER_SORT") {
+    return action.value
+  }
+  return state;
+}
+
+function videoScale(state = 1, action) {
+  if(action.value === "SET_VIDEO_SCALE") {
+    return state;
+  }
+  return state;
+}
+
+export default combineReducers({
+  currentCount, 
+  users,
+  specialText,
+  currentCity,
+  isLoading,
+  videoURL, 
+  currentUserSort, 
+  videoScale
+})
