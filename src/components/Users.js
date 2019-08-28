@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Users(props) {
+export default function Users(props) {
   var usersDivs = null;
   if(props.users){
     var sorted = props.users.sort((a,b) => {
@@ -22,4 +22,3 @@ function Users(props) {
       </div>
   );
 }
-export default Users;

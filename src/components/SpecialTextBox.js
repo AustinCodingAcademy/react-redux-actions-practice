@@ -1,6 +1,4 @@
 import React from 'react';
-import {connect} from "react-redux";
-import {setSpecialText} from "../actions";
 
 function SpecialTextBox(props) {
   return (
@@ -15,4 +13,4 @@ function SpecialTextBox(props) {
   );
 }
 
-export default (SpecialTextBox);
+export default SpecialTextBox;

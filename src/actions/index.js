@@ -4,10 +4,16 @@ export function increaseCounter(){
   }
 }
 
-export function setSpecialText(txt){
+export function decreaseCounter(){
+  return {
+    type:"DECREASE_COUNTER"
+  }
+}
+
+export function setSpecialText(text){
   return {
     type:"SET_SPECIAL_TEXT",
-    value:txt
+    value:text
   }
 }
 

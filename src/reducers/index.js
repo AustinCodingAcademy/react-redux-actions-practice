@@ -63,6 +63,20 @@ function videoScale(state = 1, action) {
   return state;
 }
 
+function searchText(state = "", action) {
+  if(action.value === "SET_SEARCH_TEXT") {
+    return action.value;
+  }
+  return state;
+}
+
+function currentTemp(state = 0, action) {
+    if(action.value === "SET_TEMP") {
+      return action.value
+    }
+    return state
+}
+
 export default combineReducers({
   currentCount, 
   users,
@@ -71,5 +85,7 @@ export default combineReducers({
   isLoading,
   videoURL, 
   currentUserSort, 
-  videoScale
+  videoScale,
+  searchText,
+  currentTemp
 })

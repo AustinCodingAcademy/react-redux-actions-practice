@@ -1,6 +1,5 @@
 import User from '../components/Users';
 import {connect} from 'react-redux';
-import state from '../state';
 
 const mapStateToProps = (state) => {
     return {
