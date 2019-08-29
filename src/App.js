@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import CounterButton from "./containers/CounterButtonContainer";
 import SpecialTextBox from "./containers/SpecialTextBoxContainer";
 import Counter from "./containers/CounterContainer";
@@ -17,8 +17,18 @@ import ScaleVideo from "./containers/ScaleVideoContainer";
 import Modal from "./containers/ModalContainer";
 import ShowModal from "./containers/ShowModalContainer";
 
-function App() {
-  return (
+class App extends React.Component {
+  
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users') 
+      .then(res => res.json())
+      .then(data => {this.props.set(data)})
+        .catch(err => console.log(`Error: ${err}`))
+  }
+
+  render() {
+    return (
       <div className="App">
         <div className="container">
           <CounterButton />
@@ -28,7 +38,7 @@ function App() {
           <UserButtons />
           <br />
           <CityDropDown />
-           <br />
+          <br />
           <ChangeTemperature />
           <br />
           <SearchTextBox />
@@ -52,14 +62,13 @@ function App() {
           <br />
           <VideoPlayer />
           <br />
-          
-          
         </div>
         <div className="container">
           <Users />
         </div>
         <Modal />
       </div>
-  );
+    );
+  }
 }
 export default App;
