@@ -3,7 +3,7 @@ import React from 'react';
 function SpecialText(props) {
   return (
       <div>
-        Special Text: {props.text}
+        Special Text: {props.text || "What would you like to write?"}
       </div>
   );
 }
