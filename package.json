@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "*",
-    "react-dom": "*",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-modal": "^1.7.7",
-    "react-redux": "*",
-    "redux": "*",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
-    "react-scripts": "*"
+    "react-scripts": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
