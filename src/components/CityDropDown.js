@@ -8,6 +8,17 @@ function CityDropDown(props) {
           (e)=>{
             if(props.set){
               props.set(e.target.value);
+              // console.log(e.target.value)
+              fetch('http://localhost:3003/city', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(e.target.value)
+              })
+              .then(res => res.json())
+              .catch(console.log);
             }
           }
         }>
