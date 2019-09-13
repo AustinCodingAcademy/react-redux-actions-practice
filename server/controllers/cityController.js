@@ -1,6 +1,7 @@
 const City = require('../models/cityModel');
 
 exports.create = function create(req,res) {
+    // console.log(req.body.city)
   let item = {
     city: req.body.city
   };

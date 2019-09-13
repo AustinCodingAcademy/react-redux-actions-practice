@@ -12,9 +12,9 @@ app.use(cityRoutes);
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/react-redux-actions-practice', {useNewUrlParser: true});
 
-app.listen(3000, (err) => {
+app.listen(3003, (err) => {
  if (err) {
    return console.log("Error", err);
  }
- console.log("Web server is now listening for messages on port",3000);
+ console.log("Web server is now listening for messages on port",3003);
 });
